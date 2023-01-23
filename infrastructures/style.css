@@ -1,0 +1,182 @@
+body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 25px;
+    text-align: center;
+  }
+  h2 {
+    
+    padding-bottom: 2px;
+    margin: 5px 0 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin: 5px 0 10px;
+  }
+  h4 {
+    font-size: 20px;
+    margin: 5px 10 10px;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  small {
+    font-size: 13px;
+  }
+  #wrapper {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 1350px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.15);
+} 
+
+
+#intro {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 10px;
+  align-items: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+#intro p {
+  padding: 0 10px;
+  text-align: center;
+}
+
+
+#intro p:last-child {
+  font-size: 18px;
+  margin-top: 50px;
+}
+
+.menu-button-container {
+  display: block;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button {
+  margin-left: 20px;
+  margin-top: 33px;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+#menu-toggle:checked ~ .menu {
+  padding: 0px;
+  justify-content: space-around;
+  background-color:rgb(255, 255, 255, 0.344) ;
+  border-radius: 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  vertical-align: top;
+  list-style: none;
+}
+
+.menu {
+  display:none;
+}
+
+.menu li {
+  display: inline-block;  
+  font-size: 20px;
+  padding: 10px;
+} 
+
+  .aligndiv {
+    float: left;
+    width: 304px;
+    height: 440px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 15px 5px 40px 5px;
+  }
+  
+ 
+  #infra {
+    margin-right: 5px;
+    margin-left: 7.5px;
+  }
+  
+  footer {
+    clear: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse : collapse;
+  }
+  th {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.756);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.756);
+    margin: 0 0 10px;
+    padding: 15px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+  }
+  td {
+    border: 1px solid rgba(255, 255, 255, 0.756);
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+  }

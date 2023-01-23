@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+  background-color: #4d5660;
+  margin: 0;
+  font-family: "Jost";
+  }
+  h1, h2 {
+    color: #ffffff;
+  }
+
+  h3{
+    color: #000000;
+  }
+
+  p {
+    color: #ffffff;
+    margin: 0;
+    text-align: justify
+
+  }
+
+  ul {
+    color: #ffffff;
+    margin: 0;
+    text-align: justify
+  }
+
+  li {
+    color: #ffffff;
+    margin: 0;
+    text-align: justify
+  }
+
+
+  a {
+    color: #000000;
+    text-decoration: none;
+    outline: none; 
+  }
+
+
+  a:hover {
+    color: #ffffff;
+  }

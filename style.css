@@ -1,0 +1,94 @@
+body {
+    font-size: 15px;
+  }
+  h1 {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 0 10px;
+    padding: 21px 0;
+    font-size: 25px;
+    text-align: center;
+  }
+  h2 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.756);
+    padding-bottom: 2px;
+    margin: 5px 0 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  h3 {
+    padding: 1em;
+    font-size: 20px;
+    margin: 5px 0 10px;
+    text-align: justify;
+  }
+  h4 {
+    font-size: 20px;
+    margin: 5px 10 10px;
+    text-align: center;
+    line-height: 2;
+  }
+  
+  small {
+    font-size: 13px;
+  }
+  #wrapper {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 1028px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  #intro p {
+    padding: 0 10px;
+    text-align: center;
+  }
+  #intro p:last-child {
+    font-size: 18px;
+    margin-top: 50px;
+  }
+  
+
+  .aligndiv {
+    float: left;
+    cursor: pointer;
+    width: 481.5px;
+    height: 150px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 15px 2.5px 40px 5px;
+  }
+  .aligndiv:hover {
+    background-color: rgba(255, 255, 255, 0.344);
+  }
+
+  .aligndiv2 {
+    float: left;
+    cursor: pointer;
+    width: 481.5px;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 15px 2.5px 40px 5px;
+  }
+  .aligndiv2:hover {
+    background-color: rgba(255, 255, 255, 0.344);
+    
+  }
+  
+  #eval {
+    margin-right: 5px;
+    margin-left: 7.5px;
+  }
+ 
+  footer {
+    clear: left;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }

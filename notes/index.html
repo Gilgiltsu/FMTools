@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Les notes cachées</title>
+  <meta charset="utf-8" />
+  <link href="../stylecomplet.css" rel="stylesheet" />
+  <link href="style.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Jost" rel="stylesheet"/>
+  
+
+</head>
+
+<body>
+<div id="wrapper">
+
+		
+		<div id="intro"> 
+		
+		<input id="menu-toggle" type="checkbox" />
+		  <label class='menu-button-container' for="menu-toggle">
+		  <div class='menu-button'></div>
+		  </label>
+		
+		
+		  <h1>Appréhender les notes cachées</h1>
+		
+		  <ul class="menu">
+			<li><a href="../index.html">Accueil</a></li>
+			<li><a href="../notes/index.html">Les notes cachées</a></li>
+			<li><a href="../prépa/index.html">Evaluation du staff</a></li>
+			<li><a href="../infrastructures/index.html">Les infrastructures</a></li>
+		  </ul>
+		
+</div>
+
+<div class="aligndiv">
+
+<form onchange="note()">
+<label class="formulaire" for="det" >Détermination</label>
+<input type="number" name="det" id="det" max="20" min="1" value="1">
+
+<label class="formulaire" for="Personnalite">Choisir une personnalité</label>
+<select name="Personnalite" id="Personnalite" onchange="RMchange()">
+    <option value="">Personnalité</option>
+    <option value="Amb">Ambitieux</option>
+    <option value="AsAmb">Assez Ambitieux</option>
+    <option value="AsDe">Assez Déterminé</option>
+    <option value="AsFP">Assez Fair-play</option>
+    <option value="AsLo">Assez Loyal</option>
+    <option value="AsPro">Assez Professionnel</option>
+	<option value="CiMo">Citoyen Modèle</option>
+	<option value="Dec">Décontracté</option>
+	<option value="Del">Déloyal</option>
+	<option value="Det">Déterminé</option>
+	<option value="Dev">Dévoué</option>
+	<option value="Ef">Effronté</option>
+	<option value="Enj">Enjoué</option>
+	<option value="Ent">Enthousiaste</option>
+	<option value="Eq">Equilibré</option>
+	<option value="Fac">Facilement Découragé</option>
+	<option value="FaDe">Faible Détermination</option>
+	<option value="FaCo">Faible confiance en soi</option>
+	<option value="FP">Fair-play</option>
+	<option value="Fo">Forte Personnalité</option>
+	<option value="Fri">Friable</option>
+	<option value="Ho">Honnête</option>
+	<option value="In">Indolent</option>
+	<option value="Jo">Jovial</option>
+	<option value="Le">Leader</option>
+	<option value="LeCh">Leader Charismatique</option>
+	<option value="Lene">Leader né</option>
+	<option value="Lo">Loyal</option>
+	<option value="Me">Mercenaire</option>
+	<option value="Modpro">Modèle de Professionnalisme</option>
+	<option value="Mot">Motivé</option>
+	<option value="Ob">Obstiné</option>
+	<option value="Per">Perfectionniste</option>
+	<option value="Pro">Professionnel</option>
+	<option value="Rea">Réaliste</option>
+	<option value="Res">Résistant</option>
+	<option value="SAmb">Sans Ambition</option>
+	<option value="TreAmb">Très Ambitieux</option>
+	<option value="TreLoy">Très Loyal</option>
+	<option value="Vers">Versatile</option>
+</select>
+<br>
+<label class="formulaire" for="Media">Rapports aux médias</label>
+<select name="Media" id="Media">
+	<option value="">Rapports aux médias</option>
+	<option value="ApMe">Apprécié des médias</option>
+	<option value="ApMeCon">Apprécié des médias, Conflictuel</option>
+	<option value="ApMeImp">Apprécié des médias, Imperturbable</option>
+	<option value="ApMeIr">Apprécié des médias, Irascible</option>
+	<option value="ApMeIrCon">Apprécié des médias, Irascible, Conflictuel</option>
+	<option value="ApMeRe">Apprécié des médias, Réservé</option>
+	<option value="ApMeVer">Apprécié des médias, Versatile</option>
+	<option value="ApMeVerCon">Apprécié des médias, Versatile, Conflictuel</option>
+
+	<option value="Con">Conflictuel</option>
+
+	<option value="Equi">Equilibré</option>
+
+	<option value="Eva">Evasif</option>
+	<option value="EvaCon">Evasif, Conflictuel</option>
+	<option value="EvaImp">Evasif, Imperturbable</option>
+	<option value="EvaIr">Evasif, Irascible</option>
+	<option value="EvaIrCon">Evasif, Irascible, Conflictuel</option>
+	<option value="EvaRes">Evasif, Réservé</option>
+	<option value="EvaVer">Evasif, Vérsatile</option>
+	<option value="EvaVerCon">Evasif, Vérsatile, Conflictuel</option>
+
+	<option value="Imp">Imperturbable</option>
+
+	<option value="Ir">Irascible</option>
+	<option value="IrCon">Irascible, Conflictuel</option>
+
+	<option value="Re">Réservé</option>
+
+	<option value="Spo">Spontané</option>
+	<option value="SpoCon">Spontané, Conflictuel</option>
+	<option value="SpoImp">Spontané, Imperturbable</option>
+	<option value="SpoIr">Spontané, Irascible</option>
+	<option value="SpoIrCon">Spontané, Irascible, Conflictuel</option>
+	<option value="SpoVer">Spontané, Versatile</option>
+	<option value="SpoVerCon">Spontané, Versatile, Conflictuel</option>
+
+	<option value="Ver">Versatile</option>
+	<option value="VerCon">Versatile, Conflictuel</option>
+
+</select>
+
+</form>
+</div>
+
+
+<div class="aligndiv">
+	<h2>Attributs</h2>
+
+<table>
+
+  <tbody>
+    <tr>
+	  <td onclick="afficher(this)" >Professionnalisme</td>
+	  <td id="minPro">1</td>
+	  <td id="midPro">-</td>
+	  <td id="maxPro">20</td>
+	</tr>
+	<tr>
+		<td onclick="afficher(this)" >Pression</td>
+		<td id="minPre">1</td>
+		<td id="midPre">-</td>
+		<td id="maxPre">20</td>
+	  </tr>
+	<tr>
+	  <td onclick="afficher(this)" >Tempérament</td>
+	  <td id="minTemp">1</td>
+	  <td id="midTemp">-</td>
+	  <td id="maxTemp">20</td>
+	</tr>
+	<tr>
+	  <td onclick="afficher(this)" >Ambition</td>
+	  <td id="minAmb">1</td>
+	  <td id="midAmb">-</td>
+	  <td id="maxAmb">20</td>
+	</tr>
+	<tr>
+		<td onclick="afficher(this)" >Fidélité</td>
+		<td id="minFid">1</td>
+		<td id="midFid">-</td>
+		<td id="maxFid">20</td>
+	  </tr>
+	<tr>
+	  <td onclick="afficher(this)" >Fair-play</td>
+	  <td id="minFp">1</td>
+	  <td id="midFp">-</td>
+	  <td id="maxFp">20</td>
+	</tr>
+	<tr>
+	  <td onclick="afficher(this)" >Polémique</td>
+	  <td id="minPol">1</td>
+	  <td id="midPol">-</td>
+	  <td id="maxPol">20</td>
+	</tr>
+  </tbody>
+</table>
+
+<h3> Clique sur le nom de l'attribut pour avoir sa définition</h3>
+
+</div>
+
+
+<div id="Professionnalisme" class="aligndiv2" style="display: none;">
+
+<h2>Professionnalisme :</h2>
+	<p>Attitude d’un joueur dans tous les aspects du foot. <br>
+Elle se traduit par son assiduité à l’entraînement, son comportement sur le terrain, sa rigueur et son adhésion au discours du coach. <br>
+Cette note est primordiale. C’est l’attribut le plus important pour la progression d’un joueur.
+</p>
+</div>
+
+<div id="Pression" class="aligndiv2" style="display: none;">
+	
+<h2>Pression :</h2>
+		<p>Faculté d’un joueur à faire face aux attentes (du club, des supporters, du coach, des médias…). <br>
+		Plus votre club est grand, plus la pression y sera importante. <br>
+		Les joueurs qui savent la gérer sont donc les meilleurs profils pour votre effectif, surtout lorsque vous jouez les grandes compétitions.
+	</p>
+	</div>
+
+<div id="Tempérament"  class="aligndiv2" style="display: none;">
+
+<h2>Tempérament :</h2>
+		<p>Faculté d’un joueur à réagir lorsqu’il est dos au mur. <br>
+		Lorsque votre équipe est menée ou en difficulté, les joueurs avec du tempérament ne baissent pas les bras ; ils restent calmes et tentent de remotiver les troupes. <br>
+		C’est eux souvent qui vont débloquer la situation.
+
+</p>
+	</div>
+
+<div id="Ambition" class="aligndiv2" style="display: none;">
+	
+<h2>Ambition :</h2>
+		<p>Volonté de jouer dans les meilleurs clubs, au meilleur salaire possible. <br>
+		Les ambitieux ont tendance à demander plus d’argent et peuvent exiger un transfert si les objectifs du club ne correspondent pas aux leurs. <br>
+		L’Ambition a un impact faible sur la progression des jeunes.
+	</p>
+	</div>
+
+	<div id="Fidélité" class="aligndiv2" style="display: none;">
+		
+	<h2>Fidélité :</h2>
+			<p>Loyauté d’un joueur envers son club. <br>
+			Les plus fidèles auront moins tendance à céder aux sirènes des meilleures écuries, et donc à vous tenir tête si vous refusez. <br>
+			Ils donneront également tout pour leur équipe.
+		</p>
+		</div>
+
+	<div id="Fair-play"  class="aligndiv2" style="display: none;">
+		
+			<h2>Fair-play :</h2>
+			<p>Tendance d’un joueur à garder un esprit sportif en toute circonstance. <br>
+			Les moins fair-play vont vouloir gagner du temps, mais prendre davantage de cartons. <br>
+			Ceux avec un meilleur état d’esprit ont tendance à être plus populaires.
+		</p>
+	</div>
+
+	<div id="Polémique"  class="aligndiv2" style="display: none;">
+		
+			<h2>Polémique :</h2>
+			<p>Tendance d’un joueur à vous tenir tête lorsqu’il n’est pas d’accord avec vous, ou que votre discours ne lui plait pas. <br>
+			Un seul rapport médias indique une haute note en polémique (Spontané), il est donc préférable de l’éviter, mais ce n’est pas forcément rédhibitoire si vous savez tenir votre vestiaire et que vous avez des résultats.
+
+		</p>
+	</div>
+
+<div class="aligndiv3" >
+<h2>Pour en savoir plus :</h2>
+<ul>
+<li > <a href="https://youtu.be/6dXkB1F6woQ" target="_blank">L'encadrement</a></li>
+<li > <a href="https://youtu.be/KBZi8b8H8Ug" target="_blank">Le guide vidéo</a></li>
+<li ><a href="https://fmslife.fr/t/le-guide-ultime-des-personnalites/11949" target="_blank">Le guide FMSLife</a></li>
+</ul>
+
+</div>
+
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="../fonction.js"></script>
+
+
+
+<footer>
+<p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a href="https://www.youtube.com/@Kiniitooo"> <img src="../image/youtube-icon.svg" width=15px> </a> | <a target="_blank"  href="https://www.twitch.tv/kiniitooo"> <img src="../image/twitch-icon.svg" width=15px> </a> | <a href="https://twitter.com/Kiniitooo"> <img src="../image/twitter-icon.svg" width=15px></a> | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../image/discordapp-icon.svg" width=15px> </a> ) et DoctorDim </small>  
+<p><small>&copy; Created by Gilgiltsu, 2023.</small></p>
+</footer>
+
+</div>
+</body>
+</html>
