@@ -8,7 +8,18 @@ minAmb=document.getElementById("minAmb"), midAmb=document.getElementById("midAmb
 minFid=document.getElementById("minFid"), midFid=document.getElementById("midFid"),maxFid=document.getElementById("maxFid"),
 minFp=document.getElementById("minFp"), midFp=document.getElementById("midFp"),maxFp=document.getElementById("maxFp"),
 minPol=document.getElementById("minPol"), midPol=document.getElementById("midPol"),maxPol=document.getElementById("maxPol"),
-det=document.getElementById("det");
+Garret = document.getElementById("Garret"),Gprise = document.getElementById("Gprise"),
+Deftac = document.getElementById("Deftac"),Deftec = document.getElementById("Deftec"),
+Attac = document.getElementById("Attac"), Attec = document.getElementById("Attec"),
+Postac = document.getElementById("Postac"), Postec = document.getElementById("Postec"),
+Puis = document.getElementById("Puis"), Viva = document.getElementById("Viva"),
+det=document.getElementById("det"),zero = "../image/0etoile.png",demi = "../image/demi.png",un = "../image/1etoile.png",undemi = "../image/1etdemi.png", deux = "../image/2etoiles.png",
+deuxdemi = "../image/2etdemi.png", trois = "../image/3etoiles.png",troisdemi = "../image/3etdemi.png", quatre = "../image/4etoiles.png",
+quatredemi = "../image/4etdemi.png", cinq = "../image/5etoiles.png",
+CP = document.getElementById("CP"),CaM = document.getElementById("CaM"), Def = document.getElementById("Def"),Det = document.getElementById("Det"),
+Men = document.getElementById("Men"),Ndd = document.getElementById("Ndd"),Off = document.getElementById("Off"),Tac = document.getElementById("Tac"),
+Tec = document.getElementById("Tec"),AGB = document.getElementById("AGB"),PGB = document.getElementById("PGB"),RGB = document.getElementById("RGB");
+
 
 let tabs = document.querySelectorAll(".tabs li");
 let tabContents = document.querySelectorAll(".tab-content div");
@@ -426,7 +437,7 @@ med(1)
 ):
 
 "Re"===Media.value?
-(minPro.innerHTML<15&&(minPro.innerHTML=15),minTemp.innerHTML<7(minTemp.innerHTML=7),maxPol.innerHTML>5&&(maxPol.innerHTML=5),minFid<11&&(minFid=11),
+(minPro.innerHTML<15&&(minPro.innerHTML=15),minTemp.innerHTML<7&&(minTemp.innerHTML=7),maxPol.innerHTML>5&&(maxPol.innerHTML=5),minFid<11&&(minFid=11),
 med(1),med(2)
 ):
 
@@ -639,4 +650,60 @@ function afficher(a) {
   document.getElementById("Fair-play").style.display="none";
   document.getElementById("Polémique").style.display="none";
   document.getElementById(a.innerHTML).style.display="";
+}
+
+
+function rststar() {
+Garret.src = zero;
+Gprise.src = zero;
+Deftec.src = zero;
+Deftac.src = zero;
+Attac.src = zero;
+Attec.src = zero;
+Postac.src = zero;
+Postec.src = zero;
+Puis.src = zero;
+Viva.src = zero;
+}
+
+
+function evalstaf() {
+  rststar();
+  DDM = ((new Number(CaM.value)) + (new Number(Det.value)) + (new Number(Ndd.value))) * 2;
+  AL = ((new Number(AGB.value))*9) + DDM;
+  PDB = ((new Number(PGB.value))*6) + ((new Number(RGB.value))*3) + DDM;
+  DTa = ((new Number(Def.value))*6) + ((new Number(Tac.value))*3) + DDM;
+  DTe = ((new Number(Def.value))*6) + ((new Number(Tec.value))*3) + DDM;
+  JoTa = ((new Number(Off.value))*6) + ((new Number(Tac.value))*3) + DDM;
+  JoTe = ((new Number(Off.value))*6) + ((new Number(Tec.value))*3) + DDM;
+  PTa = ((new Number(Men.value))*6) + ((new Number(Tac.value))*3) + DDM;
+  PTe = ((new Number(Men.value))*6) + ((new Number(Tec.value))*3) + DDM;
+  Phy = ((new Number(CP.value))*9) + DDM;
+
+ (AL>=270&&(Garret.src=cinq) || AL>=240&&(Garret.src=quatredemi) || AL>=210&&(Garret.src=quatre) || AL>=180&&(Garret.src=troisdemi) || AL>=150&&(Garret.src=trois) || AL>=120&&(Garret.src=deuxdemi) || AL>=90&&(Garret.src=deux) || AL>=60&&(Garret.src=undemi) || AL>=30&&(Garret.src=un) || AL<30&&(Garret.src=demi));
+ (PDB>=270&&(Gprise.src=cinq) || PDB>=240&&(Gprise.src=quatredemi) || PDB>=210&&(Gprise.src=quatre) || PDB>=180&&(Gprise.src=troisdemi) || PDB>=150&&(Gprise.src=trois) || PDB>=120&&(Gprise.src=deuxdemi) || PDB>=90&&(Gprise.src=deux) || PDB>=60&&(Gprise.src=undemi) || PDB>=30&&(Gprise.src=un) || PDB<30&&(Gprise.src=demi));
+ (DTa>=270&&(Deftac.src=cinq) || DTa>=240&&(Deftac.src=quatredemi) || DTa>=210&&(Deftac.src=quatre) || DTa>=180&&(Deftac.src=troisdemi) || DTa>=150&&(Deftac.src=trois) || DTa>=120&&(Deftac.src=deuxdemi) || DTa>=90&&(Deftac.src=deux) || DTa>=60&&(Deftac.src=undemi) || DTa>=30&&(Deftac.src=un) || DTa<30&&(Deftac.src=demi));
+ (DTe>=270&&(Deftec.src=cinq) || DTe>=240&&(Deftec.src=quatredemi) || DTe>=210&&(Deftec.src=quatre) || DTe>=180&&(Deftec.src=troisdemi) || DTe>=150&&(Deftec.src=trois) || DTe>=120&&(Deftec.src=deuxdemi) || DTe>=90&&(Deftec.src=deux) || DTe>=60&&(Deftec.src=undemi) || DTe>=30&&(Deftec.src=un) || DTe<30&&(Deftec.src=demi));
+ (JoTa>=270&&(Attac.src=cinq) || JoTa>=240&&(Attac.src=quatredemi) || JoTa>=210&&(Attac.src=quatre) || JoTa>=180&&(Attac.src=troisdemi) || JoTa>=150&&(Attac.src=trois) || JoTa>=120&&(Attac.src=deuxdemi) || JoTa>=90&&(Attac.src=deux) || JoTa>=60&&(Attac.src=undemi) || JoTa>=30&&(Attac.src=un) || JoTa<30&&(Attac.src=demi));
+ (JoTe>=270&&(Attec.src=cinq) || JoTe>=240&&(Attec.src=quatredemi) || JoTe>=210&&(Attec.src=quatre) || JoTe>=180&&(Attec.src=troisdemi) || JoTe>=150&&(Attec.src=trois) || JoTe>=120&&(Attec.src=deuxdemi) || JoTe>=90&&(Attec.src=deux) || JoTe>=60&&(Attec.src=undemi) || JoTe>=30&&(Attec.src=un) || JoTe<30&&(Attec.src=demi));
+ (PTa>=270&&(Postac.src=cinq) || PTa>=240&&(Postac.src=quatredemi) || PTa>=210&&(Postac.src=quatre) || PTa>=180&&(Postac.src=troisdemi) || PTa>=150&&(Postac.src=trois) || PTa>=120&&(Postac.src=deuxdemi) || PTa>=90&&(Postac.src=deux) || PTa>=60&&(Postac.src=undemi) || PTa>=30&&(Postac.src=un) || PTa<30&&(Postac.src=demi));
+ (PTe>=270&&(Postec.src=cinq) || PTe>=240&&(Postec.src=quatredemi) || PTe>=210&&(Postec.src=quatre) || PTe>=180&&(Postec.src=troisdemi) || PTe>=150&&(Postec.src=trois) || PTe>=120&&(Postec.src=deuxdemi) || PTe>=90&&(Postec.src=deux) || PTe>=60&&(Postec.src=undemi) || PTe>=30&&(Postec.src=un) || PTe<30&&(Postec.src=demi));
+ (Phy>=270&&(Puis.src=cinq) || Phy>=240&&(Puis.src=quatredemi) || Phy>=210&&(Puis.src=quatre) || Phy>=180&&(Puis.src=troisdemi) || Phy>=150&&(Puis.src=trois) || Phy>=120&&(Puis.src=deuxdemi) || Phy>=90&&(Puis.src=deux) || Phy>=60&&(Puis.src=undemi) || Phy>=30&&(Puis.src=un) || Phy<30&&(Puis.src=demi));
+ (Phy>=270&&(Viva.src=cinq) || Phy>=240&&(Viva.src=quatredemi) || Phy>=210&&(Viva.src=quatre) || Phy>=180&&(Viva.src=troisdemi) || Phy>=150&&(Viva.src=trois) || Phy>=120&&(Viva.src=deuxdemi) || Phy>=90&&(Viva.src=deux) || Phy>=60&&(Viva.src=undemi) || Phy>=30&&(Viva.src=un) || Phy<30&&(Viva.src=demi));
+}
+
+function remisazero() {
+  CaM.value = "1";
+  Det.value = "1";
+  Ndd.value = "1";
+  AGB.value = "1";
+  PGB.value = "1";
+  RGB.value = "1";
+  Def.value = "1";
+  Off.value = "1";
+  Men.value = "1";
+  CP.value = "1";
+  Tec.value = "1";
+  Tac.value = "1";
+  rststar();
 }

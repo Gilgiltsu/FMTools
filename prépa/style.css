@@ -137,36 +137,22 @@ body {
     padding: 10px;
   }
   
-  
-  
-  
-  
-  
-  
-  
-  
+
+  button {
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+
+  }
   
   .aligndiv {
     float : left ;
     font-size: large;
-    width: 538px;
-    height: 320px;
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 15px;
-    margin-bottom: 20px;
-    margin-left: 15px; 
-  }
-  
-  .aligndiv2 {
-    float : left ;
-    font-size: large;
-    width: 1130px;
-    height: 150px;
-    padding-top: 20px;
+    width: 535px;
+    height: 450px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -176,139 +162,86 @@ body {
     margin-left: 15px;
   }
   
-  .aligndiv h4 {
-    margin-top: -10px;
-    margin-bottom:0px;
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.5;
-    color: #000000;
+  
+  .aligndiv h1 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.756);
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
   }
   
   .formulaire {
-   text-align: center;
    color: rgb(255, 255, 255);
    font-size: 20px;
-   display: block;
-   margin-top: 20px;
-   border-bottom: 1px solid rgba(255, 255, 255, 0.756);
-   width: 310px;
-   margin-left: auto;
-   margin-right: auto;
   }
   
-  
-  select {
-    cursor: pointer;
-    width: 310px;
-    text-align: center;
-    padding: 5px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
+
   
   input {
+    float: right;
     cursor: pointer;
-    width: 310px;
+    width: 40px;
     text-align: center;
     padding: 5px;
     border: none;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
-  
-  .tabs {
-    margin-left: 20px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    display: block;
-  }
-  
-  .tabs ul {
-    list-style: none;
-    padding-left: 20px;
-  }
-  
-  .tabs ul li {
-    display: inline-block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background: rgb(255, 255, 255, 0.344);
-    padding: 10px;
-  }
-  
-  .tabs li:hover {
-    background: rgb(0, 0, 0, 0.3);
-    cursor: pointer;
-  }
-  
-  .tabs .active:hover {
-    background: rgb(0, 0, 0, 0.3);
-    cursor: default ;
-  }
-  
-  .tabs .active {
-    background: rgb(0, 0, 0, 0.3);
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   footer {
     clear: left;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
   }
-  table {
+
+  .result {
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.756) ;
     table-layout: fixed;
     width: 100%;
     border-collapse : collapse;
   }
-  
-  
-  td:nth-child(1) {
+  .result th {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.756);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.756);
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+  }
+  .result td {
+    border: 1px solid rgba(255, 255, 255, 0.756);
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+  }
+
+
+  .attribut {
+    border-collapse: separate;
+    border-spacing: 10px 5px; 
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .attribut th{
+    padding: 15px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #ffffff;
+    padding: 5px;
+  }
+
+  .attribut td {
     text-align: justify;
     color: #ffffff;
-    padding: 5px;
+    padding: 2px;
   }
+
   
-  td:nth-child(1):hover {
-  cursor: pointer;
-  }
-  
-  td:nth-child(2) {
-  
-    text-align: center;
-    color: #ffffff;
-    padding: 5px;
-   
-  }
-  
-  td:nth-child(3) {
-    
-    text-align: center;
-    color: #ffffff;
-    padding: 5px;
-    
-  }
-  
-  td:nth-child(4) {
-   
-    text-align: center;
-    color: #ffffff;
-    padding: 5px;
-  
-  }
-  
+
   
   
   

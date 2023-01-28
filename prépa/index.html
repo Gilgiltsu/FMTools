@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <title>Les notes cachées</title>
+  <title>Evaluation des préparateurs</title>
   <meta charset="utf-8" />
   <link href="../stylecomplet.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <link href="http://fonts.googleapis.com/css?family=Jost" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet"/>
   
 
 </head>
@@ -27,16 +27,97 @@
 		  <ul class="menu">
 			<li><a href="../index.html">Accueil</a></li>
 			<li><a href="../notes/index.html">Les notes cachées</a></li>
-			<li><a href="../prépa/index.html">Evaluation du staff</a></li>
+			<li><a href="../rapports/index.html">Les rapports</a></li>
 			<li><a href="../infrastructures/index.html">Les infrastructures</a></li>
 		  </ul>
 		
 </div>
 
 <div class="aligndiv">
+	
 
-    <h1>PAGE EN TRAVAUX</h1>
+<table class="attribut">
+	<form onchange="evalstaf()">
+	<tr>
+		<th><h1>ENTRAINEMENT</h1></th> <th><h1>MENTAL</h1></th>
+	</tr>
+	<tr>
+		<td><label class="formulaire" for="CP" >Condition physique</label>
+		<input onchange="evalstaf()" type="number" name="CP" id="CP" max="20" min="1" value="1"></td>
+		<td><label class="formulaire" for="CaM" >Capacité à motiver</label>
+		<input onchange="evalstaf()" type="number" name="CaM" id="CaM" max= "20"  min= "1"  value= "1" > </td>
+	</tr>
+	<tr>
+		<td><label class="formulaire" for="Def" >Défensif</label>
+			<input onchange="evalstaf()" type="number" name="Def" id="Def" max="20" min="1" value="1"></td>
+			<td><label class="formulaire" for="Det" >Détermination</label>
+			<input onchange="evalstaf()" type="number" name="Det" id="Det" max="20" min="1" value="1"> </td>
+	</tr>	
+	<tr>
+		<td><label class="formulaire" for="Men" >Mental</label>
+			<input onchange="evalstaf()" type="number" name="Men" id="Men" max="20" min="1" value="1"></td>
+			<td><label class="formulaire" for="Ndd" >Niveau de discipline</label>
+			<input onchange="evalstaf()" type="number" name="Ndd" id="Ndd" max="20" min="1" value="1"> </td>
+	</tr>			
+	<tr>
+		<td><label class="formulaire" for="Off" >Offensif</label>
+			<input onchange="evalstaf()" type="number" name="Off" id="Off" max="20" min="1" value="1"></td>
+	</tr>	
+	<tr>
+		<td><label class="formulaire" for="Tac" >Tactique</label>
+			<input onchange="evalstaf()" type="number" name="Tac" id="Tac" max="20" min="1" value="1"></td>
+	</tr>	
+	<tr>
+		<td><label class="formulaire" for="Tec" >Technique</label>
+			<input onchange="evalstaf()" type="number" name="Tec" id="Tec" max="20" min="1" value="1"></td>
+	</tr>	
+	<tr><td></td></tr>
+	<tr>
+		<th><h1>ENTRAINEMENT GARDIENS</h1></th> 
+	</tr>
+	<tr>
+		<td><label class="formulaire" for="AGB" >Arrêts sur la ligne GB</label>
+			<input onchange="evalstaf()" type="number" name="AGB" id="AGB" max="20" min="1" value="1"></td>
+	</tr>
+	<tr>
+		<td><label class="formulaire" for="PGB" >Prise de balle GB</label>
+			<input onchange="evalstaf()" type="number" name="PGB" id="PGB" max="20" min="1" value="1"></td> <td onclick="remisazero()" style="text-align: center;"> <button>Réinitialiser</button> </td>
+	</tr>
+	<tr>
+		<td><label class="formulaire" for="RGB" >Relance GB</label>
+			<input onchange="evalstaf()" type="number" name="RGB" id="RGB" max="20" min="1" value="1"></td>
+	</tr>
+ 	</form>
+	</table>
+	
 
+
+	</div>
+
+	<div class="aligndiv">
+
+	<table class="result">
+		<thead>
+			<tr>
+			<Th colspan="2">Affectation à l'entrainement</Th>
+			<Th>Evaluation</Th>
+		</tr>	
+		</thead>
+
+		<tr> <td rowspan="2"> <img src="../image/Gardien.png" style="width: 40px; display:flex ;margin: auto">Gardien</td> <td>Arrêts sur la ligne</td> <td><img id="Garret" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+            <tr> <td>Prise de balle</td> <td ><img id="Gprise" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td rowspan="2"> <img src="../image/Defense.png" style="width: 40px; display:flex ;margin: auto">En défense</td> <td>Tactique</td> <td ><img id="Deftac" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td>Technique</td> <td ><img id="Deftec" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td rowspan="2"> <img src="../image/JeuOff.png" style="width: 40px; display:flex ;margin: auto">Jeu offensif</td><td>Tactique</td>  <td ><img id="Attac" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td>Technique</td> <td ><img id="Attec" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td rowspan="2"> <img src="../image/Possession.png" style="width: 40px; display:flex ;margin: auto">Possession</td> <td>Tactique</td> <td ><img id="Postac" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td>Technique</td> <td ><img id="Postec" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr > <td rowspan="2"> <img src="../image/Physique.png" style="width: 40px; display:flex ;margin: auto">Condition physique</td> <td>Puissance</td> <td ><img id="Puis" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+			<tr> <td>Vivacité</td> <td ><img id="Viva" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+
+
+	</table>
+	
 	</div>
 
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -46,7 +127,7 @@
 
 <footer>
 <p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a href="https://www.youtube.com/@Kiniitooo"> <img src="../image/youtube-icon.svg" width=15px> </a> | <a target="_blank"  href="https://www.twitch.tv/kiniitooo"> <img src="../image/twitch-icon.svg" width=15px> </a> | <a href="https://twitter.com/Kiniitooo"> <img src="../image/twitter-icon.svg" width=15px></a> | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../image/discordapp-icon.svg" width=15px> </a> ) et DoctorDim </small>  
-<p><small>&copy; Created by Gilgiltsu, 2023.</small></p>
+<p><small>&copy; Créé par Gilgiltsu, 2023.</small></p>
 </footer>
 
 </div>
