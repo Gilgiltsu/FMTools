@@ -136,7 +136,7 @@ small {
 
 
 
-@media(min-width: 768px)
+@media(min-width: 1080px)
   { 
   
     .tabs {
@@ -192,7 +192,7 @@ small {
 
 
 
-  @media(max-width: 768px)
+  @media(max-width: 1080px)
   { 
 
     .tabs {
