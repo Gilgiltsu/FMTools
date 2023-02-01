@@ -60,6 +60,9 @@ function RMchange() {
   // - Equi
   "Amb"===Personnalite.value || "TreAmb"===Personnalite.value || "Vers"===Personnalite.value || "Me"===Personnalite.value?
   (RM(""),RM("ApMe"),RM("ApMeCon"),RM("ApMeImp"),RM("ApMeIr"),RM("ApMeIrCon"),RM("ApMeRe"),RM("ApMeVer"),RM("ApMeVerCon"),RM("Con"),RM("Eva"),RM("EvaCon"),RM("EvaImp"),RM("EvaIr"),RM("EvaIrCon"),RM("EvaRes"),RM("EvaVer"),RM("EvaVerCon"),RM("Imp"),RM("Ir"),RM("IrCon"),RM("Re"),RM("Spo"),RM("SpoCon"),RM("SpoImp"),RM("SpoIr"),RM("SpoIrCon"),RM("SpoVer"),RM("SpoVerCon"),RM("Ver"),RM("VerCon")):
+  // -Eva, Con, Ir, Ver
+  "CiMo"===Personnalite.value?
+  (RM(""),RM("ApMeImp"),RM("ApMeRe"),RM("Equi"),RM("EvaImp"),RM("Imp"),RM("Re"),RM("Spo"),RM("SpoImp")):
   // - Eva, Res
   "AsAmb"===Personnalite.value ||  "AsDe"===Personnalite.value || "Eq"===Personnalite.value?
   (RM(""),RM("ApMe"),RM("ApMeCon"),RM("ApMeImp"),RM("ApMeIr"),RM("ApMeIrCon"),RM("ApMeVer"),RM("ApMeVerCon"),RM("Con"),RM("Equi"),RM("Imp"),RM("Ir"),RM("IrCon"),RM("Spo"),RM("SpoCon"),RM("SpoImp"),RM("SpoIr"),RM("SpoIrCon"),RM("SpoVer"),RM("SpoVerCon"),RM("Ver"),RM("VerCon")):
@@ -82,7 +85,7 @@ function RMchange() {
   "FaCo"===Personnalite.value || "Fri"===Personnalite.value?
   (RM(""),RM("ApMe"),RM("ApMeCon"),RM("ApMeIr"),RM("ApMeIrCon"),RM("ApMeRe"),RM("ApMeVer"),RM("ApMeVerCon"),RM("Con"),RM("Equi"),RM("Ir"),RM("IrCon"),RM("Re"),RM("Spo"),RM("SpoCon"),RM("SpoIr"),RM("SpoIrCon"),RM("SpoVer"),RM("SpoVerCon"),RM("Ver"),RM("VerCon")):
   // - Con, Ir, Ver
-  "CiMo"===Personnalite.value || "Enj"===Personnalite.value || "Modpro"===Personnalite.value || "Pro"===Personnalite.value || "Ent"===Personnalite.value ||"SAmb"===Personnalite.value?
+  "Enj"===Personnalite.value || "Modpro"===Personnalite.value || "Pro"===Personnalite.value || "Ent"===Personnalite.value ||"SAmb"===Personnalite.value?
   (RM(""),RM("ApMeImp"),RM("ApMeRe"),RM("Equi"),RM("Eva"),RM("EvaImp"),RM("EvaRes"),RM("Imp"),RM("Re"),RM("Spo"),RM("SpoImp")):
   // - Con
   "FP"===Personnalite.value || "Ho"===Personnalite.value?
@@ -601,12 +604,12 @@ var lstID = document.getElementsByTagName("td");
       var mini= "min"+val;
       var maxi= "max"+val;
       var mid= "mid"+val;
-      (document.getElementById(mini).style.color= '#007c0c',document.getElementById(mid).style.color= '#007c0c',document.getElementById(maxi).style.color= '#007c0c')}
+      (document.getElementById(mini).style.color= '#26d274',document.getElementById(mid).style.color= '#26d274',document.getElementById(maxi).style.color= '#26d274')}
       if (val === "Pol") {
         var mini= "min"+val;
         var maxi= "max"+val;
         var mid= "mid"+val;
-        (document.getElementById(mini).style.color= '#ab0000',document.getElementById(mid).style.color= '#ab0000',document.getElementById(maxi).style.color= '#ab0000')}
+        (document.getElementById(mini).style.color= '#b62828',document.getElementById(mid).style.color= '#b62828',document.getElementById(maxi).style.color= '#b62828')}
       }}
       if (lstID[i].id.substring(0,3)=="mid"){
         if (lstID[i].innerHTML <10) {
@@ -615,12 +618,12 @@ var lstID = document.getElementsByTagName("td");
             var mini= "min"+val;
             var maxi= "max"+val;
             var mid= "mid"+val;
-            (document.getElementById(mini).style.color= '#ab0000',document.getElementById(mid).style.color= '#ab0000',document.getElementById(maxi).style.color= '#ab0000')}
+            (document.getElementById(mini).style.color= '#b62828',document.getElementById(mid).style.color= '#b62828',document.getElementById(maxi).style.color= '#b62828')}
             if (val === "Pol") {
               var mini= "min"+val;
               var maxi= "max"+val;
               var mid= "mid"+val;
-              (document.getElementById(mini).style.color= '#007c0c',document.getElementById(mid).style.color= '#007c0c',document.getElementById(maxi).style.color= '#007c0c')}
+              (document.getElementById(mini).style.color= '#26d274',document.getElementById(mid).style.color= '#26d274',document.getElementById(maxi).style.color= '#26d274')}
             }}
       if (lstID[i].id.substring(0,3)=="max"){
       if (lstID[i].innerHTML < 10) {
@@ -629,12 +632,12 @@ var lstID = document.getElementsByTagName("td");
           var mini= "min"+val;
           var maxi= "max"+val;
           var mid= "mid"+val;
-          (document.getElementById(mini).style.color= '#ab0000',document.getElementById(mid).style.color= '#ab0000',document.getElementById(maxi).style.color= '#ab0000')}
+          (document.getElementById(mini).style.color= '#b62828',document.getElementById(mid).style.color= '#b62828',document.getElementById(maxi).style.color= '#b62828')}
           if (val === "Pol") {
             var mini= "min"+val;
             var maxi= "max"+val;
             var mid= "mid"+val;
-            (document.getElementById(mini).style.color= '#007c0c',document.getElementById(mid).style.color= '#007c0c',document.getElementById(maxi).style.color= '#007c0c')}
+            (document.getElementById(mini).style.color= '#26d274',document.getElementById(mid).style.color= '#26d274',document.getElementById(maxi).style.color= '#26d274')}
           }}
   }
 }
@@ -649,7 +652,7 @@ function afficher(a) {
   document.getElementById("Fidélité").style.display="none";
   document.getElementById("Fair-play").style.display="none";
   document.getElementById("Polémique").style.display="none";
-  document.getElementById(a.innerHTML).style.display="";
+  document.getElementById(a).style.display="";
 }
 
 

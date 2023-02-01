@@ -5,42 +5,33 @@
   <meta charset="utf-8" />
   <link href="../stylecomplet.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Jost" rel="stylesheet"/>
-  
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet"/>
+
 
 </head>
 
 <body>
+
+
 <div id="wrapper">
-
-		
-		<div id="intro"> 
-		
-		<input id="menu-toggle" type="checkbox" />
-		  <label class='menu-button-container' for="menu-toggle">
-		  <div class='menu-button'></div>
-		  </label>
-		
-		
-		  <h1>Appréhender les notes cachées</h1>
-		
-		  <ul class="menu">
-			<li><a href="../index.html">Accueil</a></li>
-			<li><a href="../prepa/index.html">Evaluation des préparateurs</a></li>
-			<li><a href="../rapports/index.html">Les rapports</a></li>
-			<li><a href="../infrastructures/index.html">Les infrastructures</a></li>
-			
-		  </ul>
-		
+<div class="intro">
+<div class="accueil">
+<a href="../index.html"><svg><use xlink:href="#home"/></svg></a>
 </div>
+<h1>Appréhender les notes cachées</h1>
+<div class="menu">
+<a href="../prepa/index.html"><svg><use xlink:href="#staff"/></svg></a>
+<a href="../rapports/index.html"><svg><use xlink:href="#rapport"/></svg></a>
+<a href="../infrastructures/index.html"><svg><use xlink:href="#infra"/></svg></a>
+</div>
+</div>	
 
-<div class="aligndiv">
-
+<div class="aligngauche">
 <form onchange="note()">
 <label class="formulaire" for="det" >Détermination</label>
 <input type="number" name="det" id="det" max="20" min="1" value="1">
 
-<label class="formulaire" for="Personnalite">Choisir une personnalité</label>
+<label class="formulaire" for="Personnalite">Personnalité</label>
 <select name="Personnalite" id="Personnalite" onchange="RMchange()">
     <option value="">Personnalité</option>
     <option value="Amb">Ambitieux</option>
@@ -134,50 +125,50 @@
 </div>
 
 
-<div class="aligndiv">
-	<h2>Attributs</h2>
+<div class="aligndroite">
+	<h2>ATTRIBUTS</h2>
 
 <table>
 
   <tbody>
     <tr>
-	  <td onclick="afficher(this)" >Professionnalisme</td>
+	  <td >Professionnalisme <a onclick="afficher('Professionnalisme')"><svg><use xlink:href="#info"/></svg></a></td>
 	  <td id="minPro">1</td>
 	  <td id="midPro">-</td>
 	  <td id="maxPro">20</td>
 	</tr>
 	<tr>
-		<td onclick="afficher(this)" >Pression</td>
+		<td >Pression <a onclick="afficher('Pression')"><svg><use xlink:href="#info"/></svg></a> </td>
 		<td id="minPre">1</td>
 		<td id="midPre">-</td>
 		<td id="maxPre">20</td>
 	  </tr>
 	<tr>
-	  <td onclick="afficher(this)" >Tempérament</td>
+	  <td >Tempérament <a onclick="afficher('Tempérament')"><svg><use xlink:href="#info"/></svg></a></td>
 	  <td id="minTemp">1</td>
 	  <td id="midTemp">-</td>
 	  <td id="maxTemp">20</td>
 	</tr>
 	<tr>
-	  <td onclick="afficher(this)" >Ambition</td>
+	  <td >Ambition <a onclick="afficher('Ambition')" ><svg><use xlink:href="#info"/></svg></a> </td>
 	  <td id="minAmb">1</td>
 	  <td id="midAmb">-</td>
 	  <td id="maxAmb">20</td>
 	</tr>
 	<tr>
-		<td onclick="afficher(this)" >Fidélité</td>
+		<td >Fidélité <a onclick="afficher('Fidélité')"><svg><use xlink:href="#info"/></svg></a> </td>
 		<td id="minFid">1</td>
 		<td id="midFid">-</td>
 		<td id="maxFid">20</td>
 	  </tr>
 	<tr>
-	  <td onclick="afficher(this)" >Fair-play</td>
+	  <td >Fair-play <a onclick="afficher('Fair-play')"><svg><use xlink:href="#info"/></svg></a> </td>
 	  <td id="minFp">1</td>
 	  <td id="midFp">-</td>
 	  <td id="maxFp">20</td>
 	</tr>
 	<tr>
-	  <td onclick="afficher(this)" >Polémique</td>
+	  <td >Polémique <a onclick="afficher('Polémique')"><svg><use xlink:href="#info"/></svg></a> </td>
 	  <td id="minPol">1</td>
 	  <td id="midPol">-</td>
 	  <td id="maxPol">20</td>
@@ -185,82 +176,79 @@
   </tbody>
 </table>
 
-<h3> Clique sur le nom de l'attribut pour voir sa définition</h3>
-
 </div>
 
 
-<div id="Professionnalisme" class="aligndiv2" style="display: none;">
+<div id="Professionnalisme" class="aligncenter" style="display: none;">
 
-<h2>Professionnalisme :</h2>
-	<p>Attitude d’un joueur dans tous les aspects du foot. <br>
+<h2>Professionnalisme</h2>
+	<h4>Attitude d’un joueur dans tous les aspects du foot. <br>
 Elle se traduit par son assiduité à l’entraînement, son comportement sur le terrain, sa rigueur et son adhésion au discours du coach. <br>
 Cette note est primordiale. C’est l’attribut le plus important pour la progression d’un joueur.
-</p>
+</h4>
 </div>
 
-<div id="Pression" class="aligndiv2" style="display: none;">
+<div id="Pression" class="aligncenter" style="display: none;">
 	
-<h2>Pression :</h2>
-		<p>Faculté d’un joueur à faire face aux attentes (du club, des supporters, du coach, des médias…). <br>
+<h2>Pression</h2>
+		<h4>Faculté d’un joueur à faire face aux attentes (du club, des supporters, du coach, des médias…). <br>
 		Plus votre club est grand, plus la pression y sera importante. <br>
 		Les joueurs qui savent la gérer sont donc les meilleurs profils pour votre effectif, surtout lorsque vous jouez les grandes compétitions.
-	</p>
+	</h4>
 	</div>
 
-<div id="Tempérament"  class="aligndiv2" style="display: none;">
+<div id="Tempérament"  class="aligncenter" style="display: none;">
 
-<h2>Tempérament :</h2>
-		<p>Faculté d’un joueur à réagir lorsqu’il est dos au mur. <br>
+<h2>Tempérament</h2>
+		<h4>Faculté d’un joueur à réagir lorsqu’il est dos au mur. <br>
 		Lorsque votre équipe est menée ou en difficulté, les joueurs avec du tempérament ne baissent pas les bras ; ils restent calmes et tentent de remotiver les troupes. <br>
 		C’est eux souvent qui vont débloquer la situation.
 
-</p>
+</h4>
 	</div>
 
-<div id="Ambition" class="aligndiv2" style="display: none;">
+<div id="Ambition" class="aligncenter" style="display: none;">
 	
-<h2>Ambition :</h2>
-		<p>Volonté de jouer dans les meilleurs clubs, au meilleur salaire possible. <br>
+<h2>Ambition</h2>
+		<h4>Volonté de jouer dans les meilleurs clubs, au meilleur salaire possible. <br>
 		Les ambitieux ont tendance à demander plus d’argent et peuvent exiger un transfert si les objectifs du club ne correspondent pas aux leurs. <br>
 		L’Ambition a un impact faible sur la progression des jeunes.
-	</p>
+	</h4>
 	</div>
 
-	<div id="Fidélité" class="aligndiv2" style="display: none;">
+	<div id="Fidélité" class="aligncenter" style="display: none;">
 		
-	<h2>Fidélité :</h2>
-			<p>Loyauté d’un joueur envers son club. <br>
+	<h2>Fidélité</h2>
+			<h4>Loyauté d’un joueur envers son club. <br>
 			Les plus fidèles auront moins tendance à céder aux sirènes des meilleures écuries, et donc à vous tenir tête si vous refusez. <br>
 			Ils donneront également tout pour leur équipe.
-		</p>
+		</h4>
 		</div>
 
-	<div id="Fair-play"  class="aligndiv2" style="display: none;">
+	<div id="Fair-play"  class="aligncenter" style="display: none;">
 		
-			<h2>Fair-play :</h2>
-			<p>Tendance d’un joueur à garder un esprit sportif en toute circonstance. <br>
+			<h2>Fair-play</h2>
+			<h4>Tendance d’un joueur à garder un esprit sportif en toute circonstance. <br>
 			Les moins fair-play vont vouloir gagner du temps, mais prendre davantage de cartons. <br>
 			Ceux avec un meilleur état d’esprit ont tendance à être plus populaires.
-		</p>
+		</h4>
 	</div>
 
-	<div id="Polémique"  class="aligndiv2" style="display: none;">
+	<div id="Polémique"  class="aligncenter" style="display: none;">
 		
-			<h2>Polémique :</h2>
-			<p>Tendance d’un joueur à vous tenir tête lorsqu’il n’est pas d’accord avec vous, ou que votre discours ne lui plait pas. <br>
+			<h2>Polémique</h2>
+			<h4>Tendance d’un joueur à vous tenir tête lorsqu’il n’est pas d’accord avec vous, ou que votre discours ne lui plait pas. <br>
 			Un seul rapport médias indique une haute note en polémique (Spontané), il est donc préférable de l’éviter, mais ce n’est pas forcément rédhibitoire si vous savez tenir votre vestiaire et que vous avez des résultats.
 
-		</p>
+		</h4>
 	</div>
 
-<div class="aligndiv3" >
-<h2>Pour en savoir plus :</h2>
-<ul>
-<li > <a href="https://youtu.be/6dXkB1F6woQ" target="_blank">L'encadrement</a></li>
-<li > <a href="https://youtu.be/KBZi8b8H8Ug" target="_blank">Le guide vidéo</a></li>
-<li ><a href="https://fmslife.fr/t/le-guide-ultime-des-personnalites/11949" target="_blank">Le guide FMSLife</a></li>
-</ul>
+<div class="aligncenter" >
+<h2>Pour en savoir plus</h2>
+<h3>L'encadrement &nbsp <a href="https://youtu.be/6dXkB1F6woQ" target="_blank" ><img src="../image/youtube-icon.svg" width=15px> </a> <br>
+Le guide vidéo &nbsp<a href="https://youtu.be/KBZi8b8H8Ug" target="_blank"><img src="../image/youtube-icon.svg" width=15px></a><br>
+Le guide FMSLife &nbsp<a href="https://fmslife.fr/t/le-guide-ultime-des-personnalites/11949" target="_blank"><img src="../image/FMSLife.svg" width=30px></a><br>
+</h3>
 
 </div>
 
@@ -276,5 +264,80 @@ Cette note est primordiale. C’est l’attribut le plus important pour la progr
 </footer>
 
 </div>
+<svg display="none">
+	<symbol viewBox="0 0 48 48" width="15px" height="15px" id="info">
+		<path d="M24,4C12.972,4,4,12.972,4,24s8.972,20,20,20s20-8.972,20-20S35.028,4,24,4z M25.5,33.5c0,0.828-0.672,1.5-1.5,1.5	s-1.5-0.672-1.5-1.5v-11c0-0.828,0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5V33.5z M24,18c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2	s2,0.895,2,2C26,17.105,25.105,18,24,18z">
+		</path>
+		</symbol>
+		</svg>
+
+<svg display="none">
+	<symbol  viewBox="0 0 48 48"  id="home">
+	<g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+	   <path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
+	   -87 3 -88 45 0 45 0 3 67 3 68 59 0 59 0 3 -67 3 -68 45 0 45 0 3 87 3 88 29
+	   0 c40 0 38 12 -9 50 -31 24 -41 39 -43 67 -3 41 -26 56 -35 24 -5 -20 -8 -19
+	   -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z"/>
+	 </g>
+	</symbol>
+</svg>
+<svg display="none">
+	<symbol viewBox="0 0 204 152" id="infra">
+   <g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)">
+   <path d="M611 1507 c-13 -17 -18 -47 -26 -154 l-5 -83 34 0 35 0 3 93 3 92
+   360 0 360 0 3 -92 3 -93 34 0 33 0 -5 98 c-3 53 -11 108 -17 122 l-11 25 -396
+   3 c-324 2 -398 0 -408 -11z"/>
+   <path d="M63 1220 c-55 -33 -58 -47 -61 -271 -3 -162 -1 -207 10 -215 16 -13
+   983 -347 1003 -347 20 0 987 334 1003 347 11 8 13 53 10 215 -3 224 -6 238
+   -61 271 -31 19 -59 20 -952 20 -893 0 -921 -1 -952 -20z m1028 -449 c65 -65
+   17 -181 -75 -181 -94 0 -143 115 -77 181 24 24 38 29 76 29 38 0 52 -5 76 -29z"/>
+   <path d="M0 388 c0 -134 5 -261 10 -283 5 -24 21 -51 40 -67 l30 -28 935 0
+   935 0 30 27 c19 17 35 44 40 68 11 48 13 525 3 525 -17 1 -978 -335 -981 -342
+   -5 -10 -49 -10 -54 0 -3 7 -964 343 -980 342 -5 0 -8 -109 -8 -242z"/>
+   </g>
+	</symbol>
+</svg>
+<svg display="none">
+	<symbol viewBox="0 0 233 266" id="staff">
+	<g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
+  <path d="M1079 2642 c-100 -41 -171 -106 -242 -225 -34 -56 -80 -187 -92 -259
+  -4 -26 -10 -36 -20 -32 -42 17 -85 -49 -85 -130 0 -86 28 -136 76 -136 18 0
+  25 -7 30 -27 51 -232 159 -394 309 -464 56 -27 78 -32 143 -32 117 0 179 28
+  273 122 88 88 136 176 171 313 18 71 27 88 44 92 51 13 74 159 35 223 -11 17
+  -28 34 -38 37 -13 4 -24 30 -40 97 -44 181 -147 331 -275 399 -56 30 -73 34
+  -153 37 -70 3 -100 -1 -136 -15z"/>
+  <path d="M1536 1307 c-23 -200 -30 -364 -29 -712 1 -214 5 -430 10 -480 l8
+  -90 45 3 c56 4 227 60 312 103 235 118 384 279 424 457 67 303 -166 586 -604
+  730 -48 16 -103 32 -123 35 l-37 5 -6 -51z"/>
+  <path d="M599 1173 c-186 -94 -313 -169 -526 -311 -49 -33 -52 -37 -62 -96
+  -15 -84 -14 -121 4 -191 56 -212 262 -396 567 -503 78 -28 237 -67 243 -60 9
+  9 25 410 25 613 0 244 -16 603 -29 638 -6 17 -28 8 -222 -90z"/>
+  <path d="M950 1189 c0 -6 19 -80 41 -165 42 -153 42 -154 70 -154 18 0 29 -5
+  29 -14 0 -13 -103 -724 -115 -792 l-5 -32 147 -6 c82 -4 155 -9 163 -12 13 -3
+  15 37 12 324 -1 180 -3 373 -5 430 l-2 102 31 0 31 0 42 154 c22 85 41 159 41
+  165 0 8 -76 11 -240 11 -164 0 -240 -3 -240 -11z"/>
+  </g>
+<svg display="none">
+	<symbol viewBox="0 0 135 150" id="rapport">
+		<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
+		<path d="M252 1469 c-62 -31 -93 -82 -99 -164 l-6 -65 89 0 c141 -1 201 -38
+		211 -134 7 -56 -18 -109 -64 -137 -28 -18 -56 -23 -134 -27 l-99 -5 0 -212 0
+		-213 105 -4 c112 -4 136 -13 179 -71 27 -37 27 -117 0 -154 -43 -57 -65 -66
+		-180 -71 l-106 -5 6 -41 c10 -58 47 -110 98 -135 43 -20 56 -21 496 -21 385 0
+		458 2 489 15 48 20 71 41 94 87 18 35 19 68 19 638 0 570 -1 603 -19 638 -23
+		46 -46 67 -94 87 -31 13 -104 15 -489 15 -443 0 -454 0 -496 -21z m888 -354
+		l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z m0 -240 l0 -25 -280 0
+		-280 0 0 25 0 25 280 0 280 0 0 -25z m0 -250 l0 -25 -280 0 -280 0 0 25 0 25
+		280 0 280 0 0 -25z m0 -240 l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z"/>
+		<path d="M58 1185 c-30 -17 -58 -62 -58 -95 0 -34 28 -79 61 -96 25 -12 57
+		-15 161 -12 l130 3 29 33 c40 45 40 99 0 144 l-29 33 -134 3 c-104 1 -139 -1
+		-160 -13z"/>
+		<path d="M65 461 c-65 -27 -82 -118 -32 -168 27 -28 30 -28 167 -31 l140 -4
+		35 35 c48 48 49 95 1 143 l-34 34 -129 -1 c-70 0 -137 -4 -148 -8z"/>
+		</g>
+	</symbol>
+	</svg>
+
+
 </body>
 </html>

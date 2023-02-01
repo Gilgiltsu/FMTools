@@ -1,44 +1,41 @@
 body {
-  font-size: 16px;
-  background-color: #4d5660;
+  background-color: #1d0c30;
   margin: 0;
-  font-family: "Jost";
+  font-family: "Coda";
   }
-  h1, h2 {
+  h1{
     color: #ffffff;
+    text-align: center;
+  }
+  h2 {
+    color: #10e7e2;
   }
 
   h3{
-    color: #000000;
+    color: #94a8b6;
   }
 
+  h4 {
+    color: #94a8b6;
+  }
+
+
   p {
-    color: #ffffff;
+    color: #94a8b6;
     margin: 0;
     text-align: justify
-
   }
 
   ul {
-    color: #ffffff;
+    color: #94a8b6;
     margin: 0;
     text-align: justify
   }
 
   li {
-    color: #ffffff;
+    color: #94a8b6;
     margin: 0;
     text-align: justify
   }
 
 
-  a {
-    color: #000000;
-    text-decoration: none;
-    outline: none; 
-  }
-
-
-  a:hover {
-    color: #ffffff;
-  }
