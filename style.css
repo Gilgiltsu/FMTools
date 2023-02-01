@@ -59,7 +59,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  @media(min-width: 768px)
+  @media(min-width: 1080px)
   { 
 
   
@@ -135,7 +135,7 @@
 
   
 
-  @media(max-width: 768px)
+  @media(max-width: 1080px)
   { 
     .aligngauche {
       cursor: pointer;
