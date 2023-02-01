@@ -107,7 +107,7 @@ footer {
   margin:2%;
 }
 
-@media(min-width: 768px)
+@media(min-width: 1080px)
   { 
 
   .aligntable {
@@ -137,7 +137,7 @@ footer {
 
   }
 
-  @media(max-width: 768px)
+  @media(max-width: 1080px)
   { 
 
   .aligntable {
