@@ -172,7 +172,7 @@ td:nth-child(4) {
 }
 
 
-@media(min-width: 768px)
+@media(min-width: 1080px)
   { 
 
   .aligngauche {
@@ -239,7 +239,7 @@ td:nth-child(4) {
   }
 
 
-  @media(max-width: 768px) {
+  @media(max-width: 1080px) {
     .aligngauche {
       float: left;
       width: 97%;
