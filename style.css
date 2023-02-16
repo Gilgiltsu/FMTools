@@ -1,201 +1,75 @@
+.box {
+  width: 90%;
+  background-color:#1c1d2f;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: auto;
+}
+
+.container {
+  grid-gap: 1%;
+}
+
+.box:hover {
+  background-color:#37535f;
+  cursor: pointer;
+}
+
+.d {
+margin-bottom: 2%;
+}
+
+@media (min-width: 768px),
+(orientation: landscape)  { 
+
+
+  .intro {
+    grid-column: 1 / 3;
+   }
+
   h1 {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background-color:#037882;
-    margin: auto;
-    padding: 1.5vw;
-    font-size: calc(20px + 0.390625vw);
-    text-align: center;
-  }
-  h2 {
-    border-bottom: 2px solid #10e7e2;
-    display: block;
-    width: 90% ;
-    padding-bottom: 2px;
-    font-size: calc(15px + 0.390625vw);
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    
-  }
-  h3 {
-    font-size: calc(12px + 0.390625vw);
-    margin-left: 2vw;
-    margin-right: 2vw;
-    text-align: justify;
-  }
-  h4 {
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    font-size: calc(10px + 0.390625vw);
-    margin: 1vw;
-    text-align: justify;
+    padding: 1vw;
   }
 
-  small {
-    font-size: calc(10px + 0.3vw);
-  }
-
-  svg {
-    width: calc(15px + 0.390625vw);
-    height: calc(15px + 0.390625vw);
-    fill: #10e7e2;
-  }
-
-  #wrapper {
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 90%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  .a {
+    width: 96%;
+    grid-column: 1;
+    grid-row: 2;
     margin-left: 5%;
+    margin-right: 0%;
+   }
+
+  .b {
+    width: 96%;
+    grid-column: 1;
+    grid-row: 3 ;
+    margin-right: 0%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+  }
+  .c {
+    width: 94%;
+    grid-column: 2;
+    grid-row:  2;
+    margin-left: 0%;
     margin-right: 5%;
-    background-color: #252736;
   }
+
+  .d {
+    width: 94%;
+    grid-column: 2;
+    grid-row: 3;
+    margin-right: 5%;
+    margin-left: 0%;
+    margin-bottom: 1%;
+  }
+
   footer {
-    clear: left;
-    padding: 1.5vw;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
+    grid-column: 1 / 3;
+   }
 
-  @media(min-width: 768px)
-  { 
+}
+
 
   
-  .aligngauche {
-    float: left;
-    cursor: pointer;
-    width: 48%;
-    height: 200px;
-    background-color:#1c1d2f;
-    border-radius: 5px;
-    margin-right: 0.5%;
-    margin-left: 1.5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  .aligngauche:hover {
-    background-color:  #37535f;
-  }
-
-  .aligndroite {
-    float: right;
-    cursor: pointer;
-    width: 48%;
-    height: 200px;
-    background-color: #1c1d2f;
-    border-radius: 5px;
-    margin-left: 0.5%;
-    margin-right: 1.5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  .aligndroite:hover {
-    background-color: #37535f;
-  }
-
-  .aligngauche1 {
-    float: left;
-    cursor: pointer;
-    width: 48%;
-    height: 150px;
-    background-color:#1c1d2f;
-    border-radius: 5px;
-    margin-right: 0.5%;
-    margin-left: 1.5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  .aligngauche1:hover {
-    background-color:  #37535f;
-  }
-
-  .aligndroite1 {
-    float: right;
-    cursor: pointer;
-    width: 48%;
-    height: 150px;
-    background-color:#1c1d2f;
-    border-radius: 5px;
-    margin-left: 0.5%;
-    margin-right: 1.5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-
-  .aligndroite1:hover {
-    background-color:  #37535f;
-  }
-
-  }
-
-  
-
-  @media(max-width: 768px)
-  { 
-    .aligngauche {
-      cursor: pointer;
-      width: 96%;
-      height: auto;
-      background-color: #1c1d2f;
-      border-radius: 5px;
-      margin-right: 2%;
-      margin-left: 2%;
-      margin-top: 1%;
-      margin-bottom: 1%;
-    }
-    .aligngauche1 {
-      cursor: pointer;
-      width: 96%;
-      height: auto;
-      background-color: #1c1d2f;
-      border-radius: 5px;
-      margin-right: 2%;
-      margin-left: 2%;
-      margin-top: 1%;
-      margin-bottom: 1%;
-    }
-    .aligndroite {
-      cursor: pointer;
-      width: 96%;
-      height: auto;
-      background-color: #1c1d2f;
-      border-radius: 5px;
-      margin-right: 2%;
-      margin-left: 2%;
-      margin-top: 1%;
-      margin-bottom: 1%;
-    }
-    .aligndroite1 {
-      cursor: pointer;
-      width: 96%;
-      height: auto;
-      background-color: #1c1d2f;
-      margin-right: 2%;
-      margin-left: 2%;
-      margin-top: 1%;
-      margin-bottom: 5%;
-    }
-    .aligngauche:hover {
-      background-color: #37535f;
-    }
-    .aligngauche1:hover {
-      background-color: #37535f;
-    }
-    .aligndroite:hover {
-      background-color: #37535f;
-    }
-    .aligndroite1:hover {
-      background-color: #37535f;
-    }
-
-  }
-
-
-
- 
-

@@ -1,199 +1,431 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <title>Les rapports des recruteurs et des préparateurs</title>
   <meta charset="utf-8" />
   <link href="../stylecomplet.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="../image/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
 
-  <div id="wrapper">
-    <div class="intro">
+  <div class="container">
+    <div class="bandeau">
       <div class="accueil">
-      <a href="../index.html"><svg><use xlink:href="#home"/></svg></a>
+        <a class="infobulle ho" aria-label="Accueil" href="../index.html"><svg>
+            <use xlink:href="#home" />
+          </svg></a>
       </div>
-      <h1>Interprétation des rapports</h1>
+      <h1>Les rapports</h1>
       <div class="menu">
-      <a href="../notes/index.html"><svg><use xlink:href="#perso"/></svg></a>
-      <a href="../prepa/index.html"><svg><use xlink:href="#staff"/></svg></a>
-      <a href="../infrastructures/index.html"><svg><use xlink:href="#infra"/></svg></a>
+        <a class="infobulle" aria-label="Les notes cachées" href="../notes/index.html"><svg>
+            <use xlink:href="#perso" />
+          </svg></a>
+        <a class="infobulle" aria-label="Les préparateurs" href="../prepa/index.html"><svg>
+            <use xlink:href="#staff" />
+          </svg></a>
+        <a class="infobulle last" aria-label="Les infrastructures" href="../infrastructures/index.html"><svg>
+            <use xlink:href="#infra" />
+          </svg></a>
       </div>
-      </div>	
-      
-
-
-<div class="tabs">
-    <ul>
-    <li class="active" data-tab-value="#adaptabilite"><span>Adaptabilité</span><p>&nbsp<svg><use xlink:href="#adapt"/></svg>&nbsp</p></li>
-    <li data-tab-value="#regu"><span>Régularité</span><p>&nbsp<svg><use xlink:href="#regularite"/></svg>&nbsp</p></li>
-    <li data-tab-value="#match"><span>Match important</span><p>&nbsp<svg><use xlink:href="#gromatch"/></svg>&nbsp</p></li>
-    <li data-tab-value="#bles"><span>Blessure</span><p>&nbsp<svg><use xlink:href="#blessure"/></svg>&nbsp</p></li>
-    <li data-tab-value="#vio"><span>Violence</span><p>&nbsp<svg><use xlink:href="#violence"/></svg>&nbsp</p></li>
-    <li data-tab-value="#indiv"><span>Entrainement individuel</span><p>&nbsp<svg><use xlink:href="#entrainement"/></svg>&nbsp</p></li>
-    </ul>
-</div>
-
-
-<div class="tab-content">
-    <div class="aligncenter" id="adaptabilite" data-tab-info>
-    <h4> Un joueur, c’est avant tout un être humain. Et si son (sa note en) adaptabilité est mauvaise, le joueur aura du mal à s’adapter à son nouveau pays. Il aura du mal à s’intégrer ou à apprendre la langue.
-    Cela peut avoir des conséquences sur ses prestations en match qui seront de facto moins bonnes.</h4>
-    
-        <table>
-            <thead>
-                <tr>
-                  <th>Indication du rapport</th>
-                  <th>Note (/20)</th>
-                </tr>
-              </thead>
-            <tr> <td> <img src="../image/adapt18.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Ne devrait avoir aucun problème à s'acclimater à la vie à l'étranger</td> <td >18 - 20</td > </tr>
-            <tr> <td> <img src="../image/adapt15.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Pourrait s'acclimater facilement à la vie dans un pays étranger</td> <td >15 - 17</td > </tr>
-            <tr> <td> <img src="../image/adapt12.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> S'acclimate plutôt bien dans un nouveau pays</td> <td >12 - 14</td > </tr>
-            <tr align="center"> <td > Aucune information dans le rapport </td> <td >10 - 11</td > </tr>
-            <tr> <td> <img src="../image/adapt7.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Aurait sans doute des problèmes en partant à l'étranger à un si jeune âge</td> <td >7 - 9</td > </tr>
-            <tr > <td> <img src="../image/adapt4.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Pourrait avoir des problèmes d'acclimatation à l'étranger</td> <td >4 - 6 </td > </tr>
-            <tr > <td > <img src="../image/adapt1.png" style="width: 40px; vertical-align: middle; margin-left: 10px ; margin-right: 10px ;" > Aurait du mal à s'adapter à un nouveau pays à un si jeunes âge </td> <td >1 - 3</td > </tr>
-            
-            </table>
-    </div>
-    <div class="aligncenter" id="regu" data-tab-info>
-      <h4>La note en régulartié reflette la capacité d'un joueur à pouvoir enchainer les bonnes performances. Cette note indique la capacité d'un joueur à utiliser au maximum son niveau et de s'approcher lors d'un match des notes présente sur sa fiche.<br>
-        Plus un joueur est régulié, plus un joueur sera régulièrment à son meilleur niveau. 
-      </h4>
-        <table>
-            <thead>
-                <tr>
-                  <th>Indication du rapport</th>
-                  <th>Note (/20)</th>
-                </tr>
-              </thead>
-            <tr> <td> <img src="../image/regu18.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Joueur très régulier</td> <td >18 - 20</td > </tr>
-            <tr> <td> <img src="../image/regu15.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Joueur régulier</td> <td >15 - 17</td > </tr>
-            <tr> <td> <img src="../image/regu12.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Joueur assez régulier</td> <td >12 - 14</td > </tr>
-            <tr align="center"> <td > Aucune information dans le rapport </td> <td >10 - 11</td > </tr>
-            <tr> <td> <img src="../image/regu7.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Joueur assez irrégulier</td> <td >7 - 9</td > </tr>
-            <tr > <td> <img src="../image/regu4.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Joueur irrégulier</td> <td >4 - 6 </td > </tr>
-            <tr > <td > <img src="../image/regu1.png" style="width: 40px; vertical-align: middle; margin-left: 10px ; margin-right: 10px ;" > Joueur très irrégulier </td> <td >1 - 3</td > </tr>
-            
-            </table>
-
-    </div>
-    <div class="aligncenter" id="match" data-tab-info>
-      <h4> Il s'agit ici de la faculté d'un joueur à être performant dans les grandes rencontres (comme les matchs de LDC par exemple). <br>
-        Cette indication n'apparait chez un joueur qu'à partir de 22 ans</h4>
-        <table>
-            <thead>
-                <tr>
-                  <th>Indication du rapport</th>
-                  <th>Note (/20)</th>
-                </tr>
-              </thead>
-            <tr> <td> <img src="../image/Grosmatch18.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Prend du plaisir à disputer les rencontres importantes</td> <td >18 - 20</td > </tr>
-            <tr> <td> <img src="../image/Grosmatch15.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> A du plaisir à disputer les grandes rencontres</td> <td >15 - 17</td > </tr>
-            <tr> <td> <img src="../image/Grosmatch12.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Aime disputer les gros matchs</td> <td >12 - 14</td > </tr>
-            <tr align="center"> <td > Aucune information dans le rapport </td> <td >10 - 11</td > </tr>
-            <tr> <td> <img src="../image/Grosmatch7.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> N'aime pas les gros matchs</td> <td >7 - 9</td > </tr>
-            <tr > <td> <img src="../image/Grosmatch4.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> N'est pas à l'aise lors des gros matchs </td> <td >4 - 6 </td > </tr>
-            <tr > <td > <img src="../image/Grosmatch1.png" style="width: 40px; vertical-align: middle; margin-left: 10px ; margin-right: 10px ;" > Craint de jouer dans les gros matchs </td> <td >1 - 3</td > </tr>
-            </table>
-           
-    </div>
-    <div class="aligncenter" id="bles" data-tab-info>
-      <h4> Il s'agit de la tendance pour un joueur à se blesser et/ou à subir de grosses blessures.<br>
-        Cependant, cela ne veut pas dire qu'un joueur ayant une note de 1 ne se blessera pas. Mais cela devrait arriver beaucoup plus rarement.
-      </h4>
-        <table>
-            <thead>
-                <tr>
-                  <th>Indication du rapport</th>
-                  <th>Note (/20)</th>
-                </tr>
-              </thead>
-            <tr> <td> <img src="../image/bless18.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Pourrait avoir de gros probèmes de blessure</td> <td >18 - 20</td > </tr>
-            <tr> <td> <img src="../image/bless15.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Pourrait avoir des problèmes de blessure</td> <td >15 - 17</td > </tr>
-            <tr> <td> <img src="../image/bless12.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Se blesse assez régulièrement</td> <td >12 - 14</td > </tr>
-            <tr align="center"> <td > Aucune information dans le rapport </td> <td >1 - 11</td > </tr>
-            </table>
-
-    </div>
-    <div class="aligncenter" id="vio" data-tab-info>
-      <h4> Cet attribut vous indique la prédisposition de votre joueur à prendre des cartons. <br>
-      </h4>
-        <table>
-            <thead>
-                <tr>
-                  <th>Indication du rapport</th>
-                  <th>Note (/20)</th>
-                </tr>
-              </thead>
-            <tr> <td> <img src="../image/violence18.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Très compétitif, ce qui le pousse <u>SOUVENT</u> à enfreindre le règlement</td> <td >18 - 20</td > </tr>
-            <tr> <td> <img src="../image/violence15.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Très compétitif, ce qui le pousse <u>PARFOIS</u> à enfreindre le règlement</td> <td >15 - 17</td > </tr>
-            <tr> <td> <img src="../image/violence12.png" style="width: 40px;vertical-align: middle;margin-left: 10px ; margin-right: 10px ;"> Très compétitif, ce qui le pousse à enfreindre le règlement de manière occasionelle</td> <td >12 - 14</td > </tr>
-            <tr align="center"> <td > Aucune information dans le rapport </td> <td >1 - 11</td > </tr>
-            </table>
-
     </div>
 
-    <div class="aligncenter" id="indiv" data-tab-info>
-      <h4> Tous ces événements sont liés à votre hiérarchie de vestiaire et vos leaders d'équipe, c'est pour ça qu'il est important de faire attention à la personnalité
-        et aux rapports aux médias (c'est-à-dire les notes cachées) de vos joueurs les plus influents.</h4>
+
+
+    <div class="tabs">
+      <ul>
+        <li class="active" data-tab-value="#adaptabilite"><span>Adaptabilité</span>
+          <p><svg>
+              <use xlink:href="#adapt" />
+            </svg></p>
+        </li>
+        <li data-tab-value="#regu"><span>Régularité</span>
+          <p><svg>
+              <use xlink:href="#regularite" />
+            </svg></p>
+        </li>
+        <li data-tab-value="#match"><span>Match important</span>
+          <p><svg>
+              <use xlink:href="#gromatch" />
+            </svg></p>
+        </li>
+        <li data-tab-value="#bles"><span>Blessure</span>
+          <p><svg>
+              <use xlink:href="#blessure" />
+            </svg></p>
+        </li>
+        <li data-tab-value="#vio"><span>Violence</span>
+          <p><svg>
+              <use xlink:href="#violence" />
+            </svg></p>
+        </li>
+        <li data-tab-value="#indiv"><span>Entrainement individuel</span>
+          <p><svg>
+              <use xlink:href="#entrainement" />
+            </svg></p>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="tab-content">
+      <div class="box" id="adaptabilite" data-tab-info>
+        <h3> Un joueur, c’est avant tout un être humain. Et si son (sa note en) adaptabilité est mauvaise, le joueur
+          aura du mal à s’adapter à son nouveau pays. Il mettra du temps pour s'intégrer ou à apprendre la langue.
+          Cela peut avoir des conséquences sur ses prestations en match qui seront de facto moins bonnes.</h3>
+
         <table>
-            <thead>
-                <tr>
-                  <th>Message de l'adjoint</th>
-                  <th>Cause</th>
-                  <th>Conséquence</th>
-                </tr>
-            </thead>
-            <tr> <td>A gagné en expérience à un niveau plus élevé qu'auparavant</td> <td >Temps de jeu</td ><td>Aucune effet</td></tr>
-            <th colspan="3" style="text-align: center; background-color: #26d274;">Les effets positifs </th> 
-            <tr> <td>L'atmosphère d'ensemble du groupe d'encadrement a eu un effet <u>POSITIF</u> ces derniers temps</td> <td >Encadrement</td ><td>+1 dans une ou plusieurs notes cachées </td></tr>
-            <tr> <td>L'état d'esprit général de l'effectif a eu un effet <u>POSITIF</u> sur lui ces derniers temps</td> <td >Hiérarchie d'équipe</td ><td>+1 dans une ou plusieurs notes cachées </td></tr>
-            <tr> <td>L'accueil qui lui a été fait a eu un effet <u>POSITIF</u> sur son état d'esprit</td> <td >Accueil au club</td ><td>+1 dans une ou plusieurs notes cachées </td></tr>
-            <tr> <td>Son temps de jeu a eu un effet <u>POSITIF</u> sur lui récemment</td> <td >Temps de jeu</td ><td>+1 en Professionalisme</td></tr>
-            <th colspan="3" style="text-align: center; background-color: #b62828;">Les effets négatifs </th>
-            <tr> <td>L'atmosphère d'ensemble du groupe d'encadrement a eu un effet <u>NEGATIF</u> ces derniers temps</td> <td >Encadrement</td ><td>-1 dans une ou plusieurs notes cachées </td></tr>
-            <tr> <td>L'état d'esprit général de l'effectif a eu un effet <u>NEGATIF</u> sur lui ces derniers temps</td> <td >Hiérarchie d'équipe</td ><td>-1 dans une ou plusieurs notes cachées </td></tr>
-            <tr> <td>L'accueil qui lui a été fait a eu un effet <u>NEGATIF</u> sur son état d'esprit</td> <td >Accueil au club</td ><td>-1 dans une ou plusieurs notes cachées </td></tr>
-            <tr> <td>Semble faire preuve de suffisance depuis qu'il a signé un nouveau contrat</td> <td >Signature d'un nouveau contrat</td ><td>Entre -2 et -5 en Professionalisme, Ambition et Fidélité</td></tr>
-            <tr> <td>Semble faire preuve de suffisante en raison des récents résultats <i>(rare)</i></td> <td >Résultats de l'équipe</td ><td>Entre -2 et -5 en Professionalisme, Ambition et Fidélité</td></tr>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Indication du rapport <br> (<i>Recruteur uniquement</i>)</th>
+              <th>Note (/20)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td><img src="../image/adapt18.png"> </td>
+            <td> Ne devrait avoir aucun problème à s'acclimater à la vie à l'étranger</td>
+            <td>18 - 20</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/adapt15.png"> </td>
+            <td> Pourrait s'acclimater facilement à la vie dans un pays étranger</td>
+            <td>15 - 17</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/adapt12.png"> </td>
+            <td>S'acclimate plutôt bien dans un nouveau pays</td>
+            <td>12 - 14</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> <i> Aucune information dans le rapport </i></td>
+            <td>10 - 11</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/adapt7.png"> </td>
+            <td>Aurait sans doute des problèmes en partant à l'étranger à un si jeune âge</td>
+            <td>7 - 9</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/adapt4.png"> </td>
+            <td>Pourrait avoir des problèmes d'acclimatation à l'étranger</td>
+            <td>4 - 6 </td>
+          </tr>
+          <tr>
+            <td><img src="../image/adapt1.png"> </td>
+            <td>Aurait du mal à s'adapter à un nouveau pays à un si jeune âge </td>
+            <td>1 - 3</td>
+          </tr>
+        </table>
+      </div>
+      <div class="box" id="regu" data-tab-info>
+        <h3>La note en régularité reflète la capacité d'un joueur à pouvoir enchainer les bonnes performances. Cette
+          note indique la possibilité pour un joueur de jouer à son meilleur niveau de façon régulière. C'est une note
+          primodiale puisqu'un joueur irrégulier aura très souvent des malus sur ses attributs.
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Indication du rapport</th>
+              <th>Note (/20)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td> <img src="../image/regu18.png"> </td>
+            <td>Joueur très régulier </td>
+            <td>18 - 20</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/regu15.png"> </td>
+            <td>Joueur régulier </td>
+            <td>15 - 17</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/regu12.png"> </td>
+            <td> Joueur assez régulier</td>
+            <td>12 - 14</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <i> Aucune information dans le rapport </i> </td>
+            <td>10 - 11</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/regu7.png"></td>
+            <td>Joueur assez irrégulier </td>
+            <td>7 - 9</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/regu4.png"> </td>
+            <td> Joueur irrégulier </td>
+            <td>4 - 6 </td>
+          </tr>
+          <tr>
+            <td> <img src="../image/regu1.png"> </td>
+            <td> Joueur très irrégulier </td>
+            <td>1 - 3</td>
+          </tr>
         </table>
 
+      </div>
+      <div class="box" id="match" data-tab-info>
+        <h3> Il s'agit ici de la faculté d'un joueur à être performant dans les grandes rencontres (comme les matchs de
+          LDC par exemple). <br>
+          Cette indication n'apparait chez <font color="red">un joueur à partir de 22 ans</font>.</h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Indication du rapport</th>
+              <th>Note (/20)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td> <img src="../image/Grosmatch18.png"></td>
+            <td> Prend du plaisir à disputer les rencontres importantes</td>
+            <td>18 - 20</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/Grosmatch15.png"></td>
+            <td>A du plaisir à disputer les grandes rencontres</td>
+            <td>15 - 17</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/Grosmatch12.png"></td>
+            <td>Aime disputer les gros matchs</td>
+            <td>12 - 14</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <i> Aucune information dans le rapport</i> </td>
+            <td>10 - 11</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/Grosmatch7.png"></td>
+            <td>N'aime pas les gros matchs</td>
+            <td>7 - 9</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/Grosmatch4.png"></td>
+            <td>N'est pas à l'aise lors des gros matchs </td>
+            <td>4 - 6 </td>
+          </tr>
+          <tr>
+            <td> <img src="../image/Grosmatch1.png"></td>
+            <td>Craint de jouer dans les gros matchs </td>
+            <td>1 - 3</td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="box" id="bles" data-tab-info>
+        <h3> Il s'agit de la tendance pour un joueur à se blesser et/ou à subir de grosses blessures.<br>
+          Cependant, cela ne veut pas dire qu'un joueur ayant une note de 1 ne se blessera pas. Mais cela devrait
+          arriver beaucoup plus rarement.
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Indication du rapport</th>
+              <th>Note (/20)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td> <img src="../image/bless18.png"></td>
+            <td>Pourrait avoir de gros probèmes de blessure</td>
+            <td>18 - 20</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/bless15.png"></td>
+            <td>Pourrait avoir des problèmes de blessure</td>
+            <td>15 - 17</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/bless12.png"></td>
+            <td>Se blesse assez régulièrement</td>
+            <td>12 - 14</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <i> Aucune information dans le rapport</i> </td>
+            <td>1 - 11</td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="box" id="vio" data-tab-info>
+        <h3> Cet attribut vous indique la prédisposition de votre joueur à prendre des cartons. <br>
+        </h3>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Indication du rapport</th>
+              <th>Note (/20)</th>
+            </tr>
+          </thead>
+          <tr>
+            <td> <img src="../image/violence18.png"></td>
+            <td>Très compétitif, ce qui le pousse <u>SOUVENT</u> à enfreindre le règlement</td>
+            <td>18 - 20</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/violence15.png"></td>
+            <td>Très compétitif, ce qui le pousse <u>PARFOIS</u> à enfreindre le règlement</td>
+            <td>15 - 17</td>
+          </tr>
+          <tr>
+            <td> <img src="../image/violence12.png"></td>
+            <td>Très compétitif, ce qui le pousse à enfreindre le règlement de manière occasionelle</td>
+            <td>12 - 14</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td> <i> Aucune information dans le rapport</i> </td>
+            <td>1 - 11</td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="box" id="indiv" data-tab-info>
+        <h3> Ces événements sont souvent liés à votre hiérarchie de vestiaire et vos leaders d'équipe, c'est pour ça
+          qu'il est important de faire attention à la personnalité
+          et aux rapports aux médias (c'est-à-dire les notes cachées) de vos joueurs les plus influents.</h3>
+        <table id="individuel">
+          <thead>
+            <tr>
+              <th>Message de l'adjoint</th>
+              <th>Cause</th>
+              <th>Conséquence</th>
+            </tr>
+          </thead>
+          <th colspan="3" style="text-align: center; background-color: #133d26;">Les effets positifs </th>
+          <tr>
+            <td>L'atmosphère d'ensemble du groupe d'encadrement a eu un effet <u>POSITIF</u> ces derniers temps</td>
+            <td>Encadrement</td>
+            <td>+1 dans une ou plusieurs notes cachées </td>
+          </tr>
+          <tr>
+            <td>L'état d'esprit général de l'effectif a eu un effet <u>POSITIF</u> sur lui ces derniers temps</td>
+            <td>Hiérarchie d'équipe</td>
+            <td>+1 dans une ou plusieurs notes cachées </td>
+          </tr>
+          <tr>
+            <td>L'accueil qui lui a été fait a eu un effet <u>POSITIF</u> sur son état d'esprit</td>
+            <td>Accueil au club</td>
+            <td>+1 dans une ou plusieurs notes cachées </td>
+          </tr>
+          <tr>
+            <td>Son temps de jeu a eu un effet <u>POSITIF</u> sur lui récemment</td>
+            <td>Temps de jeu</td>
+            <td>+1 en Professionalisme</td>
+          </tr>
+          <th colspan="3" style="text-align: center; background-color: #b62828;">Les effets négatifs </th>
+          <tr>
+            <td>L'atmosphère d'ensemble du groupe d'encadrement a eu un effet <u>NEGATIF</u> ces derniers temps</td>
+            <td>Encadrement</td>
+            <td>-1 dans une ou plusieurs notes cachées </td>
+          </tr>
+          <tr>
+            <td>L'état d'esprit général de l'effectif a eu un effet <u>NEGATIF</u> sur lui ces derniers temps</td>
+            <td>Hiérarchie d'équipe</td>
+            <td>-1 dans une ou plusieurs notes cachées </td>
+          </tr>
+          <tr>
+            <td>L'accueil qui lui a été fait a eu un effet <u>NEGATIF</u> sur son état d'esprit</td>
+            <td>Accueil au club</td>
+            <td>-1 dans une ou plusieurs notes cachées </td>
+          </tr>
+          <tr>
+            <td>Semble faire preuve de suffisance depuis qu'il a signé un nouveau contrat</td>
+            <td>Signature d'un nouveau contrat</td>
+            <td>Entre -2 et -5 en Professionalisme, Ambition et Fidélité</td>
+          </tr>
+          <tr>
+            <td>Semble faire preuve de suffisance en raison des récents résultats <i>(rare)</i></td>
+            <td>Résultats de l'équipe</td>
+            <td>Entre -2 et -5 en Professionalisme et Ambition</td>
+          </tr>
+          <th colspan="3" style="text-align: center; background-color: #686868;">Aucun effet </th>
+          <tr>
+            <td>A gagné en expérience à un niveau plus élevé qu'auparavant</td>
+            <td>Temps de jeu</td>
+            <td>Aucun effet</td>
+          </tr>
+        </table>
+
+        <div class="sp">
+          <div class="i">
+            <h2>POUR EN SAVOIR PLUS</h2>
+          </div>
+            <div class="boite aa">
+              <a href="https://youtu.be/6dXkB1F6woQ" target="_blank">
+              <img src="../image/youtube-icon.svg">
+              <div class="legend">L'encadrement</div>
+            </a>
+            </div>
+          
+          <div class="boite bb">
+            <a href="https://youtu.be/KBZi8b8H8Ug" target="_blank">
+            <img src="../image/youtube-icon.svg">
+            <div class="legend">Le guide vidéo</div> 
+            </a>	
+          </div>
+          <div class="boite cc">
+            <a href="https://fmslife.fr/t/le-guide-ultime-des-personnalites/11949" target="_blank">
+              <img  src="../image/FMSLife.svg">
+              <div class="legend">Le guide FMSLife</div> 		
+            </a>
+          </div>
+
+      </div>
+
+
+
     </div>
 
-
-
-</div>
-
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="../fonction.js"></script>
+    <script src="../fonction.js"></script>
 
 
 
-<footer>
-<p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a href="https://www.youtube.com/@Kiniitooo"> <img src="../image/youtube-icon.svg" width=15px> </a> | <a target="_blank"  href="https://www.twitch.tv/kiniitooo"> <img src="../image/twitch-icon.svg" width=15px> </a> | <a href="https://twitter.com/Kiniitooo"> <img src="../image/twitter-icon.svg" width=15px></a> | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../image/discordapp-icon.svg" width=15px> </a> ) et DoctorDim </small>  
-<p><small>&copy; Créé par Gilgiltsu, 2023.</small></p>
-</footer>
+    <footer>
+      <p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a target="_blank"
+            href="https://www.youtube.com/@Kiniitooo"> <img src="../image/youtube-icon.svg"> </a> | <a target="_blank"
+            href="https://www.twitch.tv/kiniitooo"><img src="../image/twitch-icon.svg"> </a>
+          | <a target="_blank" href="https://twitter.com/Kiniitooo"> <img src="../image/twitter-icon.svg"></a>
+          | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../image/discordapp-icon.svg">
+          </a> ) et DoctorDim <br>
+          Partenaire : <a target="_blank" href="https://www.fmultras.com"> FMULTRAS.com<img
+              src="../image/LogoFMultras.png"> </a>
+          </a> </small>
+      <p><small>&copy; Créé par <a href="https://github.com/Gilgiltsu/FMTools">Gilgiltsu <img
+              src="../image/github.png"></a>, 2023.</small></p>
+    </footer>
 
-</div>
-<svg display="none">
-	<symbol  viewBox="0 0 48 48"  id="home">
-	<g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
-	   <path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
+  </div>
+  <svg display="none">
+    <symbol viewBox="0 0 48 48" id="home">
+      <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+        <path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
 	   -87 3 -88 45 0 45 0 3 67 3 68 59 0 59 0 3 -67 3 -68 45 0 45 0 3 87 3 88 29
 	   0 c40 0 38 12 -9 50 -31 24 -41 39 -43 67 -3 41 -26 56 -35 24 -5 -20 -8 -19
-	   -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z"/>
-	 </g>
-	</symbol>
-</svg>
-<svg display="none">
-	<symbol viewBox="0 0 595 737" id="perso">
-    <g transform="translate(0.000000,737.000000) scale(0.100000,-0.100000)">
-      <path d="M2895 7321 c-71 -5 -147 -11 -167 -16 -26 -5 -38 -4 -38 4 0 6 -16
+	   -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z" />
+      </g>
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 595 737" id="perso">
+      <g transform="translate(0.000000,737.000000) scale(0.100000,-0.100000)">
+        <path d="M2895 7321 c-71 -5 -147 -11 -167 -16 -26 -5 -38 -4 -38 4 0 6 -16
       11 -35 11 -19 0 -35 -4 -35 -9 0 -5 -46 -12 -102 -16 -57 -4 -108 -11 -113
       -16 -6 -4 -52 -14 -103 -20 -51 -7 -92 -16 -92 -20 0 -3 -22 -9 -50 -13 -27
       -4 -50 -11 -50 -16 0 -5 -23 -12 -50 -16 -28 -4 -53 -10 -56 -15 -3 -5 -24
@@ -317,63 +549,69 @@
       129 -230 166 0 7 -7 14 -15 18 -8 3 -15 12 -15 21 0 8 -4 15 -9 15 -4 0 -14
       21 -21 48 -8 26 -18 50 -24 54 -16 11 -15 280 2 286 6 2 12 15 12 28 0 38 24
       88 65 133 21 23 34 41 30 41 -4 0 -2 7 5 15 7 9 15 13 18 11 2 -3 25 12 49 34
-      25 21 61 44 81 50 21 6 46 15 57 20 38 17 60 19 178 16 66 -1 121 -7 125 -12z"/>
+      25 21 61 44 81 50 21 6 46 15 57 20 38 17 60 19 178 16 66 -1 121 -7 125 -12z" />
       </g>
-	</symbol>
-</svg>
-
-<svg display="none">
-	<symbol viewBox="0 0 204 152" id="infra">
-   <g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)">
-   <path d="M611 1507 c-13 -17 -18 -47 -26 -154 l-5 -83 34 0 35 0 3 93 3 92
-   360 0 360 0 3 -92 3 -93 34 0 33 0 -5 98 c-3 53 -11 108 -17 122 l-11 25 -396
-   3 c-324 2 -398 0 -408 -11z"/>
-   <path d="M63 1220 c-55 -33 -58 -47 -61 -271 -3 -162 -1 -207 10 -215 16 -13
-   983 -347 1003 -347 20 0 987 334 1003 347 11 8 13 53 10 215 -3 224 -6 238
-   -61 271 -31 19 -59 20 -952 20 -893 0 -921 -1 -952 -20z m1028 -449 c65 -65
-   17 -181 -75 -181 -94 0 -143 115 -77 181 24 24 38 29 76 29 38 0 52 -5 76 -29z"/>
-   <path d="M0 388 c0 -134 5 -261 10 -283 5 -24 21 -51 40 -67 l30 -28 935 0
-   935 0 30 27 c19 17 35 44 40 68 11 48 13 525 3 525 -17 1 -978 -335 -981 -342
-   -5 -10 -49 -10 -54 0 -3 7 -964 343 -980 342 -5 0 -8 -109 -8 -242z"/>
-   </g>
-	</symbol>
-</svg>
-<svg display="none">
-<symbol viewBox="0 0 137 150" id="entrainement">
-	<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
-	<path d="M460 897 l-135 -592 -101 -3 -101 -3 -48 -132 c-26 -73 -50 -138 -53
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 339 222" id="infra">
+      <g transform="translate(0.000000,222.000000) scale(0.100000,-0.100000)">
+        <path d="M1480 2154 c-458 -33 -903 -158 -1145 -323 -92 -63 -182 -157 -216
+-227 -49 -100 -48 -134 14 -524 31 -190 58 -366 62 -391 35 -271 446 -516
+1003 -599 73 -11 139 -20 147 -20 11 0 14 37 17 188 3 167 5 191 24 222 11 19
+31 41 45 47 30 16 504 18 543 3 14 -5 35 -24 46 -42 18 -30 20 -51 20 -227 l0
+-194 67 7 c208 21 461 84 633 157 149 64 246 126 337 215 104 101 132 157 143
+287 5 51 30 229 56 397 26 168 47 329 47 357 -2 176 -233 380 -573 506 -177
+65 -385 113 -627 142 -123 15 -528 27 -643 19z m452 -155 c656 -45 1113 -250
+1111 -498 -1 -69 -19 -112 -73 -173 -131 -150 -456 -268 -875 -320 -147 -18
+-635 -18 -775 0 -283 37 -553 110 -713 194 -113 60 -209 154 -231 227 -19 65
+-20 87 -4 132 40 120 185 228 411 308 315 111 737 159 1149 130z" />
+        <path d="M2090 1770 l0 -160 -72 7 c-40 5 -194 8 -343 8 -206 -1 -296 -5 -380
+-18 -217 -35 -405 -93 -519 -162 -32 -19 -60 -35 -62 -35 -2 0 -4 88 -4 195 0
+178 -8 233 -24 173 -11 -43 -7 -378 5 -378 6 0 -5 -18 -25 -41 -33 -36 -56
+-76 -56 -98 0 -21 211 -101 370 -139 521 -127 1176 -105 1630 53 119 42 180
+71 180 86 0 22 -40 86 -74 118 l-36 35 0 199 c0 154 -3 198 -12 195 -10 -4
+-14 -53 -16 -190 l-2 -186 -53 29 c-102 55 -304 118 -432 134 l-50 7 3 164 c3
+143 1 164 -13 164 -13 0 -15 -22 -15 -160z" />
+      </g>
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 137 150" id="entrainement">
+      <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
+        <path d="M460 897 l-135 -592 -101 -3 -101 -3 -48 -132 c-26 -73 -50 -138 -53
 	-144 -3 -10 134 -13 666 -13 l670 0 -53 143 -52 142 -101 3 c-56 1 -102 4
-	-102 6 0 2 -252 1107 -265 1164 -5 21 -10 22 -98 22 l-92 0 -135 -593z"/>
-	</g>
-</symbol>
-</svg>
+	-102 6 0 2 -252 1107 -265 1164 -5 21 -10 22 -98 22 l-92 0 -135 -593z" />
+      </g>
+    </symbol>
+  </svg>
 
-<svg display="none">
-  <symbol viewBox="0 0 233 266" id="staff">
-  <g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
-<path d="M1079 2642 c-100 -41 -171 -106 -242 -225 -34 -56 -80 -187 -92 -259
+  <svg display="none">
+    <symbol viewBox="0 0 233 266" id="staff">
+      <g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
+        <path d="M1079 2642 c-100 -41 -171 -106 -242 -225 -34 -56 -80 -187 -92 -259
 -4 -26 -10 -36 -20 -32 -42 17 -85 -49 -85 -130 0 -86 28 -136 76 -136 18 0
 25 -7 30 -27 51 -232 159 -394 309 -464 56 -27 78 -32 143 -32 117 0 179 28
 273 122 88 88 136 176 171 313 18 71 27 88 44 92 51 13 74 159 35 223 -11 17
 -28 34 -38 37 -13 4 -24 30 -40 97 -44 181 -147 331 -275 399 -56 30 -73 34
--153 37 -70 3 -100 -1 -136 -15z"/>
-<path d="M1536 1307 c-23 -200 -30 -364 -29 -712 1 -214 5 -430 10 -480 l8
+-153 37 -70 3 -100 -1 -136 -15z" />
+        <path d="M1536 1307 c-23 -200 -30 -364 -29 -712 1 -214 5 -430 10 -480 l8
 -90 45 3 c56 4 227 60 312 103 235 118 384 279 424 457 67 303 -166 586 -604
-730 -48 16 -103 32 -123 35 l-37 5 -6 -51z"/>
-<path d="M599 1173 c-186 -94 -313 -169 -526 -311 -49 -33 -52 -37 -62 -96
+730 -48 16 -103 32 -123 35 l-37 5 -6 -51z" />
+        <path d="M599 1173 c-186 -94 -313 -169 -526 -311 -49 -33 -52 -37 -62 -96
 -15 -84 -14 -121 4 -191 56 -212 262 -396 567 -503 78 -28 237 -67 243 -60 9
-9 25 410 25 613 0 244 -16 603 -29 638 -6 17 -28 8 -222 -90z"/>
-<path d="M950 1189 c0 -6 19 -80 41 -165 42 -153 42 -154 70 -154 18 0 29 -5
+9 25 410 25 613 0 244 -16 603 -29 638 -6 17 -28 8 -222 -90z" />
+        <path d="M950 1189 c0 -6 19 -80 41 -165 42 -153 42 -154 70 -154 18 0 29 -5
 29 -14 0 -13 -103 -724 -115 -792 l-5 -32 147 -6 c82 -4 155 -9 163 -12 13 -3
 15 37 12 324 -1 180 -3 373 -5 430 l-2 102 31 0 31 0 42 154 c22 85 41 159 41
-165 0 8 -76 11 -240 11 -164 0 -240 -3 -240 -11z"/>
-</g>
-  </symbol>
+165 0 8 -76 11 -240 11 -164 0 -240 -3 -240 -11z" />
+      </g>
+    </symbol>
   </svg>
   <svg display="none">
     <symbol viewBox="0 0 322 268" id="adapt">
       <g transform="translate(0.000000,268.000000) scale(0.100000,-0.100000)">
-      <path d="M1453 2659 c-271 -28 -521 -135 -664 -285 -81 -86 -116 -154 -134
+        <path d="M1453 2659 c-271 -28 -521 -135 -664 -285 -81 -86 -116 -154 -134
       -256 l-6 -38 -138 0 c-75 0 -164 -5 -196 -11 -124 -23 -214 -89 -267 -197
       l-33 -67 -3 -738 c-3 -816 -3 -811 60 -910 37 -58 123 -122 192 -142 37 -11
       103 -15 258 -15 l208 0 0 1025 0 1025 90 0 90 0 0 31 c0 104 139 222 329 279
@@ -381,35 +619,35 @@
       l-700 0 0 -1040 0 -1040 700 0 700 0 0 1030 0 1031 98 -3 97 -3 3 -1028 2
       -1028 228 3 227 3 58 29 c66 34 140 108 167 169 19 40 20 74 20 835 l0 793
       -25 50 c-50 99 -145 166 -265 189 -29 5 -121 10 -205 10 l-152 0 -6 52 c-16
-      129 -142 288 -301 377 -100 57 -273 116 -395 135 -125 21 -304 27 -418 15z"/>
+      129 -142 288 -301 377 -100 57 -273 116 -395 135 -125 21 -304 27 -418 15z" />
       </g>
     </symbol>
-    </svg>
-    <svg display="none">
-      <symbol viewBox="0 0 266 268" id="regularite">
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 266 268" id="regularite">
       <g transform="translate(0.000000,268.000000) scale(0.100000,-0.100000)">
-<path d="M1172 2658 c-588 -74 -1056 -526 -1148 -1111 -24 -149 -15 -386 20
+        <path d="M1172 2658 c-588 -74 -1056 -526 -1148 -1111 -24 -149 -15 -386 20
 -525 64 -254 184 -460 373 -643 179 -173 402 -291 653 -345 107 -23 398 -26
 505 -5 239 46 473 161 640 312 233 211 379 470 430 763 19 113 20 354 1 463
 -46 259 -165 495 -347 687 -288 305 -711 456 -1127 404z m308 -333 c217 -33
 401 -125 556 -280 575 -572 273 -1538 -529 -1690 -317 -60 -660 53 -889 293
 -87 91 -136 163 -189 277 -69 148 -83 215 -83 415 0 162 2 182 27 265 85 282
-266 499 522 627 188 94 380 125 585 93z"/>
-<path d="M1225 2020 c-225 -41 -405 -174 -505 -372 -55 -111 -73 -203 -68
+266 499 522 627 188 94 380 125 585 93z" />
+        <path d="M1225 2020 c-225 -41 -405 -174 -505 -372 -55 -111 -73 -203 -68
 -346 7 -170 54 -288 165 -420 85 -99 237 -189 369 -217 157 -33 314 -13 464
 61 156 78 278 216 336 384 60 170 49 364 -27 527 -84 176 -255 318 -445 368
 -73 19 -222 27 -289 15z m190 -265 c82 -22 147 -60 204 -120 61 -64 88 -118
 107 -206 31 -152 -31 -311 -159 -406 -134 -98 -313 -109 -453 -27 -60 36 -141
 125 -172 191 -23 51 -27 70 -27 164 0 102 1 108 38 181 88 178 279 270 462
-223z"/>
-</g>
+223z" />
+      </g>
 
-      </symbol>
-      </svg>
-      <svg display="none">
-        <symbol viewBox="0 0 304 254" id="gromatch">
-          <g transform="translate(0.000000,254.000000) scale(0.100000,-0.100000)">
-          <path d="M1585 2525 c-512 -71 -925 -443 -1054 -948 -45 -173 -50 -382 -15
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 304 254" id="gromatch">
+      <g transform="translate(0.000000,254.000000) scale(0.100000,-0.100000)">
+        <path d="M1585 2525 c-512 -71 -925 -443 -1054 -948 -45 -173 -50 -382 -15
           -557 143 -709 854 -1158 1551 -979 456 116 806 465 923 919 62 241 46 523 -44
           757 -214 558 -773 891 -1361 808z m-30 -155 c58 -39 105 -75 105 -80 0 -17
           -132 -474 -139 -482 -10 -11 -481 -42 -490 -32 -10 11 -121 330 -121 348 0 29
@@ -423,45 +661,46 @@
           m-2177 -133 c134 -56 182 -81 181 -93 0 -10 -10 -115 -22 -235 l-22 -219 -65
           76 c-131 154 -206 295 -260 489 -13 48 -16 67 -7 64 7 -2 94 -39 195 -82z
           m1181 -849 c10 -12 6 -16 -26 -23 -50 -10 -282 -10 -357 0 l-58 9 138 83 139
-          83 76 -69 c42 -38 82 -75 88 -83z"/>
-          <path d="M20 2067 c0 -2 16 -266 35 -587 19 -322 35 -588 35 -592 0 -5 34 -8
+          83 76 -69 c42 -38 82 -75 88 -83z" />
+        <path d="M20 2067 c0 -2 16 -266 35 -587 19 -322 35 -588 35 -592 0 -5 34 -8
           75 -8 41 0 75 3 75 8 0 4 16 270 35 592 19 321 35 585 35 587 0 2 -65 3 -145
-          3 -80 0 -145 -1 -145 -3z"/>
-          <path d="M110 698 c-132 -67 -132 -249 0 -315 169 -86 341 101 237 258 -28 42
-          -99 79 -152 79 -22 0 -61 -10 -85 -22z"/>
-          </g>
-        </symbol>
-        </svg>
-        <svg display="none">
-          <symbol viewBox="0 0 266 268" id="blessure">
-            <g transform="translate(0.000000,268.000000) scale(0.100000,-0.100000)">
-            <path d="M1000 2180 l0 -500 -500 0 -500 0 0 -335 0 -335 500 0 500 0 0 -500
+          3 -80 0 -145 -1 -145 -3z" />
+        <path d="M110 698 c-132 -67 -132 -249 0 -315 169 -86 341 101 237 258 -28 42
+          -99 79 -152 79 -22 0 -61 -10 -85 -22z" />
+      </g>
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 266 268" id="blessure">
+      <g transform="translate(0.000000,268.000000) scale(0.100000,-0.100000)">
+        <path d="M1000 2180 l0 -500 -500 0 -500 0 0 -335 0 -335 500 0 500 0 0 -500
             0 -500 330 0 330 0 0 500 0 500 500 0 500 0 0 335 0 335 -500 0 -500 0 0 500
-            0 500 -330 0 -330 0 0 -500z"/>
-            </g>
-          </symbol>
-          </svg>
-          <svg display="none">
-            <symbol viewBox="0 0 210 237" id="violence">
-              <g transform="translate(0.000000,237.000000) scale(0.100000,-0.100000)">
-<path d="M173 2347 c-62 -23 -119 -73 -146 -128 l-27 -53 0 -985 c0 -939 1
+            0 500 -330 0 -330 0 0 -500z" />
+      </g>
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 210 237" id="violence">
+      <g transform="translate(0.000000,237.000000) scale(0.100000,-0.100000)">
+        <path d="M173 2347 c-62 -23 -119 -73 -146 -128 l-27 -53 0 -985 c0 -939 1
 -988 19 -1026 23 -49 72 -100 125 -128 41 -22 48 -22 614 -25 375 -2 586 1
 611 8 71 19 133 69 166 134 l30 60 0 210 0 210 -42 8 c-89 15 -168 74 -217
 162 l-36 64 -211 -79 c-117 -44 -220 -77 -229 -74 -19 6 -29 24 -77 154 -27
 72 -33 98 -25 115 7 16 67 42 263 114 140 51 263 98 273 103 15 9 21 8 28 -5
 5 -8 28 -27 52 -41 71 -42 149 -31 204 28 l23 24 -3 479 -3 479 -28 57 c-16
-32 -45 71 -65 88 -73 60 -70 60 -696 59 -411 0 -580 -4 -603 -12z"/>
-<path d="M1616 1267 c5 -43 2 -61 -15 -94 -60 -120 -245 -139 -333 -35 l-25
+32 -45 71 -65 88 -73 60 -70 60 -696 59 -411 0 -580 -4 -603 -12z" />
+        <path d="M1616 1267 c5 -43 2 -61 -15 -94 -60 -120 -245 -139 -333 -35 l-25
 30 -239 -93 c-276 -107 -264 -96 -218 -218 31 -84 40 -97 65 -97 10 0 107 34
 214 76 108 42 198 74 199 73 2 -2 13 -25 25 -51 28 -58 86 -112 160 -147 81
 -37 201 -37 282 0 72 34 132 88 159 143 18 38 25 44 60 49 93 12 150 82 150
 182 0 64 -16 102 -59 138 -57 48 -146 59 -201 25 -15 -10 -25 -7 -57 15 -43
-30 -114 57 -149 57 -23 0 -24 -2 -18 -53z"/>
-</g>
-            </symbol>
-            </svg>
+30 -114 57 -149 57 -23 0 -24 -2 -18 -53z" />
+      </g>
+    </symbol>
+  </svg>
 
 
 
 </body>
+
 </html>

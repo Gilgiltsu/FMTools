@@ -1,160 +1,231 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <title>Évaluation des préparateurs</title>
   <meta charset="utf-8" />
   <link href="../stylecomplet.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet"/>
-  
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" />
+  <link rel="shortcut icon" type="image/png" href="../image/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 </head>
 
 <body>
-<div id="wrapper">
-	<div class="intro">
-		<div class="accueil">
-		<a href="../index.html"><svg><use xlink:href="#home"/></svg></a>
-		</div>
-		<h1>Évaluation des préparateurs</h1>
-		<div class="menu">
-		<a href="../notes/index.html"><svg><use xlink:href="#perso"/></svg></a>
-		<a href="../rapports/index.html"><svg><use xlink:href="#rapport"/></svg></a>
-		<a href="../infrastructures/index.html"><svg><use xlink:href="#infra"/></svg></a>
-		</div>
-		</div>	
-		
-
-<div class="aligngauche">
-	
-
-<table class="attribut">
-	<form onchange="evalstaf()">
-	<tr>
-		<th><h1>ENTRAINEMENT</h1></th> <th><h1>MENTAL</h1></th>
-	</tr>
-	<tr>
-		<td><label class="formulaire" for="CP" >Condition physique</label>
-		<input onchange="evalstaf()" type="number" name="CP" id="CP" max="20" min="1" value="1"></td>
-		<td><label class="formulaire" for="CaM" >Capacité à motiver</label>
-		<input onchange="evalstaf()" type="number" name="CaM" id="CaM" max= "20"  min= "1"  value= "1" > </td>
-	</tr>
-	<tr>
-		<td><label class="formulaire" for="Def" >Défensif</label>
-			<input onchange="evalstaf()" type="number" name="Def" id="Def" max="20" min="1" value="1"></td>
-			<td><label class="formulaire" for="Det" >Détermination</label>
-			<input onchange="evalstaf()" type="number" name="Det" id="Det" max="20" min="1" value="1"> </td>
-	</tr>	
-	<tr>
-		<td><label class="formulaire" for="Men" >Mental</label>
-			<input onchange="evalstaf()" type="number" name="Men" id="Men" max="20" min="1" value="1"></td>
-			<td><label class="formulaire" for="Ndd" >Niveau de discipline</label>
-			<input onchange="evalstaf()" type="number" name="Ndd" id="Ndd" max="20" min="1" value="1"> </td>
-	</tr>			
-	<tr>
-		<td><label class="formulaire" for="Off" >Offensif</label>
-			<input onchange="evalstaf()" type="number" name="Off" id="Off" max="20" min="1" value="1"></td>
-	</tr>	
-	<tr>
-		<td><label class="formulaire" for="Tac" >Tactique</label>
-			<input onchange="evalstaf()" type="number" name="Tac" id="Tac" max="20" min="1" value="1"></td>
-	</tr>	
-	<tr>
-		<td><label class="formulaire" for="Tec" >Technique</label>
-			<input onchange="evalstaf()" type="number" name="Tec" id="Tec" max="20" min="1" value="1"></td>
-	</tr>	
-	<tr><td></td></tr>
-	<tr><td></td></tr>
-	<tr>
-		<th><h1>ENTRAINEMENT GARDIENS</h1></th> 
-	</tr>
-	<tr>
-		<td><label class="formulaire" for="AGB" >Arrêts sur la ligne GB</label>
-			<input onchange="evalstaf()" type="number" name="AGB" id="AGB" max="20" min="1" value="1"></td>
-	</tr>
-	<tr>
-		<td><label class="formulaire" for="PGB" >Prise de balle GB</label>
-			<input onchange="evalstaf()" type="number" name="PGB" id="PGB" max="20" min="1" value="1"></td> <td rowspan="3" onclick="remisazero()" style="text-align: center;"> <button>Réinitialiser</button> </td>
-	</tr>
-	<tr>
-		<td><label class="formulaire" for="RGB" >Relance GB</label>
-			<input onchange="evalstaf()" type="number" name="RGB" id="RGB" max="20" min="1" value="1"></td>
-	</tr>
- 	</form>
-	</table>
-	
+  <div class="container">
+    <div class="bandeau">
+      <div class="accueil">
+        <a class="infobulle ho" aria-label="Accueil" href="../index.html"><svg>
+            <use xlink:href="#home" />
+          </svg></a>
+      </div>
+      <h1>Les préparateurs</h1>
+      <div class="menu">
+        <a class="infobulle" aria-label="Les notes cachées" href="../notes/index.html"><svg>
+            <use xlink:href="#perso" />
+          </svg></a>
+        <a class="infobulle" aria-label="Les rappports" href="../rapports/index.html"><svg>
+            <use xlink:href="#rapport" />
+          </svg></a>
+        <a class="infobulle last" aria-label="Les infrastructures" href="../infrastructures/index.html"><svg>
+            <use xlink:href="#infra" />
+          </svg></a>
+      </div>
+    </div>
 
 
-	</div>
-
-	<div class="aligndroite">
-
-	<table class="result">
-		<thead>
-			<tr>
-			<Th colspan="2">Affectation à l'entrainement</Th>
-			<Th>Evaluation</Th>
-		</tr>	
-		</thead>
-
-		<tr> <td rowspan="2"> <img src="../image/Gardien.png" style="height: 40px; display:flex ;margin: auto">Gardien</td> <td>Arrêts sur la ligne</td> <td><img id="Garret" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-            <tr> <td>Prise de balle</td> <td ><img id="Gprise" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td rowspan="2"> <img src="../image/Defense.png" style="height: 40px; display:flex ;margin: auto">En défense</td> <td>Tactique</td> <td ><img id="Deftac" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td>Technique</td> <td ><img id="Deftec" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td rowspan="2"> <img src="../image/JeuOff.png" style="height: 40px; display:flex ;margin: auto">Jeu offensif</td><td>Tactique</td>  <td ><img id="Attac" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td>Technique</td> <td ><img id="Attec" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td rowspan="2"> <img src="../image/Possession.png" style="height: 40px; display:flex ;margin: auto">Possession</td> <td>Tactique</td> <td ><img id="Postac" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td>Technique</td> <td ><img id="Postec" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr > <td rowspan="2"> <img src="../image/Physique.png" style="height: 20px; display:flex ;margin: auto">Condition physique</td> <td>Puissance</td> <td ><img id="Puis" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
-			<tr> <td>Vivacité</td> <td ><img id="Viva" src="../image/0etoile.png" style="width: 100px; display:flex ;margin: auto"></td > </tr>
+    <div class="box a">
 
 
-	</table>
-	
-	</div>
+        <table class="attribut">
+          <form onchange="evalstaf()">
+            <tr>
+              <th>ENTRAINEMENT</th>
+              <th>MENTAL</th>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="CP">Condition physique</label>
+                <input onchange="evalstaf()" type="number" name="CP" id="CP" max="20" min="1" value="1">
+              </td>
+              <td><label class="formulaire" for="CaM">Capacité à motiver</label>
+                <input onchange="evalstaf()" type="number" name="CaM" id="CaM" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="Def">Défensif</label>
+                <input onchange="evalstaf()" type="number" name="Def" id="Def" max="20" min="1" value="1">
+              </td>
+              <td><label class="formulaire" for="Det">Détermination</label>
+                <input onchange="evalstaf()" type="number" name="Det" id="Det" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="Men">Mental</label>
+                <input onchange="evalstaf()" type="number" name="Men" id="Men" max="20" min="1" value="1">
+              </td>
+              <td><label class="formulaire" for="Ndd">Niveau de discipline</label>
+                <input onchange="evalstaf()" type="number" name="Ndd" id="Ndd" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="Off">Offensif</label>
+                <input onchange="evalstaf()" type="number" name="Off" id="Off" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="Tac">Tactique</label>
+                <input onchange="evalstaf()" type="number" name="Tac" id="Tac" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="Tec">Technique</label>
+                <input onchange="evalstaf()" type="number" name="Tec" id="Tec" max="20" min="1" value="1">
+              </td>
+            </tr>
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="../fonction.js"></script>
+            <tr>
+              <th>ENTRAINEMENT GARDIENS</th>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="AGB">Arrêts sur la ligne GB</label>
+                <input onchange="evalstaf()" type="number" name="AGB" id="AGB" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="PGB">Prise de balle GB</label>
+                <input onchange="evalstaf()" type="number" name="PGB" id="PGB" max="20" min="1" value="1">
+              </td>
+              <td rowspan="3" onclick="remisazero()" style="text-align: center;"> <button>Réinitialiser</button> </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="RGB">Relance GB</label>
+                <input onchange="evalstaf()" type="number" name="RGB" id="RGB" max="20" min="1" value="1">
+              </td>
+            </tr>
+          </form>
+        </table>
+
+
+    </div>
+
+    <div class="box b">
+        <table class="result">
+          <thead>
+            <tr>
+              <Th colspan="2">Affectation à l'entrainement</Th>
+              <Th>Evaluation</Th>
+            </tr>
+          </thead>
+
+          <tr>
+            <td class="role" rowspan="2"> <img src="../image/Gardien.png">Gardien</td>
+            <td>Arrêts sur la ligne</td>
+            <td><img id="Garret" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td>Prise de balle</td>
+            <td><img id="Gprise" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td class="role" rowspan="2"> <img src="../image/Defense.png">En défense</td>
+            <td>Tactique</td>
+            <td><img id="Deftac" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td>Technique</td>
+            <td><img id="Deftec" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td class="role" rowspan="2"> <img src="../image/JeuOff.png">Jeu offensif</td>
+            <td>Tactique</td>
+            <td><img id="Attac" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td>Technique</td>
+            <td><img id="Attec" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td class="role" rowspan="2"> <img src="../image/Possession.png">Possession</td>
+            <td>Tactique</td>
+            <td><img id="Postac" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td>Technique</td>
+            <td><img id="Postec" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td class="role" rowspan="2"> <img src="../image/Physique.png">Condition physique</td>
+            <td>Puissance</td>
+            <td><img id="Puis" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td>Vivacité</td>
+            <td><img id="Viva" src="../image/0etoile.png"></td>
+          </tr>
+
+
+        </table>
+    </div>
+
+    <script src="../fonction.js"></script>
 
 
 
-<footer>
-<p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a href="https://www.youtube.com/@Kiniitooo"> <img src="../image/youtube-icon.svg" width=15px> </a> | <a target="_blank"  href="https://www.twitch.tv/kiniitooo"> <img src="../image/twitch-icon.svg" width=15px> </a> | <a href="https://twitter.com/Kiniitooo"> <img src="../image/twitter-icon.svg" width=15px></a> | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../image/discordapp-icon.svg" width=15px> </a> ) et DoctorDim </small>  
-<p><small>&copy; Créé par Gilgiltsu, 2023.</small></p>
-</footer>
+    <footer>
+      <p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a target="_blank"
+            href="https://www.youtube.com/@Kiniitooo"> <img src="../image/youtube-icon.svg"> </a> | <a target="_blank"
+            href="https://www.twitch.tv/kiniitooo"><img src="../image/twitch-icon.svg"> </a>
+          | <a target="_blank" href="https://twitter.com/Kiniitooo"> <img src="../image/twitter-icon.svg"></a>
+          | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../image/discordapp-icon.svg">
+          </a> ) et DoctorDim <br>
+          Partenaire : <a target="_blank" href="https://www.fmultras.com"> FMULTRAS.com<img
+              src="../image/LogoFMultras.png"> </a>
+          </a> </small>
+      <p><small>&copy; Créé par <a href="https://github.com/Gilgiltsu/FMTools">Gilgiltsu <img
+              src="../image/github.png"></a>, 2023.</small></p>
+    </footer>
 
-</div>
+  </div>
 
-<svg display="none">
-	<symbol  viewBox="0 0 48 48"  id="home">
-	<g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
-	   <path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
+  <svg display="none">
+    <symbol viewBox="0 0 48 48" id="home">
+      <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+        <path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
 	   -87 3 -88 45 0 45 0 3 67 3 68 59 0 59 0 3 -67 3 -68 45 0 45 0 3 87 3 88 29
 	   0 c40 0 38 12 -9 50 -31 24 -41 39 -43 67 -3 41 -26 56 -35 24 -5 -20 -8 -19
-	   -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z"/>
-	 </g>
-	</symbol>
-</svg>
-<svg display="none">
-	<symbol viewBox="0 0 204 152" id="infra">
-   <g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)">
-   <path d="M611 1507 c-13 -17 -18 -47 -26 -154 l-5 -83 34 0 35 0 3 93 3 92
-   360 0 360 0 3 -92 3 -93 34 0 33 0 -5 98 c-3 53 -11 108 -17 122 l-11 25 -396
-   3 c-324 2 -398 0 -408 -11z"/>
-   <path d="M63 1220 c-55 -33 -58 -47 -61 -271 -3 -162 -1 -207 10 -215 16 -13
-   983 -347 1003 -347 20 0 987 334 1003 347 11 8 13 53 10 215 -3 224 -6 238
-   -61 271 -31 19 -59 20 -952 20 -893 0 -921 -1 -952 -20z m1028 -449 c65 -65
-   17 -181 -75 -181 -94 0 -143 115 -77 181 24 24 38 29 76 29 38 0 52 -5 76 -29z"/>
-   <path d="M0 388 c0 -134 5 -261 10 -283 5 -24 21 -51 40 -67 l30 -28 935 0
-   935 0 30 27 c19 17 35 44 40 68 11 48 13 525 3 525 -17 1 -978 -335 -981 -342
-   -5 -10 -49 -10 -54 0 -3 7 -964 343 -980 342 -5 0 -8 -109 -8 -242z"/>
-   </g>
-	</symbol>
-</svg>
-<svg display="none">
-	<symbol viewBox="0 0 595 737" id="perso">
-    <g transform="translate(0.000000,737.000000) scale(0.100000,-0.100000)">
-      <path d="M2895 7321 c-71 -5 -147 -11 -167 -16 -26 -5 -38 -4 -38 4 0 6 -16
+	   -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z" />
+      </g>
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 339 222" id="infra">
+      <g transform="translate(0.000000,222.000000) scale(0.100000,-0.100000)">
+        <path d="M1480 2154 c-458 -33 -903 -158 -1145 -323 -92 -63 -182 -157 -216
+-227 -49 -100 -48 -134 14 -524 31 -190 58 -366 62 -391 35 -271 446 -516
+1003 -599 73 -11 139 -20 147 -20 11 0 14 37 17 188 3 167 5 191 24 222 11 19
+31 41 45 47 30 16 504 18 543 3 14 -5 35 -24 46 -42 18 -30 20 -51 20 -227 l0
+-194 67 7 c208 21 461 84 633 157 149 64 246 126 337 215 104 101 132 157 143
+287 5 51 30 229 56 397 26 168 47 329 47 357 -2 176 -233 380 -573 506 -177
+65 -385 113 -627 142 -123 15 -528 27 -643 19z m452 -155 c656 -45 1113 -250
+1111 -498 -1 -69 -19 -112 -73 -173 -131 -150 -456 -268 -875 -320 -147 -18
+-635 -18 -775 0 -283 37 -553 110 -713 194 -113 60 -209 154 -231 227 -19 65
+-20 87 -4 132 40 120 185 228 411 308 315 111 737 159 1149 130z" />
+        <path d="M2090 1770 l0 -160 -72 7 c-40 5 -194 8 -343 8 -206 -1 -296 -5 -380
+-18 -217 -35 -405 -93 -519 -162 -32 -19 -60 -35 -62 -35 -2 0 -4 88 -4 195 0
+178 -8 233 -24 173 -11 -43 -7 -378 5 -378 6 0 -5 -18 -25 -41 -33 -36 -56
+-76 -56 -98 0 -21 211 -101 370 -139 521 -127 1176 -105 1630 53 119 42 180
+71 180 86 0 22 -40 86 -74 118 l-36 35 0 199 c0 154 -3 198 -12 195 -10 -4
+-14 -53 -16 -190 l-2 -186 -53 29 c-102 55 -304 118 -432 134 l-50 7 3 164 c3
+143 1 164 -13 164 -13 0 -15 -22 -15 -160z" />
+      </g>
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 595 737" id="perso">
+      <g transform="translate(0.000000,737.000000) scale(0.100000,-0.100000)">
+        <path d="M2895 7321 c-71 -5 -147 -11 -167 -16 -26 -5 -38 -4 -38 4 0 6 -16
       11 -35 11 -19 0 -35 -4 -35 -9 0 -5 -46 -12 -102 -16 -57 -4 -108 -11 -113
       -16 -6 -4 -52 -14 -103 -20 -51 -7 -92 -16 -92 -20 0 -3 -22 -9 -50 -13 -27
       -4 -50 -11 -50 -16 0 -5 -23 -12 -50 -16 -28 -4 -53 -10 -56 -15 -3 -5 -24
@@ -278,14 +349,14 @@
       129 -230 166 0 7 -7 14 -15 18 -8 3 -15 12 -15 21 0 8 -4 15 -9 15 -4 0 -14
       21 -21 48 -8 26 -18 50 -24 54 -16 11 -15 280 2 286 6 2 12 15 12 28 0 38 24
       88 65 133 21 23 34 41 30 41 -4 0 -2 7 5 15 7 9 15 13 18 11 2 -3 25 12 49 34
-      25 21 61 44 81 50 21 6 46 15 57 20 38 17 60 19 178 16 66 -1 121 -7 125 -12z"/>
+      25 21 61 44 81 50 21 6 46 15 57 20 38 17 60 19 178 16 66 -1 121 -7 125 -12z" />
       </g>
-	</symbol>
-</svg>
-<svg display="none">
-	<symbol viewBox="0 0 135 150" id="rapport">
-		<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
-		<path d="M252 1469 c-62 -31 -93 -82 -99 -164 l-6 -65 89 0 c141 -1 201 -38
+    </symbol>
+  </svg>
+  <svg display="none">
+    <symbol viewBox="0 0 135 150" id="rapport">
+      <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
+        <path d="M252 1469 c-62 -31 -93 -82 -99 -164 l-6 -65 89 0 c141 -1 201 -38
 		211 -134 7 -56 -18 -109 -64 -137 -28 -18 -56 -23 -134 -27 l-99 -5 0 -212 0
 		-213 105 -4 c112 -4 136 -13 179 -71 27 -37 27 -117 0 -154 -43 -57 -65 -66
 		-180 -71 l-106 -5 6 -41 c10 -58 47 -110 98 -135 43 -20 56 -21 496 -21 385 0
@@ -293,17 +364,18 @@
 		46 -46 67 -94 87 -31 13 -104 15 -489 15 -443 0 -454 0 -496 -21z m888 -354
 		l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z m0 -240 l0 -25 -280 0
 		-280 0 0 25 0 25 280 0 280 0 0 -25z m0 -250 l0 -25 -280 0 -280 0 0 25 0 25
-		280 0 280 0 0 -25z m0 -240 l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z"/>
-		<path d="M58 1185 c-30 -17 -58 -62 -58 -95 0 -34 28 -79 61 -96 25 -12 57
+		280 0 280 0 0 -25z m0 -240 l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z" />
+        <path d="M58 1185 c-30 -17 -58 -62 -58 -95 0 -34 28 -79 61 -96 25 -12 57
 		-15 161 -12 l130 3 29 33 c40 45 40 99 0 144 l-29 33 -134 3 c-104 1 -139 -1
-		-160 -13z"/>
-		<path d="M65 461 c-65 -27 -82 -118 -32 -168 27 -28 30 -28 167 -31 l140 -4
-		35 35 c48 48 49 95 1 143 l-34 34 -129 -1 c-70 0 -137 -4 -148 -8z"/>
-		</g>
-	</symbol>
-	</svg>
+		-160 -13z" />
+        <path d="M65 461 c-65 -27 -82 -118 -32 -168 27 -28 30 -28 167 -31 l140 -4
+		35 35 c48 48 49 95 1 143 l-34 34 -129 -1 c-70 0 -137 -4 -148 -8z" />
+      </g>
+    </symbol>
+  </svg>
 
 
 
 </body>
+
 </html>

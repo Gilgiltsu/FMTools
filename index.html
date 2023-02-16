@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <title>Football Manager : Évaluation des joueurs et des préparateurs</title>
-  <meta charset="utf-8"/>
+  <title> Football Manager : Évaluation des joueurs et des préparateurs</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/png" href="image/logo.png" />
   <link href="stylecomplet.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+
+
 <body>
-<div id="wrapper">
+  <div class="container">
+    <div  class="intro">
+      <h1>Bienvenue sur l'outil d'évaluation de vos joueurs et de vos préparateurs</h1>
+      <h3>Après de nombreux tests sur Football Manager ces dernières années, Kinito et DoctorDim nous ont
+        permis de comprendre en profondeur des aspects importants du jeu. <br>
+        À l'aide de leur travail pour la communauté, j'ai pu réaliser ce petit outil qui vous permettra de mieux appréhender la gestion de votre effectif et de votre club.</h3>
+      <h3 style="text-align: center; margin-left: 10%; margin-right: 10%;">Voici 4 petits outils qui résument et utilisent leurs travaux afin de simplifier
+        notre expérience de jeu :
+      </h3>
+    </div>
+
+      <div class="box a" onclick="window.location.assign('notes/index.html');">
+        <h2><svg>
+            <use xlink:href="#perso" />
+          </svg> &nbsp LES NOTES CACHÉES</h2>
+        <h4>Évaluer les notes cachées d'un joueur à l'aide de :
+          <br>
+          <ul>
+            <li>Sa personnalité</li>
+            <li>Ses rapports aux médias</li>
+            <li>Sa détermination</li>
+          </ul>
+        </h4>
+      </div>
 
 
-  <div>
-    <h1>Bienvenue sur l'outil d'évaluation de vos joueurs et de vos préparateurs</h1>
-    <h3>Après de nombreux tests sur Football Manager et ceux depuis de nombreuses années, Kinito et DoctorDim nous ont permis de comprendre en profondeur le comportement des aspects les plus importants du jeu. <br>   
-    À l'aide de leur travail pour la communauté, j'ai pu réaliser ce petit outil qui vous permettra de mieux appréhender les aspects les plus profonds de Football Manager.</h3>
-    <h3 style="text-align: center;">Voici 4 petits outils qui résument et utilisent leurs travaux afin de simplifier notre expérience de jeu :
-    </h3>
+
+      <div class="box b" onclick="window.location.assign('prepa/index.html');">
+        <h2><svg>
+            <use xlink:href="#staff" />
+          </svg> &nbsp ÉVALUATION DES PRÉPARATEURS</h2>
+        <h4>Évaluer le staff pour répondre au mieux à vos besoins. <br>
+          Calculer le nombre d'étoiles d'un préparateur et identifier son atelier de prédilection.
+          </h4>
+      </div>
+
+
+
+      <div class="box c" onclick="window.location.assign('rapports/index.html');">
+        <h2><svg>
+            <use xlink:href="#rapport" />
+          </svg> &nbsp COMPRENDRE LES RAPPORTS</h2>
+          <h4>Interpréter les différents rapports :
+            <br>
+            <ul>
+              <li>Recruteur</li>
+              <li>Préparateur</li>
+              <li>Entrainement individuel</li>
+            </ul>
+          </h4>
+      </div>
+
+
+
+      <div class="box d" onclick="window.location.assign('infrastructures/index.html');">
+        <h2><svg>
+            <use xlink:href="#infra" />
+          </svg> &nbsp VALEURS DES INFRASTRUCTURES</h2>
+        <h4>Connaitre et évaluer le développement des infrastructures de votre club.</h4>
+      </div>
+
+
+
+    <footer>
+      <p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a target="_blank"
+            href="https://www.youtube.com/@Kiniitooo"> <img src="./image/youtube-icon.svg"> </a> | <a target="_blank"
+            href="https://www.twitch.tv/kiniitooo"><img src="./image/twitch-icon.svg"> </a>
+          | <a target="_blank" href="https://twitter.com/Kiniitooo"> <img src="./image/twitter-icon.svg"></a>
+          | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="./image/discordapp-icon.svg">
+          </a> ) et DoctorDim <br>
+          Partenaire : <a target="_blank" href="https://www.fmultras.com"> FMULTRAS.com<img
+              src="./image/LogoFMultras.png"> </a>
+          </a> </small>
+      <p><small>&copy; Créé par <a href="https://github.com/Gilgiltsu/FMTools">Gilgiltsu <img src="./image/github.png"></a>, 2023.</small></p>
+    </footer>
   </div>
 
-  <div class="aligngauche" onclick="window.location.assign('notes/index.html');">
-    <h2><svg><use xlink:href="#perso"/></svg> &nbsp LES NOTES CACHÉES</h2>
-    <h4>Cet outil vous permettra d'évaluer au mieux les notes cachées d'un joueur à l'aide de: 
-    <br>
-    <ul> 
-    <li>Sa personnalité</li>
-    <li>Ses rapports aux médias</li>
-    <li>Sa détermination</li>
-    </ul></h4>
-  </div>
-
-  <div class="aligndroite" onclick="window.location.assign('prepa/index.html');">
-    <h2><svg><use xlink:href="#staff"/></svg> &nbsp ÉVALUATION DES PRÉPARATEURS</h2>
-    <h4>Avec cet outil, analysez les futurs membres de votre équipe de préparateur pour répondre au mieux à vos besoin. <br>
-      Calculez le nombres d'étoiles d'un préparateur et identifiez quel est son atelier de prédilection.</h4>
-  </div>
-
-<div class="aligngauche1" onclick="window.location.assign('rapports/index.html');">
-    <h2><svg><use xlink:href="#rapport"/></svg> &nbsp COMPRENDRE LES RAPPORTS</h2>
-    <h4>Interpretation des rapports des différents membres du staff, du préparateur au recruteur en passant par les rapports d'entrainement individuel</h4>
-</div>
-  
-<div class="aligndroite1" onclick="window.location.assign('infrastructures/index.html');">
-    <h2><svg><use xlink:href="#infra"/></svg> &nbsp VALEURS DES INFRASTRUCTURES</h2>
-    <h4>Connaitre et évaluer le développement des infrastructures de votre club</h4>
-</div>
 
 
 
-<footer>
-<p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a href="https://www.youtube.com/@Kiniitooo"> <img src="./image/youtube-icon.svg" width=15px> </a> | <a target="_blank"  href="https://www.twitch.tv/kiniitooo"> <img src="./image/twitch-icon.svg" width=15px> </a> | <a href="https://twitter.com/Kiniitooo"> <img src="./image/twitter-icon.svg" width=15px></a> | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="./image/discordapp-icon.svg" width=15px> </a> ) et DoctorDim </small>  
-<p><small>&copy; Créé par Gilgiltsu, 2023.</small></p>
-</footer>
-
-</div>
-<svg display="none">
-	<symbol viewBox="0 0 595 737" id="perso">
-    <g transform="translate(0.000000,737.000000) scale(0.100000,-0.100000)">
-      <path d="M2895 7321 c-71 -5 -147 -11 -167 -16 -26 -5 -38 -4 -38 4 0 6 -16
+  <svg display="none">
+    <symbol viewBox="0 0 595 737" id="perso">
+      <g transform="translate(0.000000,737.000000) scale(0.100000,-0.100000)">
+        <path d="M2895 7321 c-71 -5 -147 -11 -167 -16 -26 -5 -38 -4 -38 4 0 6 -16
       11 -35 11 -19 0 -35 -4 -35 -9 0 -5 -46 -12 -102 -16 -57 -4 -108 -11 -113
       -16 -6 -4 -52 -14 -103 -20 -51 -7 -92 -16 -92 -20 0 -3 -22 -9 -50 -13 -27
       -4 -50 -11 -50 -16 0 -5 -23 -12 -50 -16 -28 -4 -53 -10 -56 -15 -3 -5 -24
@@ -182,53 +221,62 @@
       129 -230 166 0 7 -7 14 -15 18 -8 3 -15 12 -15 21 0 8 -4 15 -9 15 -4 0 -14
       21 -21 48 -8 26 -18 50 -24 54 -16 11 -15 280 2 286 6 2 12 15 12 28 0 38 24
       88 65 133 21 23 34 41 30 41 -4 0 -2 7 5 15 7 9 15 13 18 11 2 -3 25 12 49 34
-      25 21 61 44 81 50 21 6 46 15 57 20 38 17 60 19 178 16 66 -1 121 -7 125 -12z"/>
+      25 21 61 44 81 50 21 6 46 15 57 20 38 17 60 19 178 16 66 -1 121 -7 125 -12z" />
       </g>
-	</symbol>
-</svg>
+    </symbol>
+  </svg>
 
-<svg display="none">
-	<symbol viewBox="0 0 204 152" id="infra">
-   <g transform="translate(0.000000,152.000000) scale(0.100000,-0.100000)">
-   <path d="M611 1507 c-13 -17 -18 -47 -26 -154 l-5 -83 34 0 35 0 3 93 3 92
-   360 0 360 0 3 -92 3 -93 34 0 33 0 -5 98 c-3 53 -11 108 -17 122 l-11 25 -396
-   3 c-324 2 -398 0 -408 -11z"/>
-   <path d="M63 1220 c-55 -33 -58 -47 -61 -271 -3 -162 -1 -207 10 -215 16 -13
-   983 -347 1003 -347 20 0 987 334 1003 347 11 8 13 53 10 215 -3 224 -6 238
-   -61 271 -31 19 -59 20 -952 20 -893 0 -921 -1 -952 -20z m1028 -449 c65 -65
-   17 -181 -75 -181 -94 0 -143 115 -77 181 24 24 38 29 76 29 38 0 52 -5 76 -29z"/>
-   <path d="M0 388 c0 -134 5 -261 10 -283 5 -24 21 -51 40 -67 l30 -28 935 0
-   935 0 30 27 c19 17 35 44 40 68 11 48 13 525 3 525 -17 1 -978 -335 -981 -342
-   -5 -10 -49 -10 -54 0 -3 7 -964 343 -980 342 -5 0 -8 -109 -8 -242z"/>
-   </g>
-	</symbol>
-</svg>
-<svg display="none">
-  <symbol viewBox="0 0 233 266" id="staff">
-  <g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
-<path d="M1079 2642 c-100 -41 -171 -106 -242 -225 -34 -56 -80 -187 -92 -259
+  <svg display="none">
+    <symbol viewBox="0 0 339 222" id="infra">
+      <g transform="translate(0.000000,222.000000) scale(0.100000,-0.100000)">
+        <path d="M1480 2154 c-458 -33 -903 -158 -1145 -323 -92 -63 -182 -157 -216
+  -227 -49 -100 -48 -134 14 -524 31 -190 58 -366 62 -391 35 -271 446 -516
+  1003 -599 73 -11 139 -20 147 -20 11 0 14 37 17 188 3 167 5 191 24 222 11 19
+  31 41 45 47 30 16 504 18 543 3 14 -5 35 -24 46 -42 18 -30 20 -51 20 -227 l0
+  -194 67 7 c208 21 461 84 633 157 149 64 246 126 337 215 104 101 132 157 143
+  287 5 51 30 229 56 397 26 168 47 329 47 357 -2 176 -233 380 -573 506 -177
+  65 -385 113 -627 142 -123 15 -528 27 -643 19z m452 -155 c656 -45 1113 -250
+  1111 -498 -1 -69 -19 -112 -73 -173 -131 -150 -456 -268 -875 -320 -147 -18
+  -635 -18 -775 0 -283 37 -553 110 -713 194 -113 60 -209 154 -231 227 -19 65
+  -20 87 -4 132 40 120 185 228 411 308 315 111 737 159 1149 130z" />
+        <path d="M2090 1770 l0 -160 -72 7 c-40 5 -194 8 -343 8 -206 -1 -296 -5 -380
+  -18 -217 -35 -405 -93 -519 -162 -32 -19 -60 -35 -62 -35 -2 0 -4 88 -4 195 0
+  178 -8 233 -24 173 -11 -43 -7 -378 5 -378 6 0 -5 -18 -25 -41 -33 -36 -56
+  -76 -56 -98 0 -21 211 -101 370 -139 521 -127 1176 -105 1630 53 119 42 180
+  71 180 86 0 22 -40 86 -74 118 l-36 35 0 199 c0 154 -3 198 -12 195 -10 -4
+  -14 -53 -16 -190 l-2 -186 -53 29 c-102 55 -304 118 -432 134 l-50 7 3 164 c3
+  143 1 164 -13 164 -13 0 -15 -22 -15 -160z" />
+      </g>
+    </symbol>
+  </svg>
+
+  <svg display="none">
+    <symbol viewBox="0 0 233 266" id="staff">
+      <g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
+        <path d="M1079 2642 c-100 -41 -171 -106 -242 -225 -34 -56 -80 -187 -92 -259
 -4 -26 -10 -36 -20 -32 -42 17 -85 -49 -85 -130 0 -86 28 -136 76 -136 18 0
 25 -7 30 -27 51 -232 159 -394 309 -464 56 -27 78 -32 143 -32 117 0 179 28
 273 122 88 88 136 176 171 313 18 71 27 88 44 92 51 13 74 159 35 223 -11 17
 -28 34 -38 37 -13 4 -24 30 -40 97 -44 181 -147 331 -275 399 -56 30 -73 34
--153 37 -70 3 -100 -1 -136 -15z"/>
-<path d="M1536 1307 c-23 -200 -30 -364 -29 -712 1 -214 5 -430 10 -480 l8
+-153 37 -70 3 -100 -1 -136 -15z" />
+        <path d="M1536 1307 c-23 -200 -30 -364 -29 -712 1 -214 5 -430 10 -480 l8
 -90 45 3 c56 4 227 60 312 103 235 118 384 279 424 457 67 303 -166 586 -604
-730 -48 16 -103 32 -123 35 l-37 5 -6 -51z"/>
-<path d="M599 1173 c-186 -94 -313 -169 -526 -311 -49 -33 -52 -37 -62 -96
+730 -48 16 -103 32 -123 35 l-37 5 -6 -51z" />
+        <path d="M599 1173 c-186 -94 -313 -169 -526 -311 -49 -33 -52 -37 -62 -96
 -15 -84 -14 -121 4 -191 56 -212 262 -396 567 -503 78 -28 237 -67 243 -60 9
-9 25 410 25 613 0 244 -16 603 -29 638 -6 17 -28 8 -222 -90z"/>
-<path d="M950 1189 c0 -6 19 -80 41 -165 42 -153 42 -154 70 -154 18 0 29 -5
+9 25 410 25 613 0 244 -16 603 -29 638 -6 17 -28 8 -222 -90z" />
+        <path d="M950 1189 c0 -6 19 -80 41 -165 42 -153 42 -154 70 -154 18 0 29 -5
 29 -14 0 -13 -103 -724 -115 -792 l-5 -32 147 -6 c82 -4 155 -9 163 -12 13 -3
 15 37 12 324 -1 180 -3 373 -5 430 l-2 102 31 0 31 0 42 154 c22 85 41 159 41
-165 0 8 -76 11 -240 11 -164 0 -240 -3 -240 -11z"/>
-</g>
-</symbol>
-</svg>
-<svg display="none">
-	<symbol viewBox="0 0 135 150" id="rapport">
-		<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
-		<path d="M252 1469 c-62 -31 -93 -82 -99 -164 l-6 -65 89 0 c141 -1 201 -38
+165 0 8 -76 11 -240 11 -164 0 -240 -3 -240 -11z" />
+      </g>
+    </symbol>
+  </svg>
+
+  <svg display="none">
+    <symbol viewBox="0 0 135 150" id="rapport">
+      <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
+        <path d="M252 1469 c-62 -31 -93 -82 -99 -164 l-6 -65 89 0 c141 -1 201 -38
 		211 -134 7 -56 -18 -109 -64 -137 -28 -18 -56 -23 -134 -27 l-99 -5 0 -212 0
 		-213 105 -4 c112 -4 136 -13 179 -71 27 -37 27 -117 0 -154 -43 -57 -65 -66
 		-180 -71 l-106 -5 6 -41 c10 -58 47 -110 98 -135 43 -20 56 -21 496 -21 385 0
@@ -236,16 +284,17 @@
 		46 -46 67 -94 87 -31 13 -104 15 -489 15 -443 0 -454 0 -496 -21z m888 -354
 		l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z m0 -240 l0 -25 -280 0
 		-280 0 0 25 0 25 280 0 280 0 0 -25z m0 -250 l0 -25 -280 0 -280 0 0 25 0 25
-		280 0 280 0 0 -25z m0 -240 l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z"/>
-		<path d="M58 1185 c-30 -17 -58 -62 -58 -95 0 -34 28 -79 61 -96 25 -12 57
+		280 0 280 0 0 -25z m0 -240 l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z" />
+        <path d="M58 1185 c-30 -17 -58 -62 -58 -95 0 -34 28 -79 61 -96 25 -12 57
 		-15 161 -12 l130 3 29 33 c40 45 40 99 0 144 l-29 33 -134 3 c-104 1 -139 -1
-		-160 -13z"/>
-		<path d="M65 461 c-65 -27 -82 -118 -32 -168 27 -28 30 -28 167 -31 l140 -4
-		35 35 c48 48 49 95 1 143 l-34 34 -129 -1 c-70 0 -137 -4 -148 -8z"/>
-		</g>
-	</symbol>
-	</svg>
+		-160 -13z" />
+        <path d="M65 461 c-65 -27 -82 -118 -32 -168 27 -28 30 -28 167 -31 l140 -4
+		35 35 c48 48 49 95 1 143 l-34 34 -129 -1 c-70 0 -137 -4 -148 -8z" />
+      </g>
+    </symbol>
+  </svg>
 
 
 </body>
+
 </html>
