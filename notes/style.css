@@ -73,6 +73,102 @@ td:nth-child(4) {
 
 
 
+<<<<<<< HEAD
+=======
+@media(min-width: 1080px)
+  { 
+
+  .aligngauche {
+    float: left;
+    width: 38%;
+    height: 330px;
+    background-color:#1c1d2f;
+    border-radius: 5px;
+    margin-right: 0.5%;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+
+  .aligndroite {
+    float: right;
+    width: 58%;
+    height: 330px;
+    background-color: #1c1d2f;
+    border-radius: 5px;
+    margin-left: 0.5%;
+    margin-right: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .formulaire {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: calc(15px + 0.390625vw);
+    display: block;
+    margin-top: 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.756);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   
+   select {
+     cursor: pointer;
+     width: 50%;
+     text-align: center;
+     padding: 5px;
+     border: none;
+     border-radius: 10px;
+     margin-top: 2%;
+     margin-bottom: 2%;
+   }
+   
+   
+   input {
+     cursor: pointer;
+     width: 50%;
+     text-align: center;
+     padding: 5px;
+     border: none;
+     border-radius: 10px;
+     margin-top: 2%;
+     margin-bottom: 2%;
+   }
+
+  }
+
+
+  @media(max-width: 1080px) {
+    .aligngauche {
+      float: left;
+      width: 97%;
+      height:auto;
+      padding-bottom: 3%;
+      background-color:#1c1d2f;
+      border-radius: 5px;
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      margin-top: 0;
+      margin-bottom: 1%;
+    }
+
+    .aligndroite {
+      float: left;
+      width: 97%;
+      height: auto;
+      padding-bottom: 3%;
+      background-color:#1c1d2f;
+      border-radius: 5px;
+      margin-right: 1.5%;
+      margin-left: 1.5%;
+      margin-top: 0;
+      margin-bottom: 1%;
+    }
+>>>>>>> 020d9762454504c2c78de30eaff53edad46ddd39
 
 .formulaire {
   text-align: center;

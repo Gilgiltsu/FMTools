@@ -69,7 +69,145 @@ margin-bottom: 2%;
     grid-column: 1 / 3;
    }
 
+<<<<<<< HEAD
 }
+=======
+  @media(min-width: 1080px)
+  { 
+
+  
+  .aligngauche {
+    float: left;
+    cursor: pointer;
+    width: 48%;
+    height: 200px;
+    background-color:#1c1d2f;
+    border-radius: 5px;
+    margin-right: 0.5%;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .aligngauche:hover {
+    background-color:  #37535f;
+  }
+
+  .aligndroite {
+    float: right;
+    cursor: pointer;
+    width: 48%;
+    height: 200px;
+    background-color: #1c1d2f;
+    border-radius: 5px;
+    margin-left: 0.5%;
+    margin-right: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .aligndroite:hover {
+    background-color: #37535f;
+  }
+
+  .aligngauche1 {
+    float: left;
+    cursor: pointer;
+    width: 48%;
+    height: 150px;
+    background-color:#1c1d2f;
+    border-radius: 5px;
+    margin-right: 0.5%;
+    margin-left: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .aligngauche1:hover {
+    background-color:  #37535f;
+  }
+
+  .aligndroite1 {
+    float: right;
+    cursor: pointer;
+    width: 48%;
+    height: 150px;
+    background-color:#1c1d2f;
+    border-radius: 5px;
+    margin-left: 0.5%;
+    margin-right: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .aligndroite1:hover {
+    background-color:  #37535f;
+  }
+
+  }
+
+  
+
+  @media(max-width: 1080px)
+  { 
+    .aligngauche {
+      cursor: pointer;
+      width: 96%;
+      height: auto;
+      background-color: #1c1d2f;
+      border-radius: 5px;
+      margin-right: 2%;
+      margin-left: 2%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    .aligngauche1 {
+      cursor: pointer;
+      width: 96%;
+      height: auto;
+      background-color: #1c1d2f;
+      border-radius: 5px;
+      margin-right: 2%;
+      margin-left: 2%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    .aligndroite {
+      cursor: pointer;
+      width: 96%;
+      height: auto;
+      background-color: #1c1d2f;
+      border-radius: 5px;
+      margin-right: 2%;
+      margin-left: 2%;
+      margin-top: 1%;
+      margin-bottom: 1%;
+    }
+    .aligndroite1 {
+      cursor: pointer;
+      width: 96%;
+      height: auto;
+      background-color: #1c1d2f;
+      margin-right: 2%;
+      margin-left: 2%;
+      margin-top: 1%;
+      margin-bottom: 5%;
+    }
+    .aligngauche:hover {
+      background-color: #37535f;
+    }
+    .aligngauche1:hover {
+      background-color: #37535f;
+    }
+    .aligndroite:hover {
+      background-color: #37535f;
+    }
+    .aligndroite1:hover {
+      background-color: #37535f;
+    }
+
+  }
+>>>>>>> 020d9762454504c2c78de30eaff53edad46ddd39
 
 
   
