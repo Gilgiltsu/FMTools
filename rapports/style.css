@@ -291,13 +291,8 @@ thead th:nth-child(2) {
 }
 
 .box {
-  float: left;
-  width: 90%;
-  height: auto;
-  background-color: #1c1d2f;
-  border-radius: 15px;
+  width: 95.10%;
   margin-right: 2.45%;
   margin-left: 2.45%;
-  margin-top: 0;
-  margin-bottom: 1%;
+
 }
