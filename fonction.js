@@ -1,6 +1,5 @@
 
 //Simplfication du code 
-minFp=document.getElementById("minFp"), midFp=document.getElementById("midFp"),maxFp=document.getElementById("maxFp"),
 var
   minPro = document.getElementById("minPro"), midPro = document.getElementById("midPro"), maxPro = document.getElementById("maxPro"),
   minPre = document.getElementById("minPre"), midPre = document.getElementById("midPre"), maxPre = document.getElementById("maxPre"),
