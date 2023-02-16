@@ -59,6 +59,7 @@ button:hover {
 
 
 .formulaire {
+  text-align: justify;
   margin: auto ;
   color: rgb(255, 255, 255);
   font-size: calc(5px + 1.3vw);
@@ -66,8 +67,9 @@ button:hover {
 }
 
 label {
-  width: 68%;
-  display: inline-block;
+  width: 50%;
+  display: flex;
+  float: left;
   white-space: pre-line;
 }
 
