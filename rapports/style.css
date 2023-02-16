@@ -242,8 +242,7 @@ thead th:nth-child(2) {
 
 
 
-@media (min-width: 768px),
-(orientation: landscape)  {
+@media (min-width: 768px)  {
   thead th:nth-child(1) {
     width: 20%;
   }

@@ -106,8 +106,7 @@ td {
 
 
 
-@media (min-width: 768px),
-(orientation: landscape)  { 
+@media (min-width: 768px)  { 
 
   .container {
     grid-gap: 2%;

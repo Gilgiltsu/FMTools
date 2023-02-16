@@ -20,8 +20,7 @@
 margin-bottom: 2%;
 }
 
-@media (min-width: 768px),
-(orientation: landscape)  { 
+@media (min-width: 768px) { 
 
 
   .intro {
