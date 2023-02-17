@@ -287,7 +287,9 @@ function note() {
                                                           ) :
 
                                                           "Me" === Personnalite.value ?
-                                                            (minAmb.innerHTML = 16, maxFid.innerHTML = 3, (det.max = 17) && (det.value > 17 && (det.value = 17))
+                                                            (minAmb.innerHTML = 16, maxFid.innerHTML = 3, (det.max = 17) && (det.value > 17 && (det.value = 17)),
+                                                              deter(2),
+                                                              cas(0), cas(1)
                                                             ) :
 
                                                             "Modpro" === Personnalite.value ?
@@ -341,7 +343,9 @@ function note() {
                                                                                 ) :
 
                                                                                 "Vers" === Personnalite.value &&
-                                                                                (minAmb.innerHTML = 16, minFid.innerHTML = 4, maxFid.innerHTML = 6, (det.max = 17) && (det.value > 17 && (det.value = 17))
+                                                                                (minAmb.innerHTML = 16, minFid.innerHTML = 4, maxFid.innerHTML = 6, (det.max = 17) && (det.value > 17 && (det.value = 17)),
+                                                                                  deter(2),
+                                                                                  cas(0), cas(1)
                                                                                 ));
 
   //Média
@@ -370,7 +374,7 @@ function note() {
             ) :
 
             "ApMeRe" === Media.value ?
-              (minPro.innerHTML < 15 && (minPro.innerHTML = 15), minTemp.innerHTML < 7 && (minTemp.innerHTML = 7), maxPol.innerHTML > 5 && (maxPol.innerHTML = 5), maxPre.innerHTML > 14 && (maxPre.innerHTML = 14), maxFid.innerHTML > 10 && (maxFid.innerHTML = 10),
+              (minPro.innerHTML < 15 && (minPro.innerHTML = 15), minTemp.innerHTML < 7 && (minTemp.innerHTML = 7), maxPol.innerHTML > 5 && (maxPol.innerHTML = 5), maxPre.innerHTML > 14 && (maxPre.innerHTML = 14),
                 med(2), med(3)
               ) :
 
@@ -427,21 +431,21 @@ function note() {
                                       ) :
 
                                       "Imp" === Media.value ?
-                                        (minPre.innerHTML < 15 && (minPre.innerHTML = 15), minTemp.innerHTML < 15 && (minTemp.innerHTML = 15), minFid < 11 && (minFid = 11)
+                                        (minPre.innerHTML < 15 && (minPre.innerHTML = 15), minTemp.innerHTML < 15 && (minTemp.innerHTML = 15), minFid.innerHTML < 11 && (minFid.innerHTML = 11)
                                         ) :
 
                                         "Ir" === Media.value ?
-                                          (maxTemp.innerHTML > 2 && (maxTemp.innerHTML = 2), minFid < 11 && (minFid = 11), minPro.innerHTML < 11 && (minPro.innerHTML = 11),
+                                          (maxTemp.innerHTML > 2 && (maxTemp.innerHTML = 2), minFid.innerHTML < 11 && (minFid.innerHTML = 11), minPro.innerHTML < 11 && (minPro.innerHTML = 11),
                                             med(1)
                                           ) :
 
                                           "IrCon" === Media.value ?
-                                            (maxTemp.innerHTML > 2 && (maxTemp.innerHTML = 2), maxFp.innerHTML > 7 && (maxFp.innerHTML = 7), minFid < 11 && (minFid = 11), minPro.innerHTML < 13 && (minPro.innerHTML = 13),
+                                            (maxTemp.innerHTML > 2 && (maxTemp.innerHTML = 2), maxFp.innerHTML > 7 && (maxFp.innerHTML = 7), minFid.innerHTML < 11 && (minFid.innerHTML = 11), minPro.innerHTML < 13 && (minPro.innerHTML = 13),
                                               med(1)
                                             ) :
 
                                             "Re" === Media.value ?
-                                              (minPro.innerHTML < 15 && (minPro.innerHTML = 15), minTemp.innerHTML < 7 && (minTemp.innerHTML = 7), maxPol.innerHTML > 5 && (maxPol.innerHTML = 5), minFid < 11 && (minFid = 11),
+                                              (minPro.innerHTML < 15 && (minPro.innerHTML = 15), minTemp.innerHTML < 7 && (minTemp.innerHTML = 7), maxPol.innerHTML > 5 && (maxPol.innerHTML = 5), minFid.innerHTML < 11 && (minFid.innerHTML = 11),
                                                 med(1), med(2)
                                               ) :
 
@@ -485,8 +489,6 @@ function note() {
                                                                 med(1)
                                                               );
 
-  uniq();
-  color();
 }
 
 function ajustement() {
@@ -496,199 +498,213 @@ function ajustement() {
       cas(0), cas(1)
     ) :
 
-    "AsAmb" === Personnalite.value ?
+    "Me" === Personnalite.value ?
       (
-        cas(0), cas(2), cas(5)
+        cas(0), cas(1)
       ) :
-
-      "AsDe" === Personnalite.value ?
+      "Vers" === Personnalite.value ?
         (
-          cas(0), cas(2), cas(3), cas(4), cas(5)
+          cas(0), cas(1)
         ) :
 
-        "AsFP" === Personnalite.value ?
+        "AsAmb" === Personnalite.value ?
           (
-            cas(0), cas(5)
+            cas(0), cas(2), cas(5)
           ) :
 
-          "AsLo" === Personnalite.value ?
+          "AsDe" === Personnalite.value ?
             (
-              cas(0), cas(4), cas(5)
+              cas(0), cas(2), cas(3), cas(4), cas(5)
             ) :
 
-            "AsPro" === Personnalite.value ?
+            "AsFP" === Personnalite.value ?
               (
-                cas(1), cas(2), cas(3), cas(4), cas(5)
+                cas(0), cas(5)
               ) :
 
-              "Del" === Personnalite.value ?
+              "AsLo" === Personnalite.value ?
                 (
-                  cas(0), cas(1), cas(2), cas(3)
+                  cas(0), cas(4), cas(5)
                 ) :
 
-                "Det" === Personnalite.value ?
+                "AsPro" === Personnalite.value ?
                   (
                     cas(1), cas(2), cas(3), cas(4), cas(5)
                   ) :
 
-                  "Dev" === Personnalite.value || "TreLoy" === Personnalite.value ?
+                  "Del" === Personnalite.value ?
                     (
-                      cas(0), cas(1)
+                      cas(0), cas(1), cas(2), cas(3)
                     ) :
 
-                    "Ef" === Personnalite.value ?
+                    "Det" === Personnalite.value ?
                       (
-                        cas(0), cas(1), cas(2), cas(3), cas(4)
+                        cas(1), cas(2), cas(3), cas(4), cas(5)
                       ) :
 
-                      "Enj" === Personnalite.value ?
+                      "Dev" === Personnalite.value || "TreLoy" === Personnalite.value ?
                         (
-                          cas(2), cas(3), cas(4)
+                          cas(0), cas(1)
                         ) :
 
-                        "Ent" === Personnalite.value ?
+                        "Ef" === Personnalite.value ?
                           (
-                            cas(2), cas(3), cas(4)
+                            cas(0), cas(1), cas(2), cas(3), cas(4)
                           ) :
 
-                          "Eq" === Personnalite.value ?
+                          "Enj" === Personnalite.value ?
                             (
-                              cas(0), cas(3), cas(5)
+                              cas(2), cas(3), cas(4)
                             ) :
 
-                            "Fac" === Personnalite.value ?
+                            "Ent" === Personnalite.value ?
                               (
-                                cas(0), cas(1), cas(3)
+                                cas(2), cas(3), cas(4)
                               ) :
 
-                              "FaDe" === Personnalite.value ?
+                              "Eq" === Personnalite.value ?
                                 (
-                                  cas(0), cas(1), cas(3)
+                                  cas(0), cas(3), cas(5)
                                 ) :
 
-                                "FaCo" === Personnalite.value ?
+                                "Fac" === Personnalite.value ?
                                   (
-                                    cas(1), cas(2), cas(3), cas(4), cas(0)
+                                    cas(0), cas(1), cas(3)
                                   ) :
 
-                                  "FP" === Personnalite.value ?
+                                  "FaDe" === Personnalite.value ?
                                     (
-                                      cas(0), cas(1), cas(2), cas(3)
+                                      cas(0), cas(1), cas(3)
                                     ) :
 
-
-                                    "Fri" === Personnalite.value ?
+                                    "FaCo" === Personnalite.value ?
                                       (
-                                        cas(0), cas(1), cas(2), cas(3), cas(4)
+                                        cas(1), cas(2), cas(3), cas(4), cas(0)
                                       ) :
 
-                                      "Ho" === Personnalite.value ?
+                                      "FP" === Personnalite.value ?
                                         (
                                           cas(0), cas(1), cas(2), cas(3)
                                         ) :
 
 
-                                        "Jo" === Personnalite.value ?
+                                        "Fri" === Personnalite.value ?
                                           (
-                                            cas(2), cas(3), cas(4)
+                                            cas(0), cas(1), cas(2), cas(3), cas(4)
                                           ) :
 
-                                          "Lo" === Personnalite.value ?
+                                          "Ho" === Personnalite.value ?
                                             (
-                                              cas(0), cas(1)
+                                              cas(0), cas(1), cas(2), cas(3)
                                             ) :
 
-                                            "Rea" === Personnalite.value ?
+
+                                            "Jo" === Personnalite.value ?
                                               (
-                                                cas(0), cas(1), cas(2), cas(3)
+                                                cas(2), cas(3), cas(4)
                                               ) :
 
-                                              "Res" === Personnalite.value ?
+                                              "Lo" === Personnalite.value ?
                                                 (
-                                                  cas(0), cas(1), cas(2), cas(3), cas(4)
+                                                  cas(0), cas(1)
                                                 ) :
 
-
-                                                "SAmb" === Personnalite.value ?
+                                                "Rea" === Personnalite.value ?
                                                   (
-                                                    cas(0), cas(1)
+                                                    cas(0), cas(1), cas(2), cas(3)
                                                   ) :
 
-                                                  "TreAmb" === Personnalite.value ?
+                                                  "Res" === Personnalite.value ?
                                                     (
-                                                      cas(0), cas(1)
+                                                      cas(0), cas(1), cas(2), cas(3), cas(4)
                                                     ) :
 
-                                                    "TreLoy" === Personnalite.value ?
+
+                                                    "SAmb" === Personnalite.value ?
                                                       (
                                                         cas(0), cas(1)
                                                       ) :
 
-                                                      "ApMe" === Media.value ?
+                                                      "TreAmb" === Personnalite.value ?
                                                         (
-                                                          med(1), med(2), med(3), med(4), med(5)
+                                                          cas(0), cas(1)
                                                         ) :
 
-                                                        "ApMeCon" === Media.value || "ApMeIr" === Media.value || "ApMeIrCon" === Media.value || "ApMeVer" === Media.value || "ApMeVerCon" === Media.value ?
+                                                        "TreLoy" === Personnalite.value ?
                                                           (
-                                                            med(1), med(5)
+                                                            cas(0), cas(1)
                                                           ) :
 
-                                                          "ApMeImp" === Media.value ?
-                                                            (med(5)
+                                                          "ApMe" === Media.value ?
+                                                            (
+                                                              med(1), med(2), med(3), med(4), med(5)
                                                             ) :
 
-                                                            "Con" === Media.value || "Ir" === Media.value || "IrCon" === Media.value || "Ver" === Media.value || "VerCon" === Media.value ?
+                                                            "ApMeCon" === Media.value || "ApMeIr" === Media.value || "ApMeIrCon" === Media.value || "ApMeVer" === Media.value || "ApMeVerCon" === Media.value ?
                                                               (
-                                                                med(1)
+                                                                med(1), med(5)
                                                               ) :
 
-                                                              "ApMeRe" === Media.value ?
-                                                                (
-                                                                  med(2), med(3), med(5)
+                                                              "ApMeImp" === Media.value ?
+                                                                (med(5)
                                                                 ) :
 
-
-
-                                                                "Equi" === Media.value ?
+                                                                "Con" === Media.value || "Ir" === Media.value || "IrCon" === Media.value || "Ver" === Media.value || "VerCon" === Media.value ?
                                                                   (
-                                                                    med(1), med(2), med(3), med(4)
+                                                                    med(1)
                                                                   ) :
 
-                                                                  "Eva" === Media.value ?
+                                                                  "ApMeRe" === Media.value ?
                                                                     (
-                                                                      med(2), med(3)
+                                                                      med(2), med(3), med(5)
                                                                     ) :
 
 
-                                                                    "EvaRes" === Media.value ?
+
+                                                                    "Equi" === Media.value ?
                                                                       (
-                                                                        med(2), med(3)
+                                                                        med(1), med(2), med(3), med(4)
                                                                       ) :
 
-
-                                                                      "Re" === Media.value ?
+                                                                      "Eva" === Media.value ?
                                                                         (
-                                                                          med(1), med(2)
+                                                                          med(2), med(3)
                                                                         ) :
 
-                                                                        "Spo" === Media.value ?
+
+                                                                        "EvaRes" === Media.value ?
                                                                           (
                                                                             med(2), med(3)
                                                                           ) :
 
-                                                                          "SpoCon" === Media.value &&
-                                                                          (
-                                                                            med(2), med(3)
-                                                                          ));
+
+                                                                          "Re" === Media.value ?
+                                                                            (
+                                                                              med(1), med(2)
+                                                                            ) :
+
+                                                                            "Spo" === Media.value ?
+                                                                              (
+                                                                                med(2), med(3)
+                                                                              ) :
+
+                                                                              "SpoCon" === Media.value &&
+                                                                              (
+                                                                                med(2), med(3)
+                                                                              ));
 
 
   ambition();
+  AssezAmb();
   mercenaire();
   tresambitieux();
   versatile()
   realist();
   indololent();
+  forteperso();
+
+
+
   uniq();
   color();
 }
@@ -698,11 +714,11 @@ function ambition() {
   "Amb" === Personnalite.value &&
     ("Eva" === Media.value ?
       (det.value >= 14 &&
-        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
+        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
       ) :
       "ApMeRe" === Media.value ?
         (det.value >= 14 &&
-          (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
+          (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
         ) :
         "ApMeIr" === Media.value ?
           (det.value >= 14 &&
@@ -721,224 +737,300 @@ function ambition() {
                   (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
                 ) :
                 "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
-                (det.value >= 14 &&
-                (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
-                ):
-                
-                "EvaImp" === Media.value ?
-                  (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
-                  ) :
-                  "EvaRe" === Media.value ?
                   (det.value >= 14 &&
-                    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
+                    (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
                   ) :
-                  "EvaIr" === Media.value ? 
-                  (det.max = 13 && (det.value > 13 && (det.value = 13))
-                  ) : 
-                  "EvaIrCon" === Media.value ?
-                  (det.max = 13 && (det.value > 13 && (det.value = 13))
-                  ) :  
-                  "EvaVer" === Media.value ? 
-                  (det.max = 13 && (det.value > 13 && (det.value = 13))
-                  ) : 
-                  "EvaVerCon" === Media.value ? 
-                  (det.max = 13 && (det.value > 13 && (det.value = 13))
-                  ) : 
-                  "EvaCon" === Media.value &&
-                  (det.max = 13 && (det.value > 13 && (det.value = 13))
-                  ) 
+
+                  "EvaImp" === Media.value ?
+                    (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+                    ) :
+                    "EvaRes" === Media.value ?
+                      (det.value >= 14 &&
+                        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
+                      ) :
+                      "EvaIr" === Media.value ?
+                        (det.value > 13 && (det.value = 13),
+                          det.max = 13
+                        ) :
+                        "EvaIrCon" === Media.value ?
+                          (det.value > 13 && (det.value = 13),
+                            det.max = 13
+                          ) :
+                          "EvaVer" === Media.value ?
+                            (det.value > 13 && (det.value = 13),
+                              det.max = 13
+                            ) :
+                            "EvaVerCon" === Media.value ?
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              ) :
+                              "EvaCon" === Media.value &&
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              )
 
     );
 }
 function mercenaire() {
   "Me" === Personnalite.value &&
-  ("Eva" === Media.value ?
-  (det.value >= 14 &&
-    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
-  ) :
-  "ApMeRe" === Media.value ?
-    (det.value >= 14 &&
-      (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
-    ) :
-    "ApMeIr" === Media.value ?
+    ("Eva" === Media.value ?
       (det.value >= 14 &&
-        (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
       ) :
-      "ApMeIrCon" === Media.value ?
+      "ApMeRe" === Media.value ?
         (det.value >= 14 &&
-          (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+          (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
         ) :
-        "SpoIr" === Media.value ?
+        "ApMeIr" === Media.value ?
           (det.value >= 14 &&
             (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
           ) :
-          "SpoIrCon" === Media.value ?
+          "ApMeIrCon" === Media.value ?
             (det.value >= 14 &&
               (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
             ) :
-            "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
-            (det.value >= 14 &&
-            (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
-            ):
-            
-            "EvaImp" === Media.value ?
-              (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+            "SpoIr" === Media.value ?
+              (det.value >= 14 &&
+                (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
               ) :
-              "EvaRe" === Media.value ?
+              "SpoIrCon" === Media.value ?
+                (det.value >= 14 &&
+                  (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+                ) :
+                "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
                   (det.value >= 14 &&
-                    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
+                    (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
                   ) :
-              "EvaIr" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaIrCon" === Media.value ?
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) :  
-              "EvaVer" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaVerCon" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaCon" === Media.value &&
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) 
-);
+
+                  "EvaImp" === Media.value ?
+                    (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+                    ) :
+                    "EvaRes" === Media.value ?
+                      (det.value >= 14 &&
+                        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
+                      ) :
+                      "EvaIr" === Media.value ?
+                        (det.value > 13 && (det.value = 13),
+                          det.max = 13
+                        ) :
+                        "EvaIrCon" === Media.value ?
+                          (det.value > 13 && (det.value = 13),
+                            det.max = 13
+                          ) :
+                          "EvaVer" === Media.value ?
+                            (det.value > 13 && (det.value = 13),
+                              det.max = 13
+                            ) :
+                            "EvaVerCon" === Media.value ?
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              ) :
+                              "EvaCon" === Media.value &&
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              )
+    );
 
 }
 
 function tresambitieux() {
   "TreAmb" === Personnalite.value &&
-  ("Eva" === Media.value ?
-  (det.value >= 14 &&
-    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
-  ) :
-  "ApMeRe" === Media.value ?
-    (det.value >= 14 &&
-      (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
-    ) :
-    "ApMeIr" === Media.value ?
+    ("Eva" === Media.value ?
       (det.value >= 14 &&
-        (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
       ) :
-      "ApMeIrCon" === Media.value ?
+      "ApMeRe" === Media.value ?
         (det.value >= 14 &&
-          (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+          (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
         ) :
-        "SpoIr" === Media.value ?
+        "ApMeIr" === Media.value ?
           (det.value >= 14 &&
             (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
           ) :
-          "SpoIrCon" === Media.value ?
+          "ApMeIrCon" === Media.value ?
             (det.value >= 14 &&
               (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
             ) :
-            "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
-            (det.value >= 14 &&
-            (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
-            ):
-            
-            "EvaImp" === Media.value ?
-              (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+            "SpoIr" === Media.value ?
+              (det.value >= 14 &&
+                (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
               ) :
-              "EvaRe" === Media.value ?
+              "SpoIrCon" === Media.value ?
+                (det.value >= 14 &&
+                  (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+                ) :
+                "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
                   (det.value >= 14 &&
-                    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
+                    (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
                   ) :
-              "EvaIr" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaIrCon" === Media.value ?
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) :  
-              "EvaVer" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaVerCon" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaCon" === Media.value &&
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) 
 
-);
+                  "EvaImp" === Media.value ?
+                    (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+                    ) :
+                    "EvaRes" === Media.value ?
+                      (det.value >= 14 &&
+                        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
+                      ) :
+                      "EvaIr" === Media.value ?
+                        (det.value > 13 && (det.value = 13),
+                          det.max = 13
+                        ) :
+                        "EvaIrCon" === Media.value ?
+                          (det.value > 13 && (det.value = 13),
+                            det.max = 13
+                          ) :
+                          "EvaVer" === Media.value ?
+                            (det.value > 13 && (det.value = 13),
+                              det.max = 13
+                            ) :
+                            "EvaVerCon" === Media.value ?
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              ) :
+                              "EvaCon" === Media.value &&
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              )
+
+    );
 }
 
 
 function versatile() {
   "Vers" === Personnalite.value &&
-  ("Eva" === Media.value ?
-  (det.value >= 14 &&
-    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
-  ) :
-  "ApMeRe" === Media.value ?
-    (det.value >= 14 &&
-      (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
-    ) :
-    "ApMeIr" === Media.value ?
+    ("Eva" === Media.value ?
       (det.value >= 14 &&
-        (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
       ) :
-      "ApMeIrCon" === Media.value ?
+      "ApMeRe" === Media.value ?
         (det.value >= 14 &&
-          (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+          (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
         ) :
-        "SpoIr" === Media.value ?
+        "ApMeIr" === Media.value ?
           (det.value >= 14 &&
             (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
           ) :
-          "SpoIrCon" === Media.value ?
+          "ApMeIrCon" === Media.value ?
             (det.value >= 14 &&
               (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
             ) :
-            "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
-            (det.value >= 14 &&
-            (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
-            ):
-            
-            "EvaImp" === Media.value ?
-              (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+            "SpoIr" === Media.value ?
+              (det.value >= 14 &&
+                (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
               ) :
-              "EvaRe" === Media.value ?
+              "SpoIrCon" === Media.value ?
+                (det.value >= 14 &&
+                  (minPro.innerHTML < 11 && (minPro.innerHTML = 11), maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+                ) :
+                "ApMeVerCon" === Media.value || "ApMeVer" === Media.value || "ApMeCon" === Media.value || "SpoVerCon" === Media.value || "SpoVer" === Media.value || "SpoCon" === Media.value ?
                   (det.value >= 14 &&
-                    (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10))
+                    (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
                   ) :
-              "EvaIr" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaIrCon" === Media.value ?
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) :  
-              "EvaVer" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaVerCon" === Media.value ? 
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) : 
-              "EvaCon" === Media.value &&
-              (det.max = 13 && (det.value > 13 && (det.value = 13))
-              ) 
+
+                  "EvaImp" === Media.value ?
+                    (maxPro.innerHTML > 17 && (maxPro.innerHTML = 17)
+                    ) :
+                    "EvaRes" === Media.value ?
+                      (det.value >= 14 &&
+                        (minTemp.innerHTML < 10 && (minTemp.innerHTML = 10), maxPro.innerHTML > 17 && (maxPro.innerHTML = 17))
+                      ) :
+                      "EvaIr" === Media.value ?
+                        (det.value > 13 && (det.value = 13),
+                          det.max = 13
+                        ) :
+                        "EvaIrCon" === Media.value ?
+                          (det.value > 13 && (det.value = 13),
+                            det.max = 13
+                          ) :
+                          "EvaVer" === Media.value ?
+                            (det.value > 13 && (det.value = 13),
+                              det.max = 13
+                            ) :
+                            "EvaVerCon" === Media.value ?
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              ) :
+                              "EvaCon" === Media.value &&
+                              (det.value > 13 && (det.value = 13),
+                                det.max = 13
+                              )
 
 
-);
+    );
 }
 
 
 function realist() {
-  "Rea" === Personnalite.value || "Del" === Personnalite.value &&
-    ("Imp" === Media.value || "Ir" === Media.value || "Vers" === Media.value || "Eq" === Media.value &&
-      (minPro.innerHTML < 13 && (minPro.innerHTML = 13))
+  "Rea" === Personnalite.value &&
+    ("Imp" === Media.value ?
+      (minPro.innerHTML < 13 && (minPro.innerHTML = 13)) :
+      "Ir" === Media.value ?
+        (minPro.innerHTML < 13 && (minPro.innerHTML = 13)) :
+        "Vers" === Media.value ?
+          (minPro.innerHTML < 13 && (minPro.innerHTML = 13)) :
+          "Eq" === Media.value &&
+          (minPro.innerHTML < 13 && (minPro.innerHTML = 13))
+    );
+  "Del" === Personnalite.value &&
+    ("Imp" === Media.value ?
+      (minPro.innerHTML < 13 && (minPro.innerHTML = 13)) :
+      "Ir" === Media.value ?
+        (minPro.innerHTML < 13 && (minPro.innerHTML = 13)) :
+        "Vers" === Media.value ?
+          (minPro.innerHTML < 13 && (minPro.innerHTML = 13)) :
+          "Eq" === Media.value &&
+          (minPro.innerHTML < 13 && (minPro.innerHTML = 13))
+    );
+}
+
+
+function AssezAmb() {
+  "AsAmb" === Personnalite.value &&
+    ("Con" === Media.value || "SpoIrCon" === Media.value || "SpoVerCon" === Media.value || "SpoCon" === Media.value || "IrCon" === Media.value || "VerCon" === Media.value ?
+      (det.value >= 14 &&
+        (midPro.innerHTML = 13)
+      ) :
+      "ApMeVer" === Media.value || "ApMeIr" === Media.value || "Ir" === Media.value || "Ver" === Media.value || "SpoIr" === Media.value || "SpoVer" === Media.value ?
+        (det.value >= 14 &&
+          (maxPro.innerHTML > 13 && (maxPro.innerHTML = 13))
+        ) :
+        "ApMeVerCon" === Media.value || "ApMeIrCon" === Media.value || "ApMeCon" === Media.value &&
+        (det.value >= 14 &&
+          (maxPro.innerHTML > 12 && (maxPro.innerHTML = 12))
+        )
     )
 }
+
+
 
 function indololent() {
-  "In" === Personnalite.value || "Dec" === Personnalite.value &&
-    ("Imp" === Media.value || "Ir" === Media.value || "Vers" === Media.value || "Eq" === Media.value &&
-      (minFp.innerHTML < 12 && (minFp.innerHTML = 12))
-    )
-
-
+  "In" === Personnalite.value &&
+    ("Imp" === Media.value ?
+      (minFp.innerHTML < 12 && (minFp.innerHTML = 12)) :
+      "Ir" === Media.value ?
+        (minFp.innerHTML < 12 && (minFp.innerHTML = 12)) :
+        "Vers" === Media.value ?
+          (minFp.innerHTML < 12 && (minFp.innerHTML = 12)) :
+          "Eq" === Media.value &&
+          (minFp.innerHTML < 12 && (minFp.innerHTML = 12))
+    );
+  "Dec" === Personnalite.value &&
+    ("Imp" === Media.value ?
+      (minFp.innerHTML < 12 && (minFp.innerHTML = 12)) :
+      "Ir" === Media.value ?
+        (minFp.innerHTML < 12 && (minFp.innerHTML = 12)) :
+        "Vers" === Media.value ?
+          (minFp.innerHTML < 12 && (minFp.innerHTML = 12)) :
+          "Eq" === Media.value &&
+          (minFp.innerHTML < 12 && (minFp.innerHTML = 12))
+    );
 }
+
+function forteperso() {
+  "Fo" === Personnalite.value && (minPro.innerHTML = 1)
+  rstColor();
+}
+
 
 
 
@@ -976,13 +1068,12 @@ function med(a) {
     minPre.innerHTML > 14 && (maxTemp.innerHTML > 14 && (maxTemp.innerHTML = 14)));
   4 === a && (minPol.innerHTML > 14 && (maxPro.innerHTML > 14 && (maxPro.innerHTML = 14)), maxPol.innerHTML < 6 && (maxPro.innerHTML > 14 && (maxPro.innerHTML = 14)),
     minPro.innerHTML > 14 && ((minPol.innerHTML < 6 && (minPol.innerHTML = 6)) && (maxPol.innerHTML > 14 && (maxPol.innerHTML = 14))));
- 
-  5 === a && (minFid.innerHTML > 10 ? 
-    (maxFp.innerHTML > 11 && (maxFp.innerHTML = 11) && (maxPro.innerHTML > 12 && (maxPro.innerHTML = 12))) : 
+  5 === a && (minFid.innerHTML > 10 ?
+    (maxFp.innerHTML > 11 && (maxFp.innerHTML = 11) && (maxPro.innerHTML > 12 && (maxPro.innerHTML = 12))) :
     (minFp.innerHTML > 11 &&
       (minPro.innerHTML > 12 &&
         (maxFid.innerHTML > 10 && (maxFid.innerHTML = 10))))
-        )
+  )
 }
 
 
@@ -995,6 +1086,7 @@ function rst() {
   minFp.innerHTML = 1; midFp.innerHTML = "-"; maxFp.innerHTML = 20;
   minPol.innerHTML = 1; midPol.innerHTML = "-"; maxPol.innerHTML = 20;
   rstColor();
+  rstdeter();
 }
 
 
@@ -1032,8 +1124,10 @@ function adjust() {
       var mini = "min" + val;
       var maxi = "max" + val;
       var mid = "mid" + val;
-      if (document.getElementById(mini).innerHTML == document.getElementById(maxi).innerHTML) {
-        document.getElementById(mid).innerHTML = document.getElementById(mini).innerHTML;
+      if (document.getElementById(mini).innerHTML != "") {
+        if (document.getElementById(mini).innerHTML == document.getElementById(maxi).innerHTML) {
+          document.getElementById(mid).innerHTML = document.getElementById(mini).innerHTML;
+        }
       }
     }
   }
@@ -1049,8 +1143,7 @@ function uniq() {
     var mid = "mid" + val;
     if (lstID[i].id.substring(0, 3) == "mid")
       if (lstID[i].innerHTML != "-")
-        (document.getElementById(mid).colSpan = "3", document.getElementById(mini).style.display = "none", document.getElementById(maxi).style.display = "none")
-
+        document.getElementById(mini).innerHTML = "", document.getElementById(maxi).innerHTML = ""
   }
 }
 
@@ -1093,8 +1186,9 @@ function color() {
         }
       }
     }
+
     if (lstID[i].id.substring(0, 3) == "max") {
-      if (lstID[i].innerHTML < 10) {
+      if (lstID[i].innerHTML < 10 && lstID[i].innerHTML != "") {
         val = lstID[i].id.substring(3);
         if (val != "Pol") {
           var mini = "min" + val;
@@ -1180,3 +1274,21 @@ function remisazero() {
   Tac.value = "1";
   rststar();
 }
+
+function rstdeter() {
+  det.min = 1,
+    det.max = 20
+}
+
+function isMobileDevice() { 
+  if( navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)
+  ){
+    document.getElementsByTagName("input").type= 'tel';
+   }
+ }

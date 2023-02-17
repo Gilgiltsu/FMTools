@@ -288,11 +288,10 @@ thead th:nth-child(2) {
     padding-bottom: 0.7vw;
     color: #ffffff;
   }
-}
-
-.box {
-  width: 95.10%;
-  margin-right: 2.45%;
-  margin-left: 2.45%;
-
+  .box {
+    width: 95.10%;
+    margin-right: 2.45%;
+    margin-left: 2.45%;
+  
+  }
 }
