@@ -14,28 +14,31 @@
 
 .attribut {
   border-collapse: separate;
-  border-spacing:3vw 0.5vw;
+  border-spacing:3vw 0vw;
   table-layout: fixed;
   width: 90%;
   margin: auto;
   margin-top: 5%;
-  margin-bottom:5%
+  margin-bottom:5%;
 }
 
 .attribut th {
-  font-size: calc(10px + 0.4vw);
+  font-size: calc(15px + 0.5vw);
   text-align: center;
   color: #ffffff;
   border-bottom: 2px solid rgba(255, 255, 255, 0.756);
+}
 
+.attribut tr {
+  height: 40px;
 }
 
 .attribut td {
-  text-align: justify;
+  padding-top: 5px;
+  text-align: left;
   color: #ffffff;
   align-items: center;
   vertical-align: middle;
-  font-size: calc(10px + 0.2vw);;
 }
 
 button {
@@ -59,15 +62,15 @@ button:hover {
 
 
 .formulaire {
-  text-align: justify;
+  text-align: left;
   margin: auto ;
   color: rgb(255, 255, 255);
-  font-size: calc(5px + 1.3vw);
+  font-size: calc(10px + 0.8vw);
   align-items: center;
 }
 
 label {
-  width: 50%;
+  width: 70%;
   display: flex;
   float: left;
   white-space: pre-line;
@@ -76,11 +79,11 @@ label {
 input {
   float: right;
   cursor: pointer;
-  width: calc(30px + 1vw);
+  width: calc(30px + 0.5vw);
   height: calc(10px + 2vw);
   text-align: center;
   padding: 2px;
-  margin-left: 2%;
+  margin-left: 0.5%;
   border: none;
   border-radius: 10px;
 }
@@ -203,6 +206,6 @@ input {
     border-radius: 10px;
   }
   .attribut {
-    border-spacing: 2vw 0.4vw;
+    border-spacing: 2vw 0vw;
   }
 }
