@@ -200,3 +200,20 @@ body {
     font-size: calc(10px + 0.4vw);
   }
 
+  .don {
+    display : inline;
+    float: right;
+    font-family: "Coda";
+    color: #ffffff;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    border:  2px outset #006a74;
+    background-color: #037882;
+    padding: 3px;
+    font-size: calc(10px + 0.1vw);
+  }
+  .don:hover {
+    border: 2px inset #006a74 ;
+  }
