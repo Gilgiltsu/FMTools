@@ -39,7 +39,7 @@
 
 
 		<div class="box a">
-			<form onchange="note(),ajustement()">
+			<form onchange="note(),ajustement(),rstcheck(),affichprojet()">
 				<label class="formulaire" for="det">DÉTERMINATION</label>
 				<input type="number" name="det" id="det" max="20" min="1" value="1">
 
@@ -133,14 +133,44 @@
 
 				</select>
 
+
+
 			</form>
 		</div>
-
+		<div id="projet" class="box proj" style="display: none;">
+			<h2>LE JOUEUR A-T-IL DES PROJETS ? <a onclick="afficher('projetable')"><svg>
+				<use xlink:href="#info" />
+			</svg></a></h2>
+			<p style="margin-top: 0%; margin-bottom: 1%; text-align:center;"><i>N'apparaissent uniquement les projets modifiant les notes cachéees</i></p>
+				<table class="tableprojet">
+					<tbody>
+						<tr id="proj1">
+							<td><input class="projet" type="checkbox" id="prjt1" onchange="proj()">
+							</td>
+							<td>Projet à court terme relatif au temps de jeu</td>
+						</tr>
+						<tr id="proj1bis">
+							<td><input class="projet" type="checkbox" id="prjt1b" onchange="proj()">
+							</td>
+							<td>Projet à long terme relatif au temps de jeu</td>
+						</tr>
+						<tr id="proj2"> 
+							<td><input class="projet" type="checkbox" id="prjt2" onchange="proj()">
+							</td>
+							<td>Projet de remporter un trophée avec l'équipe</td>
+						</tr>
+						<tr id="proj3">
+							<td><input class="projet" type="checkbox" id="prjt3" onchange="proj()">
+							<td>Espère un jour devenir capitaine de l'équipe</td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
 
 		<div class="box b">
 			<h2>ATTRIBUTS</h2>
 
-			<table>
+			<table id="attri">
 
 				<tbody>
 					<tr>
@@ -201,7 +231,8 @@
 					</tr>
 				</tbody>
 			</table>
-
+			<p id="projetinfo" style="margin-top: 1%; margin-bottom: 2%; text-align:center; display:none"><i>Si le joueur a des projets, ils n'impacteront pas ses notes cachées</i></p>
+			
 		</div>
 
 
@@ -273,35 +304,70 @@
 				Un seul rapport médias indique une haute note en polémique (Spontané), il est donc préférable de
 				l’éviter, mais ce n’est pas forcément rédhibitoire si vous savez tenir votre vestiaire et que vous avez
 				des résultats.
-
 			</h4>
 		</div>
+
+		<div id="projetable" class="box c" style="display: none;">
+
+			<h2>LES PROJETS</h2>
+			<table class="tableprojet2">
+			  <tr>
+				<td rowspan="4">Autour du temps de jeu</td>
+				<td>Court terme</td>
+				<td>Veut se faire une place en équipe première</td>
+			  </tr>
+			  <tr>
+				<td>Court terme</td>
+				<td>Veut devenir un membre régulier de l'équipe première</td>
+			  </tr>
+			  <tr>
+				<td>Court terme</td>
+				<td>Veut devenir un membre régulier de l'équipe première</td>
+			  </tr>
+			  <tr>
+				<td>Long terme</td>
+				<td>A pour objectif de s'imposer en équipe première dans les années à venir</td>
+			  </tr>
+			  <tr>
+				<td rowspan="2">Gagner des trophées</td>
+				<td>Court terme</td>
+				<td>Veut remporter un trophée cette saison</td>
+			  </tr>
+			  <tr>
+				<td>Court terme</td>
+				<td>Veut remporter un trophée et est enthousiaste concernant les chances de l'équipe en "compétition"</td>
+			  </tr>
+			</table>
+
+
+		</div>
+
 
 
 		<div class="sp">
 			<div class="i">
 				<h2>POUR EN SAVOIR PLUS</h2>
 			</div>
-				<div class="boite aa">
-					<a href="https://youtu.be/6dXkB1F6woQ" target="_blank">
+			<div class="boite aa">
+				<a href="https://youtu.be/6dXkB1F6woQ" target="_blank">
 					<img src="../image/youtube-icon.svg">
 					<div class="legend">L'encadrement</div>
 				</a>
-				</div>
-			
+			</div>
+
 			<div class="boite bb">
 				<a href="https://youtu.be/KBZi8b8H8Ug" target="_blank">
-				<img src="../image/youtube-icon.svg">
-				<div class="legend">Le guide vidéo</div> 
-				</a>	
+					<img src="../image/youtube-icon.svg">
+					<div class="legend">Le guide vidéo</div>
+				</a>
 			</div>
 			<div class="boite cc">
 				<a href="https://fmslife.fr/t/le-guide-ultime-des-personnalites/11949" target="_blank">
-					<img  src="../image/FMSLife.svg">
-					<div class="legend">Le guide FMSLife</div> 		
+					<img src="../image/FMSLife.svg">
+					<div class="legend">Le guide FMSLife</div>
 				</a>
 			</div>
-			
+
 		</div>
 
 
