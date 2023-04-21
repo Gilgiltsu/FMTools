@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hidden Attributes</title>
+	<meta charset="utf-8" />
+	<link href="../../stylecomplet.css" rel="stylesheet" />
+	<link href="../../notes/style.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" />
+	<link rel="shortcut icon" type="image/png" href="../../image/logo.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="bandeau">
+			<div class="accueil">
+				<a class="infobulle ho" aria-label="Home" href="../index.html"><svg>
+						<use xlink:href="#home" />
+					</svg></a>
+			</div>
+			<h1>Hidden Attributes</h1>
+			<div class="menu">
+				<a class="infobulle" aria-label="Staff" href="../prepa/index.html"><svg>
+						<use xlink:href="#staff" />
+					</svg></a>
+				<a class="infobulle" aria-label="Reports" href="../rapports/index.html"><svg>
+						<use xlink:href="#rapport" />
+					</svg></a>
+				<a class="infobulle last" aria-label="Facilities" href="../infrastructures/index.html"><svg>
+						<use xlink:href="#infra" />
+					</svg></a>
+			</div>
+		</div>
+
+
+		<div class="box a">
+			<form onchange="note(),ajustement(),rstcheck(),affichprojet()">
+				<label class="formulaire" for="det">DETERMINATION</label>
+				<input type="number" name="det" id="det" max="20" min="1" value="1">
+
+				<label class="formulaire" for="Personnalite">PERSONNALITY</label>
+				<select name="Personnalite" id="Personnalite" onchange="RMchange()">
+					<option value="">Personnality</option>
+					<option value="Amb">Ambitious</option>
+					<option value="Eq">Balanced</option>
+					<option value="Lene">Born Leader</option>
+					<option value="Dec">Casual</option>
+					<option value="LeCh">Charismatic Leader</option>
+					<option value="Ob">Determined</option>
+					<option value="Dev">Devoted</option>
+					<option value="Mot">Driven</option>
+					<option value="Fac">Easily Discouraged</option>
+					<option value="AsAmb">Fairly Ambitious</option>
+					<option value="AsDe">Fairly Determined</option>
+					<option value="AsLo">Fairly Loyal</option>
+					<option value="AsFP">Fairly Sporting</option>
+					<option value="AsPro">Fairly Professional</option>
+					<option value="Vers">Fickle</option>
+					<option value="Ho">Honest</option>
+					<option value="Ef">Iron Willed</option>
+					<option value="Jo">Jovial</option>
+					<option value="Le">Leader</option>
+					<option value="Enj">Light-Hearted</option>
+					<option value="Lo">Loyal</option>
+					<option value="FaDe">Low Determination</option>
+					<option value="FaCo">Low Self-Belief</option>
+					<option value="Me">Mercenary</option>
+					<option value="CiMo">Model Citizen</option>
+					<option value="Modpro">Model Professional</option>
+					<option value="Per">Perfectionist</option>
+					<option value="Pro">Professional</option>
+					<option value="Rea">Realist</option>
+					<option value="Res">Resilient</option>
+					<option value="Det">Resolute</option>
+					<option value="In">Slack</option>
+					<option value="Fri">Spineless</option>
+					<option value="Ent">Spirited</option>
+					<option value="FP">Sporting</option>
+					<option value="Fo">Temperamental</option>
+					<option value="SAmb">Unambitious</option>
+					<option value="Del">Unsporting</option>
+					<option value="TreAmb">Very Ambitions</option>
+					<option value="TreLoy">Very Loyal</option>					
+				</select>
+				<br>
+				<label class="formulaire" for="Media">MEDIA HANDLING</label>
+				<select name="Media" id="Media">
+					<option value="">Media handling</option>
+					
+					<option value="Con">Confrontational</option>
+
+					<option value="Eva">Evasive</option>
+					<option value="EvaCon">Evasive, Confrontational</option>
+					<option value="EvaImp">Evasive, Unflappable</option>
+					<option value="EvaIr">Evasive, Short-Tempered</option>
+					<option value="EvaIrCon">Evasive, Short-Tempered, Confrontational</option>
+					<option value="EvaRes">Evasive, Reserved</option>
+					<option value="EvaVer">Evasive, Volatile</option>
+					<option value="EvaVerCon">Evasive, Volatile, Confrontational</option>
+
+					<option value="Equi">Level-Headed</option>
+
+					<option value="ApMe">Media-Friendly</option>
+					<option value="ApMeCon">Media-Friendly, Confrontational</option>
+					<option value="ApMeImp">Media-Friendly, Unflappable</option>
+					<option value="ApMeIr">Media-Friendly, Short-Tempered</option>
+					<option value="ApMeIrCon">Media-Friendly, Short-Tempered, Confrontational</option>
+					<option value="ApMeRe">Media-Friendly, Reserved</option>
+					<option value="ApMeVer">Media-Friendly, Volatile</option>
+					<option value="ApMeVerCon">Media-Friendly, Volatile, Confrontational</option>
+
+					<option value="Spo">Outspoken</option>
+					<option value="SpoCon">Outspoken, Confrontational</option>
+					<option value="SpoImp">Outspoken, Unflappable</option>
+					<option value="SpoIr">Outspoken, Short-Tempered</option>
+					<option value="SpoIrCon">Outspoken, Short-Tempered, Confrontational</option>
+					<option value="SpoVer">Outspoken, Volatile</option>
+					<option value="SpoVerCon">Outspoken, Volatile, Confrontational</option>
+
+					<option value="Re">Reserved</option>
+
+					<option value="Ir">Short-Tempered</option>
+					<option value="IrCon">Short-Tempered, Confrontational</option>
+					
+					<option value="Imp">Unflappable</option>
+
+					<option value="Ver">Volatile</option>
+					<option value="VerCon">Volatile, Confrontational</option>
+
+				</select>
+
+
+
+			</form>
+		</div>
+		<div id="projet" class="box proj" style="display: none;">
+			<h2>DOES THE PLAYER HAVE PLANS ? <a onclick="afficher('projetable')"><svg>
+				<use xlink:href="#info" />
+			</svg></a></h2>
+			<p style="margin-top: 0%; margin-bottom: 1%; text-align:center;"><i>Only projects that modify hidden notes appear</i></p>
+				<table class="tableprojet">
+					<tbody>
+						<tr id="proj1">
+							<td><input class="projet" type="checkbox" id="prjt1" onchange="proj()">
+							</td>
+							<td>Short terms plans around playing time</td>
+						</tr>
+						<tr id="proj1bis">
+							<td><input class="projet" type="checkbox" id="prjt1b" onchange="proj()">
+							</td>
+							<td>Long terms plans around playing time</td>
+						</tr>
+						<tr id="proj2"> 
+							<td><input class="projet" type="checkbox" id="prjt2" onchange="proj()">
+							</td>
+							<td>Plans to win a trophy with the team</td>
+						</tr>
+						<tr id="proj3">
+							<td><input class="projet" type="checkbox" id="prjt3" onchange="proj()">
+							<td>Would like to one day be captain at the club</td>
+						</tr>
+					</tbody>
+				</table>
+		</div>
+
+		<div class="box b">
+			<h2>ATTRIBUTES</h2>
+
+			<table id="attri">
+
+				<tbody>
+					<tr>
+						<td>Professionalism <a onclick="afficher('Professionnalisme')"><svg>
+									<use xlink:href="#info" />
+								</svg></a></td>
+						<td id="minPro">1</td>
+						<td id="midPro">-</td>
+						<td id="maxPro">20</td>
+					</tr>
+					<tr>
+						<td>Pressure <a onclick="afficher('Pression')"><svg>
+									<use xlink:href="#info" />
+								</svg></a> </td>
+						<td id="minPre">1</td>
+						<td id="midPre">-</td>
+						<td id="maxPre">20</td>
+					</tr>
+					<tr>
+						<td>Temperament <a onclick="afficher('Tempérament')"><svg>
+									<use xlink:href="#info" />
+								</svg></a></td>
+						<td id="minTemp">1</td>
+						<td id="midTemp">-</td>
+						<td id="maxTemp">20</td>
+					</tr>
+					<tr>
+						<td>Ambition <a onclick="afficher('Ambition')"><svg>
+									<use xlink:href="#info" />
+								</svg></a> </td>
+						<td id="minAmb">1</td>
+						<td id="midAmb">-</td>
+						<td id="maxAmb">20</td>
+					</tr>
+					<tr>
+						<td>Loyalty <a onclick="afficher('Fidélité')"><svg>
+									<use xlink:href="#info" />
+								</svg></a> </td>
+						<td id="minFid">1</td>
+						<td id="midFid">-</td>
+						<td id="maxFid">20</td>
+					</tr>
+					<tr>
+						<td>Sportsmanship <a onclick="afficher('Fair-play')"><svg>
+									<use xlink:href="#info" />
+								</svg></a> </td>
+						<td id="minFp">1</td>
+						<td id="midFp">-</td>
+						<td id="maxFp">20</td>
+					</tr>
+					<tr>
+						<td>Controversy <a onclick="afficher('Polémique')"><svg>
+									<use xlink:href="#info" />
+								</svg></a> </td>
+						<td id="minPol">1</td>
+						<td id="midPol">-</td>
+						<td id="maxPol">20</td>
+					</tr>
+				</tbody>
+			</table>
+			<p id="projetinfo" style="margin-top: 1%; margin-bottom: 2%; text-align:center; display:none"><i>If the player has plans, they will not impact his hidden attributes</i></p>
+			
+		</div>
+
+
+		<div id="Professionnalisme" class="box c" style="display: none;">
+
+			<h2>PROFESSIONALISM</h2>
+			<h4>A player’s attitude in all aspects of football. <br>
+				It's relative to training attendance, field behaviour, rigour and
+				adherence to the coach’s speech. <br>
+				This rating is essential. It is the most important attribute for a player’s progress.
+			</h4>
+		</div>
+
+		<div id="Pression" class="box c" style="display: none;">
+
+			<h2>PRESSURE</h2>
+			<h4>A player’s ability to meet expectations (club, supporters, coach, media, etc.). <br>
+				The bigger your club, the more pressure there will be. <br>
+				The players who know how to manage it are the best profiles for your team, especially when
+				you play the big competitions.
+			</h4>
+		</div>
+
+		<div id="Tempérament" class="box c" style="display: none;">
+
+			<h2>TEMPERAMENT</h2>
+			<h4>A player’s ability to react when facing the wall. <br>
+				When your team is being led or struggling, players with temperament do not give up; they remain calm and try to remotivate the troops. <br>
+				They are often the ones who are going to unlock the situation.
+
+			</h4>
+		</div>
+
+		<div id="Ambition" class="box c" style="display: none;">
+
+			<h2>AMBITION</h2>
+			<h4>Willingness to play in the best clubs, at the best possible salary. <br>
+				Ambitious people tend to ask for more money and may demand a transfer if the goals of
+				club doesn’t match theirs.  <br>
+				Ambition has a small impact on Youth progress.
+			</h4>
+		</div>
+
+		<div id="Fidélité" class="box c" style="display: none;">
+
+			<h2>LOYALTY</h2>
+			<h4>A player’s loyalty to his club.<br>
+				The more faithful will be less likely to yield to the sirens of the best stables, and therefore to hold you
+				head if you refuse. <br>
+				They will also give everything for their team.
+			</h4>
+		</div>
+
+		<div id="Fair-play" class="box c" style="display: none;">
+
+			<h2>SPORTSMANSHIP</h2>
+			<h4>Tendency of a player to keep a sportsmanship in all circumstances. <br>
+				The less fair will want to stall, but take more cards. <br>
+				Those with a better mindset tend to be more popular.
+			</h4>
+		</div>
+
+		<div id="Polémique" class="box c" style="display: none;">
+
+			<h2>CONTROVERSY</h2>
+			<h4>A player tends to stand up to you when he doesn't agree with you, or when he doesn't like what you're saying.  <br>
+				A single media report indicates a high note in controversy (Outspoken), so it is better to avoid it, but it is not necessarily prohibitive if you know how to hold your locker room and have results.
+			</h4>
+		</div>
+
+		<div id="projetable" class="box c" style="display: none;">
+
+			<h2>PLANS</h2>
+			<table class="tableprojet2">
+			  <tr>
+				<td rowspan="4">Playing time</td>
+				<td>Short term</td>
+				<td>Wants to break into the first team</td>
+			  </tr>
+			  <tr>
+				<td>Short term</td>
+				<td>Want to become a regular in the first team</td>
+			  </tr>
+			  <tr>
+				<td>Short term</td>
+				<td>Is willing to fight to regain his place in the first team</td>
+			  </tr>
+			  <tr>
+				<td>Long term</td>
+				<td>Aim to be in the current first team in the coming years</td>
+			  </tr>
+			  <tr>
+				<td rowspan="2">Winning trophy</td>
+				<td>Short term</td>
+				<td>Want the team to win a trophy by the end of the season</td>
+			  </tr>
+			  <tr>
+				<td>Short term</td>
+				<td>Want to win a trophy and is excited at the team's chance in the "competition"</td>
+			  </tr>
+			</table>
+
+
+		</div>
+
+
+
+		<div class="sp">
+			<div class="i">
+				<h2>MORE INFORMATION</h2>
+			</div>
+			<div class="boite aa">
+				<a href="https://youtu.be/6dXkB1F6woQ" target="_blank">
+					<img src="../../image/youtube-icon.svg">
+					<div class="legend">Mentoring</div>
+				</a>
+			</div>
+
+			<div class="boite bb">
+				<a href="https://youtu.be/KBZi8b8H8Ug" target="_blank">
+					<img src="../../image/youtube-icon.svg">
+					<div class="legend">Video guide</div>
+				</a>
+			</div>
+			<div class="boite cc">
+				<a href="https://fmslife.fr/t/le-guide-ultime-des-personnalites/11949" target="_blank">
+					<img src="../../image/FMSLife.svg">
+					<div class="legend">FMSLife guide</div>
+				</a>
+			</div>
+
+		</div>
+
+
+		<script src="../fonction.js"></script>
+
+
+		<footer>
+			<p><small>This tool follows the research and testing work of Kinito (<a target="_blank"
+				  href="https://www.youtube.com/@Kiniitooo"><img src="../../image/youtube-icon.svg"> </a> | <a target="_blank"
+				  href="https://wwww.twitch.tv/kiniitooo"><img src="../../image/twitch-icon.svg"> </a>
+				| <a target="_blank" href="https://twitter.com/Kiniitooo"> <img src="../../image/twitter-icon.svg"></a>
+				| <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../../image/discordapp-icon.svg">
+				</a> ) and DoctorDim <br>
+				Partner: <a target="_blank" href="https://www.fmultras.com"> FMULTRAS.com<img
+					src="../../image/LogoFMultras.png"> </a>
+				</a> <a target="_blank"  href="https://www.paypal.me/gilgiltsu"><button class="don">Support the creator</button></a></small>
+				<p><small>&copy; Created by <a href="https://github.com/Gilgiltsu/FMTools">Gilgiltsu <img src="../../image/github.png"></a>, 2023.</small></p>
+		  </footer>
+
+	</div>
+
+
+
+	<svg display="none">
+		<symbol viewBox="0 0 48 48" width="15px" height="15px" id="info">
+			<path
+				d="M24,4C12.972,4,4,12.972,4,24s8.972,20,20,20s20-8.972,20-20S35.028,4,24,4z M25.5,33.5c0,0.828-0.672,1.5-1.5,1.5	s-1.5-0.672-1.5-1.5v-11c0-0.828,0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5V33.5z M24,18c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2	s2,0.895,2,2C26,17.105,25.105,18,24,18z">
+			</path>
+		</symbol>
+	</svg>
+
+	<svg display="none">
+		<symbol viewBox="0 0 48 48" id="home">
+			<g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+				<path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
+	   -87 3 -88 45 0 45 0 3 67 3 68 59 0 59 0 3 -67 3 -68 45 0 45 0 3 87 3 88 29
+	   0 c40 0 38 12 -9 50 -31 24 -41 39 -43 67 -3 41 -26 56 -35 24 -5 -20 -8 -19
+	   -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z" />
+			</g>
+		</symbol>
+	</svg>
+	<svg display="none">
+		<symbol viewBox="0 0 339 222" id="infra">
+			<g transform="translate(0.000000,222.000000) scale(0.100000,-0.100000)">
+				<path d="M1480 2154 c-458 -33 -903 -158 -1145 -323 -92 -63 -182 -157 -216
+	-227 -49 -100 -48 -134 14 -524 31 -190 58 -366 62 -391 35 -271 446 -516
+	1003 -599 73 -11 139 -20 147 -20 11 0 14 37 17 188 3 167 5 191 24 222 11 19
+	31 41 45 47 30 16 504 18 543 3 14 -5 35 -24 46 -42 18 -30 20 -51 20 -227 l0
+	-194 67 7 c208 21 461 84 633 157 149 64 246 126 337 215 104 101 132 157 143
+	287 5 51 30 229 56 397 26 168 47 329 47 357 -2 176 -233 380 -573 506 -177
+	65 -385 113 -627 142 -123 15 -528 27 -643 19z m452 -155 c656 -45 1113 -250
+	1111 -498 -1 -69 -19 -112 -73 -173 -131 -150 -456 -268 -875 -320 -147 -18
+	-635 -18 -775 0 -283 37 -553 110 -713 194 -113 60 -209 154 -231 227 -19 65
+	-20 87 -4 132 40 120 185 228 411 308 315 111 737 159 1149 130z" />
+				<path d="M2090 1770 l0 -160 -72 7 c-40 5 -194 8 -343 8 -206 -1 -296 -5 -380
+	-18 -217 -35 -405 -93 -519 -162 -32 -19 -60 -35 -62 -35 -2 0 -4 88 -4 195 0
+	178 -8 233 -24 173 -11 -43 -7 -378 5 -378 6 0 -5 -18 -25 -41 -33 -36 -56
+	-76 -56 -98 0 -21 211 -101 370 -139 521 -127 1176 -105 1630 53 119 42 180
+	71 180 86 0 22 -40 86 -74 118 l-36 35 0 199 c0 154 -3 198 -12 195 -10 -4
+	-14 -53 -16 -190 l-2 -186 -53 29 c-102 55 -304 118 -432 134 l-50 7 3 164 c3
+	143 1 164 -13 164 -13 0 -15 -22 -15 -160z" />
+			</g>
+		</symbol>
+	</svg>
+	<svg display="none">
+		<symbol viewBox="0 0 233 266" id="staff">
+			<g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
+				<path d="M1079 2642 c-100 -41 -171 -106 -242 -225 -34 -56 -80 -187 -92 -259
+	  -4 -26 -10 -36 -20 -32 -42 17 -85 -49 -85 -130 0 -86 28 -136 76 -136 18 0
+	  25 -7 30 -27 51 -232 159 -394 309 -464 56 -27 78 -32 143 -32 117 0 179 28
+	  273 122 88 88 136 176 171 313 18 71 27 88 44 92 51 13 74 159 35 223 -11 17
+	  -28 34 -38 37 -13 4 -24 30 -40 97 -44 181 -147 331 -275 399 -56 30 -73 34
+	  -153 37 -70 3 -100 -1 -136 -15z" />
+				<path d="M1536 1307 c-23 -200 -30 -364 -29 -712 1 -214 5 -430 10 -480 l8
+	  -90 45 3 c56 4 227 60 312 103 235 118 384 279 424 457 67 303 -166 586 -604
+	  730 -48 16 -103 32 -123 35 l-37 5 -6 -51z" />
+				<path d="M599 1173 c-186 -94 -313 -169 -526 -311 -49 -33 -52 -37 -62 -96
+	  -15 -84 -14 -121 4 -191 56 -212 262 -396 567 -503 78 -28 237 -67 243 -60 9
+	  9 25 410 25 613 0 244 -16 603 -29 638 -6 17 -28 8 -222 -90z" />
+				<path d="M950 1189 c0 -6 19 -80 41 -165 42 -153 42 -154 70 -154 18 0 29 -5
+	  29 -14 0 -13 -103 -724 -115 -792 l-5 -32 147 -6 c82 -4 155 -9 163 -12 13 -3
+	  15 37 12 324 -1 180 -3 373 -5 430 l-2 102 31 0 31 0 42 154 c22 85 41 159 41
+	  165 0 8 -76 11 -240 11 -164 0 -240 -3 -240 -11z" />
+			</g>
+		</symbol>
+	</svg>
+	<svg display="none">
+		<symbol viewBox="0 0 135 150" id="rapport">
+			<g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
+				<path d="M252 1469 c-62 -31 -93 -82 -99 -164 l-6 -65 89 0 c141 -1 201 -38
+		211 -134 7 -56 -18 -109 -64 -137 -28 -18 -56 -23 -134 -27 l-99 -5 0 -212 0
+		-213 105 -4 c112 -4 136 -13 179 -71 27 -37 27 -117 0 -154 -43 -57 -65 -66
+		-180 -71 l-106 -5 6 -41 c10 -58 47 -110 98 -135 43 -20 56 -21 496 -21 385 0
+		458 2 489 15 48 20 71 41 94 87 18 35 19 68 19 638 0 570 -1 603 -19 638 -23
+		46 -46 67 -94 87 -31 13 -104 15 -489 15 -443 0 -454 0 -496 -21z m888 -354
+		l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z m0 -240 l0 -25 -280 0
+		-280 0 0 25 0 25 280 0 280 0 0 -25z m0 -250 l0 -25 -280 0 -280 0 0 25 0 25
+		280 0 280 0 0 -25z m0 -240 l0 -25 -280 0 -280 0 0 25 0 25 280 0 280 0 0 -25z" />
+				<path d="M58 1185 c-30 -17 -58 -62 -58 -95 0 -34 28 -79 61 -96 25 -12 57
+		-15 161 -12 l130 3 29 33 c40 45 40 99 0 144 l-29 33 -134 3 c-104 1 -139 -1
+		-160 -13z" />
+				<path d="M65 461 c-65 -27 -82 -118 -32 -168 27 -28 30 -28 167 -31 l140 -4
+		35 35 c48 48 49 95 1 143 l-34 34 -129 -1 c-70 0 -137 -4 -148 -8z" />
+			</g>
+		</symbol>
+	</svg>
+
+
+</body>
+
+</html>

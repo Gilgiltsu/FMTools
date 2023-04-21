@@ -1,109 +1,281 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
-  <title> Football Manager : Évaluation des joueurs et des préparateurs</title>
+  <title>Club facilities</title>
   <meta charset="utf-8" />
-  <link rel="shortcut icon" type="image/png" href="image/logo.png" />
-  <link href="stylecomplet.css" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+  <link href="../../stylecomplet.css" rel="stylesheet" />
+  <link href="../../infrastructures/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" type="image/png" href="../../image/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body>
+
   <div class="container">
-    <div  class="intro">
-      <h1>Bienvenue sur l'outil d'évaluation de vos joueurs et de vos préparateurs </h1>
-      <h2 class = "lang"><img style="width: calc(15px+0.5vw)" src="./image/Fr.png">&nbsp Francais &nbsp|<a class = "langue" href="./EN/index.html">&nbsp English &nbsp<img style="width: calc(15px+0.5vw)" src="./image/En.png"></a></h2>
-      <h3>Après de nombreux tests sur Football Manager ces dernières années, Kinito et DoctorDim nous ont
-        permis de comprendre en profondeur des aspects importants du jeu. <br>
-        À l'aide de leur travail pour la communauté, j'ai pu réaliser ce petit outil qui vous permettra de mieux appréhender la gestion de votre effectif et de votre club.</h3>
-      <h3 style="text-align: center; margin-left: 10%; margin-right: 10%;">Voici 4 petits outils qui résument et utilisent leurs travaux afin de simplifier
-        notre expérience de jeu :
+
+    <div class="bandeau">
+      <div class="accueil">
+        <a class="infobulle ho" aria-label="Home" href="../index.html"><svg>
+            <use xlink:href="#home" />
+          </svg></a>
+      </div>
+      <h1>Facilities</h1>
+      <div class="menu">
+        <a class="infobulle" aria-label="Hidden attributes" href="../notes/index.html"><svg>
+            <use xlink:href="#perso" />
+          </svg></a>
+        <a class="infobulle" aria-label="Staff" href="../prepa/index.html"><svg>
+            <use xlink:href="#staff" />
+          </svg></a>
+        <a class="infobulle last" aria-label="Reports" href="../rapports/index.html"><svg>
+            <use xlink:href="#rapport" />
+          </svg></a>
+      </div>
+    </div>
+
+
+    <div class="intro">
+      <h3>In order to know the facilities level of your club, go to the "club info" tab in the "facilities" section.
+        Facilities don’t necessarily move on two by two. When the human player makes a request for improvement, the facilities always moves to the bottom of the next level.
       </h3>
     </div>
 
-      <div class="box a" onclick="window.location.assign('notes/index.html');">
-        <h2><svg>
-            <use xlink:href="#perso" />
-          </svg> &nbsp LES NOTES CACHÉES</h2>
-        <h4 style="white-space: nowrap;">Évaluer les notes cachées d'un joueur à l'aide de :
-          <br>
-          <ul>
-            <li>Sa personnalité</li>
-            <li>Ses rapports aux médias</li>
-            <li>Sa détermination</li>
-          </ul>
-        </h4>
+    <div class="box a">
+
+      <h2>TRAINING FACILITIES</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Rating (/20)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Poor</td>
+          <td>1 - 3</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>4 - 5 </td>
+        </tr>
+        <tr>
+          <td>Below Average</td>
+          <td>6 - 7</td>
+        </tr>
+        <tr>
+          <td>Adequate</td>
+          <td>8 - 9</td>
+        </tr>
+        <tr>
+          <td>Average</td>
+          <td>10 - 11</td>
+        </tr>
+        <tr>
+          <td>Good</td>
+          <td>12 - 13</td>
+        </tr>
+        <tr>
+          <td>Great</td>
+          <td>14 - 15</td>
+        </tr>
+        <tr>
+          <td>Excellent</td>
+          <td>16 - 17</td>
+        </tr>
+        <tr>
+          <td>Superb</td>
+          <td>18 - 19</td>
+        </tr>
+        <tr>
+          <td>State of the art</td>
+          <td>20</td>
+        </tr>
+      </table>
+    </div>
+
+
+
+
+
+    <div class="box b">
+
+      <h2>YOUTH FACILITIES</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Rating (/20)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Poor</td>
+          <td>1 - 3</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>4 - 5 </td>
+        </tr>
+        <tr>
+          <td>Below Average</td>
+          <td>6 - 7</td>
+        </tr>
+        <tr>
+          <td>Adequate</td>
+          <td>8 - 9</td>
+        </tr>
+        <tr>
+          <td>Average</td>
+          <td>10 - 11</td>
+        </tr>
+        <tr>
+          <td>Good</td>
+          <td>12 - 13</td>
+        </tr>
+        <tr>
+          <td>Great</td>
+          <td>14 - 15</td>
+        </tr>
+        <tr>
+          <td>Excellent</td>
+          <td>16 - 19</td>
+        </tr>
+        <tr>
+          <td>Superb</td>
+          <td>18 - 19</td>
+        </tr>
+        <tr>
+          <td>State of the art</td>
+          <td>20</td>
+        </tr>
+      </table>
+
+    </div>
+
+
+
+
+    <div class="box c">
+
+      <h2>JUNIOR COACHING</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Rating (/20)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Basic</td>
+          <td>1 - 2</td>
+        </tr>
+        <tr>
+          <td>Fairly basic</td>
+          <td>3 - 5 </td>
+        </tr>
+        <tr>
+          <td>Average</td>
+          <td>6 - 9</td>
+        </tr>
+        <tr>
+          <td>Adequate</td>
+          <td>10 - 13</td>
+        </tr>
+        <tr>
+          <td>Good</td>
+          <td>14 - 16</td>
+        </tr>
+        <tr>
+          <td>Excellent</td>
+          <td>17 - 19</td>
+        </tr>
+        <tr>
+          <td>Exceptional</td>
+          <td>20</td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div class="box d">
+
+      <h2>YOUTH RECRUITMENT</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Rating (/20)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Limited</td>
+          <td>1 - 2</td>
+        </tr>
+        <tr>
+          <td>Basic</td>
+          <td>3 - 5 </td>
+        </tr>
+        <tr>
+          <td>Farily basic</td>
+          <td>6 - 8</td>
+        </tr>
+        <tr>
+          <td>Average</td>
+          <td>9 - 11</td>
+        </tr>
+        <tr>
+          <td>Above average</td>
+          <td>12 - 14</td>
+        </tr>
+        <tr>
+          <td>Good</td>
+          <td>15 - 16</td>
+        </tr>
+        <tr>
+          <td>Excellent</td>
+          <td>17 - 19</td>
+        </tr>
+        <tr>
+          <td>Exceptional</td>
+          <td>20</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="sp">
+      <div class="i">
+        <h2>MORE INFORMATION</h2>
       </div>
-
-
-
-      <div class="box b" onclick="window.location.assign('prepa/index.html');">
-        <h2><svg>
-            <use xlink:href="#staff" />
-          </svg> &nbsp ÉVALUATION DES PRÉPARATEURS</h2>
-        <h4>Évaluer le staff pour répondre au mieux à vos besoins. <br>
-          Calculer le nombre d'étoiles d'un préparateur et identifier son atelier de prédilection.
-          </h4>
+      <div class="boite aa">
+        <a href="https://youtu.be/aqCDW53D0A0" target="_blank">
+          <img src="../../image/youtube-icon.svg">
+          <div class="legend">TRAINING CENTER</div>
+        </a>
       </div>
-
-
-
-      <div class="box c" onclick="window.location.assign('rapports/index.html');">
-        <h2><svg>
-            <use xlink:href="#rapport" />
-          </svg> &nbsp COMPRENDRE LES RAPPORTS</h2>
-          <h4>Interpréter les différents rapports :
-            <br>
-            <ul>
-              <li>Recruteur</li>
-              <li>Préparateur</li>
-              <li>Entrainement individuel</li>
-            </ul>
-          </h4>
-      </div>
-
-
-
-      <div class="box d" onclick="window.location.assign('infrastructures/index.html');">
-        <h2><svg>
-            <use xlink:href="#infra" />
-          </svg> &nbsp VALEURS DES INFRASTRUCTURES</h2>
-        <h4>Connaitre et évaluer le développement des infrastructures de votre club.</h4>
-      </div>
-
-      <div class="sp">
-        <div class="i">
-          <h2>TUTORIEL</h2>
-        </div>
-        <div class="boite aa">
-          <a href="https://youtu.be/9bWkYexbNII" target="_blank">
-            <img src="./image/youtube-icon.svg">
-            <div class="legend">PRÉSENTATION VIDEO DE L'OUTIL</div>
-          </a>
-        </div>
-      </div>
+    </div>
 
 
     <footer>
-      <p><small> Cet outil fait suite au travail de recherche et de test de Kinito ( <a target="_blank"
-            href="https://www.youtube.com/@Kiniitooo"> <img src="./image/youtube-icon.svg"> </a> | <a target="_blank"
-            href="https://www.twitch.tv/kiniitooo"><img src="./image/twitch-icon.svg"> </a>
-          | <a target="_blank" href="https://twitter.com/Kiniitooo"> <img src="./image/twitter-icon.svg"></a>
-          | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="./image/discordapp-icon.svg">
-          </a> ) et DoctorDim <br>
-          Partenaire : <a target="_blank" href="https://www.fmultras.com"> FMULTRAS.com<img
-              src="./image/LogoFMultras.png"> </a>
-          </a> <a target="_blank"  href="https://www.paypal.me/gilgiltsu"><button class="don">Soutenir le créateur</button></a></small>
-      <p><small>&copy; Créé par <a href="https://github.com/Gilgiltsu/FMTools">Gilgiltsu <img src="./image/github.png"></a>, 2023.</small></p>
+      <p><small>This tool follows the research and testing work of Kinito (<a target="_blank"
+            href="https://www.youtube.com/@Kiniitooo"><img src="../../image/youtube-icon.svg"> </a> | <a target="_blank"
+            href="https://wwww.twitch.tv/kiniitooo"><img src="../../image/twitch-icon.svg"> </a>
+          | <a target="_blank" href="https://twitter.com/Kiniitooo"> <img src="../../image/twitter-icon.svg"></a>
+          | <a target="_blank" href="https://discord.gg/YTXdbJz798"> <img src="../../image/discordapp-icon.svg">
+          </a> ) and DoctorDim <br>
+          Partner: <a target="_blank" href="https://www.fmultras.com"> FMULTRAS.com<img
+              src="../../image/LogoFMultras.png"> </a>
+          </a><a target="_blank"  href="https://www.paypal.me/gilgiltsu"><button class="don">Support the creator</button></a> </small>
+      <p><small>&copy; Created by <a href="https://github.com/Gilgiltsu/FMTools">Gilgiltsu <img src="../../image/github.png"></p>
     </footer>
+    
+
+
   </div>
-
-
-
 
   <svg display="none">
     <symbol viewBox="0 0 595 737" id="perso">
@@ -236,31 +408,6 @@
       </g>
     </symbol>
   </svg>
-
-  <svg display="none">
-    <symbol viewBox="0 0 339 222" id="infra">
-      <g transform="translate(0.000000,222.000000) scale(0.100000,-0.100000)">
-        <path d="M1480 2154 c-458 -33 -903 -158 -1145 -323 -92 -63 -182 -157 -216
-  -227 -49 -100 -48 -134 14 -524 31 -190 58 -366 62 -391 35 -271 446 -516
-  1003 -599 73 -11 139 -20 147 -20 11 0 14 37 17 188 3 167 5 191 24 222 11 19
-  31 41 45 47 30 16 504 18 543 3 14 -5 35 -24 46 -42 18 -30 20 -51 20 -227 l0
-  -194 67 7 c208 21 461 84 633 157 149 64 246 126 337 215 104 101 132 157 143
-  287 5 51 30 229 56 397 26 168 47 329 47 357 -2 176 -233 380 -573 506 -177
-  65 -385 113 -627 142 -123 15 -528 27 -643 19z m452 -155 c656 -45 1113 -250
-  1111 -498 -1 -69 -19 -112 -73 -173 -131 -150 -456 -268 -875 -320 -147 -18
-  -635 -18 -775 0 -283 37 -553 110 -713 194 -113 60 -209 154 -231 227 -19 65
-  -20 87 -4 132 40 120 185 228 411 308 315 111 737 159 1149 130z" />
-        <path d="M2090 1770 l0 -160 -72 7 c-40 5 -194 8 -343 8 -206 -1 -296 -5 -380
-  -18 -217 -35 -405 -93 -519 -162 -32 -19 -60 -35 -62 -35 -2 0 -4 88 -4 195 0
-  178 -8 233 -24 173 -11 -43 -7 -378 5 -378 6 0 -5 -18 -25 -41 -33 -36 -56
-  -76 -56 -98 0 -21 211 -101 370 -139 521 -127 1176 -105 1630 53 119 42 180
-  71 180 86 0 22 -40 86 -74 118 l-36 35 0 199 c0 154 -3 198 -12 195 -10 -4
-  -14 -53 -16 -190 l-2 -186 -53 29 c-102 55 -304 118 -432 134 l-50 7 3 164 c3
-  143 1 164 -13 164 -13 0 -15 -22 -15 -160z" />
-      </g>
-    </symbol>
-  </svg>
-
   <svg display="none">
     <symbol viewBox="0 0 233 266" id="staff">
       <g transform="translate(0.000000,266.000000) scale(0.100000,-0.100000)">
@@ -283,7 +430,6 @@
       </g>
     </symbol>
   </svg>
-
   <svg display="none">
     <symbol viewBox="0 0 135 150" id="rapport">
       <g transform="translate(0.000000,150.000000) scale(0.100000,-0.100000)">
@@ -304,8 +450,16 @@
       </g>
     </symbol>
   </svg>
-
-
+  <svg display="none">
+    <symbol viewBox="0 0 48 48" id="home">
+      <g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)">
+        <path d="M129 350 c-57 -50 -105 -95 -107 -100 -2 -6 10 -10 27 -10 l30 0 3
+       -87 3 -88 45 0 45 0 3 67 3 68 59 0 59 0 3 -67 3 -68 45 0 45 0 3 87 3 88 29
+       0 c40 0 38 12 -9 50 -31 24 -41 39 -43 67 -3 41 -26 56 -35 24 -5 -20 -8 -19
+       -49 19 -24 22 -47 40 -52 40 -4 0 -55 -41 -113 -90z" />
+      </g>
+    </symbol>
+  </svg>
 </body>
 
 </html>

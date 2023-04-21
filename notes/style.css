@@ -267,7 +267,7 @@ padding-top: 1%;
 @media (min-width: 768px) {
 
   .container {
-    grid-gap: 2%;
+    grid-gap: 1.5%;
     grid-template-columns: repeat(2,1fr);
   }
 

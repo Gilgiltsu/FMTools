@@ -18,6 +18,23 @@ body {
     text-align: center;
   }
 
+  .lang {
+    color: #94a8b6;
+    border-bottom: none;
+    display: flex;
+    font-size: calc(10px + 0.3vw);
+    text-align: center;
+    justify-content: center;
+  }
+
+  .langue{
+    color: #94a8b6;
+    border-bottom: none;
+    display: flex;
+    font-size: calc(10px + 0.3vw);
+    text-align: center;
+  } 
+
   h2 {
     color: #10e7e2;
     border-bottom: 2px solid #10e7e2;
@@ -35,7 +52,7 @@ body {
     font-size: calc(10px + 0.3vw);
     margin-left: 5%;
     margin-right: 5%;
-    text-align: justify;
+    text-align: center;
   }
 
   h4 {
