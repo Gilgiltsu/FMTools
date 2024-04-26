@@ -37,7 +37,8 @@
 
 
     <div class="box a">
-
+     <h3> /!\ Les coups de pied arrêtés sont en phase de tests /!\    <br>
+      Merci de faire vos retours sur le  <a target="_blank" href="https://discord.gg/YTXdbJz798"><u>discord</u></a> de Kinito </h3>
 
         <table class="attribut">
           <form onchange="evalstaf()">
@@ -54,19 +55,24 @@
               </td>
             </tr>
             <tr>
-              <td><label class="formulaire" for="Def">Défensif</label>
-                <input onchange="evalstaf()" type="number" name="Def" id="Def" max="20" min="1" value="1">
+              <td><label class="formulaire" for="CPA">Coups de pieds arrêtés</label>
+                <input onchange="evalstaf()" type="number" name="CPA" id="CPA" max="20" min="1" value="1">
               </td>
               <td><label class="formulaire" for="Det">Détermination</label>
                 <input onchange="evalstaf()" type="number" name="Det" id="Det" max="20" min="1" value="1">
               </td>
             </tr>
             <tr>
-              <td><label class="formulaire" for="Men">Mental</label>
-                <input onchange="evalstaf()" type="number" name="Men" id="Men" max="20" min="1" value="1">
+              <td><label class="formulaire" for="Def">Défensif</label>
+                <input onchange="evalstaf()" type="number" name="Def" id="Def" max="20" min="1" value="1">
               </td>
               <td><label class="formulaire" for="Ndd">Niveau de discipline</label>
                 <input onchange="evalstaf()" type="number" name="Ndd" id="Ndd" max="20" min="1" value="1">
+              </td>
+            </tr>
+            <tr>
+              <td><label class="formulaire" for="Men">Mental</label>
+                <input onchange="evalstaf()" type="number" name="Men" id="Men" max="20" min="1" value="1">
               </td>
             </tr>
             <tr>
@@ -87,10 +93,14 @@
 
             <tr>
               <th>ENTRAINEMENT GARDIENS</th>
+              <th>CONNAISSANCES</th>
             </tr>
             <tr>
               <td><label class="formulaire" for="AGB">Arrêts sur la ligne GB</label>
                 <input onchange="evalstaf()" type="number" name="AGB" id="AGB" max="20" min="1" value="1">
+              </td>
+              <td><label class="formulaire" for="NT">Notions tactiques</label>
+                <input onchange="evalstaf()" type="number" name="NT" id="NT" max="20" min="1" value="1">
               </td>
             </tr>
             <tr>
@@ -163,6 +173,10 @@
           <tr>
             <td>Vivacité</td>
             <td><img id="Viva" src="../image/0etoile.png"></td>
+          </tr>
+          <tr>
+            <td class="role" colspan="2"> <img src="../image/coupied.png">Coups de pied arrêtés</td>
+            <td><img id="CouPA" src="../image/0etoile.png"></td>
           </tr>
 
 
